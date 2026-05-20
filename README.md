@@ -208,9 +208,52 @@ React Hook Form combined with Zod provides type-safe, performant form handling.
 Create a `.env.local` file in the project root for local environment variables:
 
 ```env
-NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
-NEXT_PUBLIC_API_TIMEOUT=30000
+NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
 ```
+
+For production, set `NEXT_PUBLIC_API_URL` to your backend API URL.
+
+## Troubleshooting
+
+### Authentication Issues
+
+**Problem:** User stuck on login page despite cookies being set
+
+**Solution:** Ensure frontend and backend share a common parent domain:
+
+```
+Frontend:  theinventory.ndevuspace.com
+Backend:   api.theinventory.ndevuspace.com
+Parent:    ndevuspace.com ✓
+```
+
+Backend must configure:
+```python
+JWT_COOKIE_DOMAIN = ".ndevuspace.com"  # Leading dot for all subdomains
+JWT_COOKIE_SECURE = True               # For HTTPS
+JWT_COOKIE_SAMESITE = "Lax"
+```
+
+See [Backend Troubleshooting Guide](../the_inventory/docs/troubleshooting.md#jwt-authentication-401-errors-production) for detailed setup.
+
+### CORS Errors
+
+**Problem:** `No 'Access-Control-Allow-Origin' header`
+
+**Solution:** 
+1. Verify backend is running
+2. Check `NEXT_PUBLIC_API_URL` matches backend URL
+3. Verify backend `CORS_ALLOWED_ORIGINS` includes frontend URL
+
+### API Connection Issues
+
+**Problem:** Cannot connect to backend API
+
+**Solution:**
+1. Verify `NEXT_PUBLIC_API_URL` is correct
+2. Check backend is running and accessible
+3. For local development: `NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1`
+4. For production: Use full HTTPS URL to backend
 
 ## Contributing
 

@@ -1,6 +1,10 @@
 
 /node_modules/
 /.next/
+.kiro/scripts/
+.kiro/specs/
+.kiro/docs/
+.kiro/settings/
 
 # Environment variables
 .env
@@ -9,3 +13,6 @@
 .env.development.local
 .env.production
 .env.production.local
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat

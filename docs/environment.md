@@ -18,12 +18,17 @@ Frontend variables are prefixed with `NEXT_PUBLIC_` to make them accessible in t
   # Local development
   NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
   
-  # Production
-  NEXT_PUBLIC_API_URL=https://api.example.com/api/v1
+  # Production with shared parent domain (recommended)
+  NEXT_PUBLIC_API_URL=https://api.theinventory.ndevuspace.com/api/v1
   
-  # Vercel with backend on Render
-  NEXT_PUBLIC_API_URL=https://my-api.onrender.com/api/v1
+  # Production with same domain
+  NEXT_PUBLIC_API_URL=https://example.com/api/v1
   ```
+
+**Important for Authentication:**
+- In production, the backend domain must share a common parent domain with the frontend for cookies to work
+- Example: `api.theinventory.ndevuspace.com` and `theinventory.ndevuspace.com` share parent `ndevuspace.com`
+- See [Authentication Troubleshooting](./AUTHENTICATION_TROUBLESHOOTING.md) for cross-domain setup
 
 #### `NEXT_PUBLIC_APP_NAME`
 
@@ -101,3 +106,101 @@ NEXT_PUBLIC_APP_NAME="The Inventory (Local)"
   ```bash
   WAGTAIL_SITE_NAME="My Company Inventory"
   ```
+
+---
+
+## Backend Configuration for Authentication
+
+For the frontend to authenticate properly, especially in production with cross-domain setups, the backend must be configured correctly.
+
+### JWT Cookie Settings
+
+These settings are in your Django backend's `settings.py` or environment variables:
+
+#### `JWT_COOKIE_DOMAIN`
+
+- **Type:** string
+- **Purpose:** Domain scope for JWT authentication cookies
+- **Critical for:** Cross-domain authentication (frontend and backend on different subdomains)
+- **Examples:**
+  ```python
+  # Shared parent domain (recommended for production)
+  JWT_COOKIE_DOMAIN = ".ndevuspace.com"  # Leading dot allows all subdomains
+  
+  # Exact domain match
+  JWT_COOKIE_DOMAIN = "example.com"
+  
+  # Local development
+  JWT_COOKIE_DOMAIN = None  # or "localhost"
+  ```
+
+**Why this matters:**
+- `.ndevuspace.com` allows cookies to be shared between `api.theinventory.ndevuspace.com` and `theinventory.ndevuspace.com`
+- Without proper domain configuration, cookies are set but not sent on subsequent requests
+- See [Authentication Troubleshooting](./AUTHENTICATION_TROUBLESHOOTING.md) for detailed setup
+
+#### `JWT_COOKIE_SECURE`
+
+- **Type:** boolean
+- **Default:** `False`
+- **Purpose:** Require HTTPS for cookie transmission
+- **Examples:**
+  ```python
+  # Production (HTTPS)
+  JWT_COOKIE_SECURE = True
+  
+  # Local development (HTTP)
+  JWT_COOKIE_SECURE = False
+  ```
+
+#### `JWT_COOKIE_SAMESITE`
+
+- **Type:** string (`"Lax"`, `"Strict"`, `"None"`)
+- **Default:** `"Lax"`
+- **Purpose:** Control cross-site cookie behavior
+- **Examples:**
+  ```python
+  # Shared parent domain (recommended)
+  JWT_COOKIE_SAMESITE = "Lax"
+  
+  # Completely different domains (requires Secure=True)
+  JWT_COOKIE_SAMESITE = "None"
+  ```
+
+### CORS Configuration
+
+Ensure your Django backend allows requests from the frontend:
+
+```python
+# settings.py
+CORS_ALLOWED_ORIGINS = [
+    "https://theinventory.ndevuspace.com",
+    "http://localhost:3000",  # for local development
+]
+
+CORS_ALLOW_CREDENTIALS = True  # Required for cookies
+```
+
+### Complete Backend Configuration Example
+
+```python
+# Production with shared parent domain
+JWT_COOKIE_DOMAIN = ".ndevuspace.com"
+JWT_COOKIE_SECURE = True
+JWT_COOKIE_SAMESITE = "Lax"
+JWT_COOKIE_HTTPONLY = True
+JWT_COOKIE_PATH = "/"
+
+CORS_ALLOWED_ORIGINS = [
+    "https://theinventory.ndevuspace.com",
+]
+CORS_ALLOW_CREDENTIALS = True
+```
+
+### Troubleshooting
+
+If authentication fails in production:
+1. Verify `JWT_COOKIE_DOMAIN` matches your domain setup
+2. Ensure `CORS_ALLOWED_ORIGINS` includes your frontend URL
+3. Check that `CORS_ALLOW_CREDENTIALS = True`
+4. See [Authentication Troubleshooting Guide](./AUTHENTICATION_TROUBLESHOOTING.md) for detailed debugging
