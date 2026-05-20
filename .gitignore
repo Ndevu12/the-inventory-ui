@@ -1,6 +1,10 @@
 
 /node_modules/
 /.next/
+.kiro/scripts/
+.kiro/specs/
+.kiro/docs/
+.kiro/settings/
 
 # Environment variables
 .env
