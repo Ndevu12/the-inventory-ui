@@ -69,7 +69,7 @@ export function Breadcrumbs() {
     <Breadcrumb>
       <BreadcrumbList>
         <BreadcrumbItem>
-          <BreadcrumbLink render={<Link href="/" />}>{t("home")}</BreadcrumbLink>
+          <BreadcrumbLink render={<Link href="/dashboard" />}>{t("home")}</BreadcrumbLink>
         </BreadcrumbItem>
         {segments.map((segment, index) => {
           const href = "/" + segments.slice(0, index + 1).join("/");

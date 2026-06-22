@@ -26,7 +26,7 @@ export function middleware(request: NextRequest) {
     !hasNonEmptyAccessCookie(request)
   ) {
     const url = request.nextUrl.clone();
-    url.pathname = `/${locale}/login`;
+    url.pathname = `/${locale}/auth/login`;
     return NextResponse.redirect(url);
   }
 

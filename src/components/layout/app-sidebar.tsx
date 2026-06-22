@@ -58,7 +58,7 @@ const NAV_GROUPS: NavGroupDef[] = [
   {
     groupKey: "overview",
     items: [
-      { itemKey: "dashboard", href: "/", icon: LayoutDashboardIcon },
+      { itemKey: "dashboard", href: "/dashboard", icon: LayoutDashboardIcon },
     ],
   },
   {
@@ -120,7 +120,7 @@ const NAV_GROUPS: NavGroupDef[] = [
 ];
 
 function isActive(href: string, pathname: string): boolean {
-  if (href === "/") return pathname === "/";
+  if (href === "/dashboard") return pathname === "/dashboard";
   if (href === "/settings") return pathname === "/settings";
   return pathname === href || pathname.startsWith(href + "/");
 }

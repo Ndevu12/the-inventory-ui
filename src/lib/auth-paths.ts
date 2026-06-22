@@ -3,7 +3,7 @@ import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from "@/i18n/routing";
 export const JWT_ACCESS_COOKIE_NAME = "access_token" as const;
 
 /**
- * Path after locale segment (leading slash). Examples: `/`, `/login`, `/products`.
+ * Path after locale segment (leading slash). Examples: `/`, `/auth/login`, `/products`.
  * When the first segment is not a known locale, `innerPath` is the full pathname.
  */
 export type ParsedLocalePath = {
@@ -13,9 +13,10 @@ export type ParsedLocalePath = {
 
 /** Paths that do not require JWT access cookie (tenant UI); prefix is without locale. */
 const PUBLIC_INNER_PATHS = new Set([
-  "/login",
-  "/register",
-  "/no-organization",
+  "/", // public marketing landing
+  "/auth/login",
+  "/auth/register",
+  "/auth/no-organization",
 ]);
 
 function normalizeInnerPath(segments: string[]): string {
@@ -64,8 +65,8 @@ export function isPublicAuthPath(innerPath: string): boolean {
     return true;
   }
   if (
-    p === "/accept-invitation" ||
-    p.startsWith("/accept-invitation/")
+    p === "/auth/accept-invitation" ||
+    p.startsWith("/auth/accept-invitation/")
   ) {
     return true;
   }
