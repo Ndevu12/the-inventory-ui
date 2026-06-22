@@ -8,9 +8,9 @@ import {
 
 describe("auth-paths", () => {
   it("parseLocalePath strips known locale prefix", () => {
-    expect(parseLocalePath("/en/login")).toEqual({
+    expect(parseLocalePath("/en/auth/login")).toEqual({
       locale: "en",
-      innerPath: "/login",
+      innerPath: "/auth/login",
     });
     expect(parseLocalePath("/fr")).toEqual({ locale: "fr", innerPath: "/" });
     expect(parseLocalePath("/")).toEqual({
@@ -20,24 +20,26 @@ describe("auth-paths", () => {
   });
 
   it("parseLocalePath treats unknown first segment as locale-free path", () => {
-    expect(parseLocalePath("/login")).toEqual({
+    expect(parseLocalePath("/auth/login")).toEqual({
       locale: "en",
-      innerPath: "/login",
+      innerPath: "/auth/login",
     });
   });
 
-  it("isPublicAuthPath covers auth and invitation flows", () => {
-    expect(isPublicAuthPath("/login")).toBe(true);
-    expect(isPublicAuthPath("/register")).toBe(true);
-    expect(isPublicAuthPath("/no-organization")).toBe(true);
-    expect(isPublicAuthPath("/accept-invitation")).toBe(true);
-    expect(isPublicAuthPath("/accept-invitation/abc")).toBe(true);
-    expect(isPublicAuthPath("/login/")).toBe(true);
+  it("isPublicAuthPath covers the landing, auth and invitation flows", () => {
+    expect(isPublicAuthPath("/")).toBe(true);
+    expect(isPublicAuthPath("/auth/login")).toBe(true);
+    expect(isPublicAuthPath("/auth/register")).toBe(true);
+    expect(isPublicAuthPath("/auth/no-organization")).toBe(true);
+    expect(isPublicAuthPath("/auth/accept-invitation")).toBe(true);
+    expect(isPublicAuthPath("/auth/accept-invitation/abc")).toBe(true);
+    expect(isPublicAuthPath("/auth/login/")).toBe(true);
   });
 
   it("requiresJwtAccessCookie is the complement on dashboard paths", () => {
-    expect(requiresJwtAccessCookie("/")).toBe(true);
+    expect(requiresJwtAccessCookie("/")).toBe(false);
     expect(requiresJwtAccessCookie("/products")).toBe(true);
-    expect(requiresJwtAccessCookie("/login")).toBe(false);
+    expect(requiresJwtAccessCookie("/dashboard")).toBe(true);
+    expect(requiresJwtAccessCookie("/auth/login")).toBe(false);
   });
 });
