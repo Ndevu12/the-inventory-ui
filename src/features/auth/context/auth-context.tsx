@@ -11,7 +11,8 @@ import {
   useState,
 } from "react";
 
-import { usePathname } from "@/i18n/navigation";
+import { usePathname } from "next/navigation";
+import { parseLocalePath } from "@/lib/auth-paths";
 import { useAuthStore } from "@/lib/auth-store";
 import type { User, Membership } from "@/lib/auth-store";
 
@@ -132,7 +133,11 @@ export function AuthProvider({
   // (server HTML + no spinner flash) so it stays fast and SEO-friendly. Its only
   // auth-aware piece (the nav CTA) reads `isReady`/`isAuthenticated` and renders a
   // stable signed-out default until hydration completes.
-  const isPublicMarketing = pathname === "/";
+  // `usePathname` here is Next's own hook (full path incl. locale, e.g. "/en"),
+  // not next-intl's — AuthProvider renders above NextIntlClientProvider, so a
+  // next-intl navigation hook would throw "no intl context". Reuse the same
+  // locale parsing the middleware uses to recover the inner path.
+  const isPublicMarketing = parseLocalePath(pathname).innerPath === "/";
 
   // Block all auth-dependent UI until we know true state. Prevents hydration mismatch + redirect loops.
   if (!isReady && !isPublicMarketing) {
