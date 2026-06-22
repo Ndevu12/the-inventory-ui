@@ -23,11 +23,11 @@ export function NoOrganizationPage() {
     if (meQuery.isError) {
       useAuthStore.getState().logout();
       queryClient.clear();
-      router.replace("/login");
+      router.replace("/auth/login");
       return;
     }
     if (memberships.length > 0) {
-      router.replace("/");
+      router.replace("/dashboard");
     }
   }, [
     isReady,
@@ -79,7 +79,7 @@ export function NoOrganizationPage() {
           onClick={() => {
             useAuthStore.getState().logout();
             queryClient.clear();
-            router.replace("/login");
+            router.replace("/auth/login");
           }}
         >
           {t("signOut")}

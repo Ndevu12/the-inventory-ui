@@ -2328,5 +2328,131 @@
         "empty": "No hay eventos de trazabilidad."
       }
     }
+  },
+  "Landing": {
+    "nav": {
+      "features": "Funciones",
+      "workflow": "Cómo funciona",
+      "faq": "Preguntas frecuentes",
+      "signIn": "Iniciar sesión",
+      "getStarted": "Comenzar",
+      "goToDashboard": "Ir al panel",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "language": "Idioma"
+    },
+    "hero": {
+      "badge": "Inventario multiempresa, reinventado",
+      "title": "Gestión de inventario moderna que",
+      "titleHighlight": "crece con tu negocio",
+      "subtitle": "Controla el stock en cada almacén, automatiza las compras y toma decisiones con seguridad gracias a información en tiempo real, todo en una plataforma sencilla y elegante.",
+      "ctaPrimary": "Empieza gratis",
+      "ctaSecondary": "Iniciar sesión",
+      "note": "Sin tarjeta de crédito · Configúralo en minutos"
+    },
+    "stats": {
+      "uptimeValue": "99.9%",
+      "uptimeLabel": "SLA de disponibilidad",
+      "warehousesValue": "Ilimitados",
+      "warehousesLabel": "Almacenes y ubicaciones",
+      "realtimeValue": "Tiempo real",
+      "realtimeLabel": "Visibilidad del stock"
+    },
+    "preview": {
+      "title": "Panel",
+      "totalStock": "Valor total del stock",
+      "lowStock": "Artículos con stock bajo",
+      "orders": "Pedidos abiertos",
+      "movements": "Movimientos de stock"
+    },
+    "features": {
+      "eyebrow": "Todo lo que necesitas",
+      "title": "Una sola plataforma para todo tu inventario",
+      "subtitle": "Del catálogo al despacho, cada flujo de trabajo viene integrado: sin hojas de cálculo, sin conjeturas.",
+      "catalogTitle": "Gestión de catálogo",
+      "catalogDesc": "Organiza tus productos con SKU, variantes, imágenes y categorías jerárquicas.",
+      "trackingTitle": "Seguimiento en tiempo real",
+      "trackingDesc": "Sigue cada movimiento de stock entre almacenes con actualizaciones instantáneas.",
+      "alertsTitle": "Alertas de reposición inteligentes",
+      "alertsDesc": "Define puntos de reposición y recibe avisos antes de quedarte sin stock.",
+      "warehousesTitle": "Multialmacén",
+      "warehousesDesc": "Gestiona almacenes y ubicaciones ilimitados desde una única vista.",
+      "procurementTitle": "Compras y ventas",
+      "procurementDesc": "Gestiona órdenes de compra, recepciones de mercancía y despachos de principio a fin.",
+      "reportsTitle": "Informes reveladores",
+      "reportsDesc": "Valoraciones, tendencias de movimiento y registros de auditoría en los que puedes confiar."
+    },
+    "workflow": {
+      "eyebrow": "Cómo funciona",
+      "title": "En marcha en tres pasos",
+      "subtitle": "Del registro al envío en una sola tarde.",
+      "step1Title": "Crea tu organización",
+      "step1Desc": "Pon en marcha un espacio de trabajo seguro y aislado para tu equipo en segundos.",
+      "step2Title": "Añade productos y stock",
+      "step2Desc": "Importa tu catálogo y configura almacenes, ubicaciones y puntos de reposición.",
+      "step3Title": "Opera con confianza",
+      "step3Desc": "Controla movimientos, cumple pedidos y observa cómo llega la información en directo."
+    },
+    "highlight": {
+      "eyebrow": "Diseñado para crecer",
+      "title": "Potencia empresarial, sin la complejidad empresarial",
+      "subtitle": "Multiempresa seguro, roles detallados y un historial de auditoría completo, listos desde el momento en que inicias sesión.",
+      "point1": "Arquitectura multiempresa aislada",
+      "point2": "Acceso por roles para cada miembro del equipo",
+      "point3": "Historial de auditoría completo e inalterable",
+      "point4": "Seis idiomas, con soporte completo de derecha a izquierda",
+      "cta": "Explora la plataforma"
+    },
+    "metrics": {
+      "m1Value": "40%",
+      "m1Label": "Menos tiempo en recuentos de stock",
+      "m2Value": "2x",
+      "m2Label": "Cumplimiento de pedidos más rápido",
+      "m3Value": "0",
+      "m3Label": "Hojas de cálculo necesarias",
+      "m4Value": "6",
+      "m4Label": "Idiomas disponibles"
+    },
+    "testimonial": {
+      "quote": "Sustituimos tres herramientas desconectadas y un montón de hojas de cálculo por una sola plataforma. Por fin nuestro equipo confía en las cifras.",
+      "author": "Responsable de Operaciones",
+      "role": "Empresa de distribución en crecimiento"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Todo lo que necesitas saber antes de empezar.",
+      "q1": "¿Están mis datos aislados de otras organizaciones?",
+      "a1": "Sí. Cada organización opera en su propio espacio de trabajo multiempresa y seguro: tus datos nunca se comparten ni son visibles para nadie más.",
+      "q2": "¿Puedo gestionar más de un almacén?",
+      "a2": "Por supuesto. Crea almacenes y ubicaciones ilimitados, y mueve el stock entre ellos con un historial de movimientos completo.",
+      "q3": "¿Es compatible con mi idioma?",
+      "a3": "La plataforma está disponible en seis idiomas, incluido el soporte completo de derecha a izquierda, y cambia al instante desde cualquier lugar.",
+      "q4": "¿Cuánto tarda la configuración?",
+      "a4": "La mayoría de los equipos están en marcha el mismo día: crea tu organización, importa productos y empieza a controlar en minutos."
+    },
+    "cta": {
+      "title": "¿Listo para tomar el control de tu inventario?",
+      "subtitle": "Únete a los equipos que operan de forma más ágil y rápida. Empieza gratis hoy mismo.",
+      "primary": "Comienza gratis",
+      "secondary": "Iniciar sesión"
+    },
+    "footer": {
+      "tagline": "Gestión de inventario multiempresa para equipos de operaciones modernos.",
+      "productHeading": "Producto",
+      "features": "Funciones",
+      "workflow": "Cómo funciona",
+      "pricing": "Precios",
+      "companyHeading": "Empresa",
+      "about": "Acerca de",
+      "contact": "Contacto",
+      "careers": "Empleo",
+      "resourcesHeading": "Recursos",
+      "docs": "Documentación",
+      "security": "Seguridad",
+      "status": "Estado",
+      "rights": "Todos los derechos reservados.",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
   }
 }
