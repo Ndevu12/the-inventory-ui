@@ -2328,5 +2328,131 @@
         "empty": "No traceability events found."
       }
     }
+  },
+  "Landing": {
+    "nav": {
+      "features": "Vipengele",
+      "workflow": "Jinsi inavyofanya kazi",
+      "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+      "signIn": "Ingia",
+      "getStarted": "Anza sasa",
+      "goToDashboard": "Nenda kwenye Dashibodi",
+      "openMenu": "Fungua menyu",
+      "closeMenu": "Funga menyu",
+      "language": "Lugha"
+    },
+    "hero": {
+      "badge": "Usimamizi wa hesabu wa watumiaji wengi, ulioboreshwa upya",
+      "title": "Usimamizi wa kisasa wa hesabu unaokua",
+      "titleHighlight": "sambamba na biashara yako",
+      "subtitle": "Fuatilia bidhaa katika kila ghala, fanya ununuzi kiotomatiki, na uchukue maamuzi kwa uhakika ukitumia taarifa za papo hapo — vyote katika jukwaa moja rahisi na nadhifu.",
+      "ctaPrimary": "Anza bila malipo",
+      "ctaSecondary": "Ingia",
+      "note": "Hakuna kadi ya benki inayohitajika · Anzisha kwa dakika chache"
+    },
+    "stats": {
+      "uptimeValue": "99.9%",
+      "uptimeLabel": "Dhamana ya upatikanaji wa huduma",
+      "warehousesValue": "Bila Kikomo",
+      "warehousesLabel": "Maghala na maeneo",
+      "realtimeValue": "Papo hapo",
+      "realtimeLabel": "Mwonekano wa hesabu"
+    },
+    "preview": {
+      "title": "Dashibodi",
+      "totalStock": "Thamani jumla ya bidhaa",
+      "lowStock": "Bidhaa zilizopungua",
+      "orders": "Oda zinazoendelea",
+      "movements": "Mienendo ya bidhaa"
+    },
+    "features": {
+      "eyebrow": "Kila kitu unachohitaji",
+      "title": "Jukwaa moja kwa hesabu yako yote",
+      "subtitle": "Kuanzia katalogi hadi usafirishaji, kila hatua imejengwa ndani — bila majedwali, bila kukisia.",
+      "catalogTitle": "Usimamizi wa katalogi",
+      "catalogDesc": "Panga bidhaa kwa namba za SKU, aina, picha, na makundi yaliyopangwa kwa ngazi.",
+      "trackingTitle": "Ufuatiliaji wa papo hapo",
+      "trackingDesc": "Fuatilia kila mwendo wa bidhaa katika maghala kwa taarifa za papo hapo.",
+      "alertsTitle": "Arifa mahiri za kuagiza upya",
+      "alertsDesc": "Weka viwango vya kuagiza upya na upate arifa kabla bidhaa haijaisha.",
+      "warehousesTitle": "Maghala mengi",
+      "warehousesDesc": "Simamia maghala na maeneo bila kikomo kutoka mwonekano mmoja.",
+      "procurementTitle": "Ununuzi na mauzo",
+      "procurementDesc": "Endesha oda za ununuzi, upokeaji wa bidhaa, na usafirishaji kuanzia mwanzo hadi mwisho.",
+      "reportsTitle": "Ripoti zenye maarifa",
+      "reportsDesc": "Tathmini za thamani, mwenendo wa mienendo, na rekodi za ukaguzi unazoweza kuziamini."
+    },
+    "workflow": {
+      "eyebrow": "Jinsi inavyofanya kazi",
+      "title": "Anza kufanya kazi kwa hatua tatu",
+      "subtitle": "Toka usajili hadi usafirishaji ndani ya mchana mmoja.",
+      "step1Title": "Unda shirika lako",
+      "step1Desc": "Anzisha eneo salama na tofauti la kazi kwa timu yako kwa sekunde chache.",
+      "step2Title": "Ongeza bidhaa na hesabu",
+      "step2Desc": "Leta katalogi yako na uweke maghala, maeneo, na viwango vya kuagiza upya.",
+      "step3Title": "Endesha kwa uhakika",
+      "step3Desc": "Fuatilia mienendo, timiza oda, na uone maarifa yakija papo hapo."
+    },
+    "highlight": {
+      "eyebrow": "Imejengwa kwa ukuaji",
+      "title": "Kiwango cha shirika kubwa, bila ugumu wa mashirika makubwa",
+      "subtitle": "Mfumo salama wa watumiaji wengi, majukumu ya kina, na rekodi kamili ya ukaguzi — tayari pindi tu unapoingia.",
+      "point1": "Mfumo wa watumiaji wengi uliotengwa",
+      "point2": "Ufikiaji kulingana na majukumu kwa kila mwanachama wa timu",
+      "point3": "Historia kamili na isiyoweza kubadilishwa ya ukaguzi",
+      "point4": "Lugha sita, ikiwa na uwezo kamili wa maandishi ya kulia kwenda kushoto",
+      "cta": "Chunguza jukwaa"
+    },
+    "metrics": {
+      "m1Value": "40%",
+      "m1Label": "Muda mdogo unaotumika kuhesabu bidhaa",
+      "m2Value": "2x",
+      "m2Label": "Utimizaji wa oda haraka zaidi",
+      "m3Value": "0",
+      "m3Label": "Majedwali yanayohitajika",
+      "m4Value": "6",
+      "m4Label": "Lugha zinazoungwa mkono"
+    },
+    "testimonial": {
+      "quote": "Tulibadilisha zana tatu zisizounganishwa na rundo la majedwali kwa jukwaa moja. Hatimaye timu yetu inaamini takwimu.",
+      "author": "Kiongozi wa Uendeshaji",
+      "role": "Kampuni ya usambazaji inayokua"
+    },
+    "faq": {
+      "title": "Maswali yanayoulizwa mara kwa mara",
+      "subtitle": "Kila kitu unachohitaji kujua kabla ya kuanza.",
+      "q1": "Je, data yangu imetengwa na mashirika mengine?",
+      "a1": "Ndiyo. Kila shirika linaendeshwa katika eneo lake salama la watumiaji wengi — data yako haishirikiwi kamwe wala kuonekana na mtu yeyote mwingine.",
+      "q2": "Je, ninaweza kusimamia ghala zaidi ya moja?",
+      "a2": "Bila shaka. Unda maghala na maeneo bila kikomo, na uhamishe bidhaa kati yao ukiwa na historia kamili ya mienendo.",
+      "q3": "Je, inasaidia lugha yangu?",
+      "a3": "Jukwaa linapatikana kwa lugha sita, ikijumuisha uwezo kamili wa maandishi ya kulia kwenda kushoto, na hubadilika papo hapo kutoka mahali popote.",
+      "q4": "Je, uanzishaji huchukua muda gani?",
+      "a4": "Timu nyingi huanza kufanya kazi siku hiyo hiyo — unda shirika lako, leta bidhaa, na uanze kufuatilia kwa dakika chache."
+    },
+    "cta": {
+      "title": "Uko tayari kudhibiti hesabu yako?",
+      "subtitle": "Jiunge na timu zinazoendesha shughuli nyepesi na za haraka zaidi. Anza bila malipo leo.",
+      "primary": "Anza bila malipo",
+      "secondary": "Ingia"
+    },
+    "footer": {
+      "tagline": "Usimamizi wa hesabu wa watumiaji wengi kwa timu za kisasa za uendeshaji.",
+      "productHeading": "Bidhaa",
+      "features": "Vipengele",
+      "workflow": "Jinsi inavyofanya kazi",
+      "pricing": "Bei",
+      "companyHeading": "Kampuni",
+      "about": "Kuhusu",
+      "contact": "Wasiliana nasi",
+      "careers": "Nafasi za kazi",
+      "resourcesHeading": "Rasilimali",
+      "docs": "Nyaraka",
+      "security": "Usalama",
+      "status": "Hali",
+      "rights": "Haki zote zimehifadhiwa.",
+      "privacy": "Faragha",
+      "terms": "Masharti"
+    }
   }
 }

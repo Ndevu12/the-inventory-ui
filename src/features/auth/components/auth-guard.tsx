@@ -17,8 +17,8 @@ interface AuthGuardProps {
  * AuthProvider handles hydration gating; this only runs when isReady.
  *
  * Waits for GET /auth/me/ bootstrap, then requires at least one organization
- * membership for dashboard routes. Otherwise redirects to `/no-organization`
- * or `/login` when cookie session verification fails.
+ * membership for dashboard routes. Otherwise redirects to `/auth/no-organization`
+ * or `/auth/login` when cookie session verification fails.
  */
 export function AuthGuard({ children }: AuthGuardProps) {
   const router = useRouter();
@@ -31,11 +31,11 @@ export function AuthGuard({ children }: AuthGuardProps) {
     if (!meQuery.isFetched) return;
     if (meQuery.isError) {
       useAuthStore.getState().logout();
-      router.replace("/login");
+      router.replace("/auth/login");
       return;
     }
     if (memberships.length === 0) {
-      router.replace("/no-organization");
+      router.replace("/auth/no-organization");
     }
   }, [
     isReady, meQuery.isFetched, meQuery.isError, memberships.length, router]);
