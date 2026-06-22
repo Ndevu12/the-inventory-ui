@@ -11,6 +11,7 @@ import {
   useState,
 } from "react";
 
+import { usePathname } from "@/i18n/navigation";
 import { useAuthStore } from "@/lib/auth-store";
 import type { User, Membership } from "@/lib/auth-store";
 
@@ -63,6 +64,7 @@ export function AuthProvider({
 }: AuthProviderProps) {
   /** Bumped after rehydration + optional RSC merge so `isReady` does not flicker. */
   const [readyNonce, setReadyNonce] = useState(0);
+  const pathname = usePathname();
   const queryClient = useQueryClient();
   const serverBootstrapRef = useRef(serverBootstrap);
   serverBootstrapRef.current = serverBootstrap;
@@ -126,8 +128,14 @@ export function AuthProvider({
     invalidate,
   };
 
+  // The public marketing landing ("/") is auth-independent: render it immediately
+  // (server HTML + no spinner flash) so it stays fast and SEO-friendly. Its only
+  // auth-aware piece (the nav CTA) reads `isReady`/`isAuthenticated` and renders a
+  // stable signed-out default until hydration completes.
+  const isPublicMarketing = pathname === "/";
+
   // Block all auth-dependent UI until we know true state. Prevents hydration mismatch + redirect loops.
-  if (!isReady) {
+  if (!isReady && !isPublicMarketing) {
     return (
       <div className="flex h-screen w-screen items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-3">

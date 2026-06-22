@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { Package, Box, AlertCircle, Search, Zap } from "lucide-react";
+import { Package } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useAuth } from "../context/auth-context";
 import { LoginForm } from "../components/login-form";
-import { AuthMarketingShell } from "../components/auth-marketing-shell";
+import { AuthCardShell } from "../components/auth-card-shell";
 import { useLogin, useAuthConfig } from "../hooks/use-auth";
 import { useLoginFormStore } from "../stores/login-form-store";
 import type { LoginFormValues } from "../helpers/auth-schemas";
@@ -20,7 +20,7 @@ function LoginPageRegisterLink() {
     <p className="text-center text-sm text-muted-foreground">
       {t("noOrgPrompt")}{" "}
       <Link
-        href="/register"
+        href="/auth/register"
         className="text-primary underline hover:no-underline"
       >
         {t("createOrgLink")}
@@ -33,42 +33,15 @@ export function LoginPage() {
   const router = useRouter();
   const pathname = usePathname();
   const t = useTranslations("Auth");
-  const tMarketing = useTranslations("Auth.marketing");
   const { isReady, isAuthenticated } = useAuth();
   const loginMutation = useLogin();
   const { serverError, setServerError, reset } = useLoginFormStore();
 
-  const marketingFeatures = useMemo(
-    () => [
-      {
-        icon: Box,
-        title: tMarketing("catalogTitle"),
-        description: tMarketing("catalogDescription"),
-      },
-      {
-        icon: Zap,
-        title: tMarketing("trackingTitle"),
-        description: tMarketing("trackingDescription"),
-      },
-      {
-        icon: AlertCircle,
-        title: tMarketing("alertsTitle"),
-        description: tMarketing("alertsDescription"),
-      },
-      {
-        icon: Search,
-        title: tMarketing("searchTitle"),
-        description: tMarketing("searchDescription"),
-      },
-    ],
-    [tMarketing],
-  );
-
   useEffect(() => {
     if (!isReady) return;
-    if (pathname !== "/login") return;
+    if (pathname !== "/auth/login") return;
     if (isAuthenticated) {
-      router.replace("/");
+      router.replace("/dashboard");
     }
   }, [isReady, isAuthenticated, pathname, router]);
 
@@ -89,14 +62,10 @@ export function LoginPage() {
   }
 
   return (
-    <AuthMarketingShell
-      columnAlign="center"
+    <AuthCardShell
       formIcon={Package}
       title={t("login.title")}
       subtitle={t("login.subtitle")}
-      marketingTitle={tMarketing("title")}
-      marketingSubtitle={tMarketing("subtitle")}
-      features={marketingFeatures}
     >
       <div className="space-y-4">
         <LoginForm
@@ -106,6 +75,6 @@ export function LoginPage() {
         />
         <LoginPageRegisterLink />
       </div>
-    </AuthMarketingShell>
+    </AuthCardShell>
   );
 }

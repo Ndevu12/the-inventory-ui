@@ -2328,5 +2328,131 @@
         "empty": "Aucun événement de traçabilité."
       }
     }
+  },
+  "Landing": {
+    "nav": {
+      "features": "Fonctionnalités",
+      "workflow": "Comment ça marche",
+      "faq": "FAQ",
+      "signIn": "Se connecter",
+      "getStarted": "Commencer",
+      "goToDashboard": "Accéder au tableau de bord",
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu",
+      "language": "Langue"
+    },
+    "hero": {
+      "badge": "La gestion d'inventaire multi-entité, réinventée",
+      "title": "Une gestion d'inventaire moderne qui",
+      "titleHighlight": "évolue avec votre entreprise",
+      "subtitle": "Suivez vos stocks dans chaque entrepôt, automatisez vos approvisionnements et prenez des décisions éclairées grâce à une visibilité en temps réel — le tout sur une plateforme aussi élégante que simple.",
+      "ctaPrimary": "Démarrer gratuitement",
+      "ctaSecondary": "Se connecter",
+      "note": "Aucune carte bancaire requise · Configuration en quelques minutes"
+    },
+    "stats": {
+      "uptimeValue": "99.9%",
+      "uptimeLabel": "SLA de disponibilité",
+      "warehousesValue": "Illimités",
+      "warehousesLabel": "Entrepôts et emplacements",
+      "realtimeValue": "Temps réel",
+      "realtimeLabel": "Visibilité des stocks"
+    },
+    "preview": {
+      "title": "Tableau de bord",
+      "totalStock": "Valeur totale du stock",
+      "lowStock": "Articles en rupture imminente",
+      "orders": "Commandes en cours",
+      "movements": "Mouvements de stock"
+    },
+    "features": {
+      "eyebrow": "Tout ce dont vous avez besoin",
+      "title": "Une seule plateforme pour tout votre inventaire",
+      "subtitle": "Du catalogue à l'expédition, chaque processus est intégré — fini les tableurs et les approximations.",
+      "catalogTitle": "Gestion du catalogue",
+      "catalogDesc": "Organisez vos produits avec des références SKU, des variantes, des images et des catégories hiérarchisées.",
+      "trackingTitle": "Suivi en temps réel",
+      "trackingDesc": "Suivez chaque mouvement de stock entre vos entrepôts avec des mises à jour instantanées.",
+      "alertsTitle": "Alertes de réapprovisionnement intelligentes",
+      "alertsDesc": "Définissez des seuils de réapprovisionnement et soyez prévenu avant la moindre rupture.",
+      "warehousesTitle": "Multi-entrepôts",
+      "warehousesDesc": "Gérez un nombre illimité d'entrepôts et d'emplacements depuis une seule vue.",
+      "procurementTitle": "Achats et ventes",
+      "procurementDesc": "Pilotez vos commandes d'achat, vos réceptions de marchandises et vos expéditions de bout en bout.",
+      "reportsTitle": "Des rapports pertinents",
+      "reportsDesc": "Valorisations, tendances des mouvements et pistes d'audit auxquelles vous pouvez vous fier."
+    },
+    "workflow": {
+      "eyebrow": "Comment ça marche",
+      "title": "Opérationnel en trois étapes",
+      "subtitle": "De l'inscription à l'expédition en un seul après-midi.",
+      "step1Title": "Créez votre organisation",
+      "step1Desc": "Déployez en quelques secondes un espace de travail sécurisé et isolé pour votre équipe.",
+      "step2Title": "Ajoutez vos produits et vos stocks",
+      "step2Desc": "Importez votre catalogue et configurez vos entrepôts, emplacements et seuils de réapprovisionnement.",
+      "step3Title": "Opérez en toute confiance",
+      "step3Desc": "Suivez les mouvements, traitez les commandes et voyez vos indicateurs s'actualiser en direct."
+    },
+    "highlight": {
+      "eyebrow": "Conçu pour la croissance",
+      "title": "La robustesse de l'entreprise, sans sa complexité",
+      "subtitle": "Une architecture multi-entité sécurisée, des rôles précis et une piste d'audit complète — prêts dès votre première connexion.",
+      "point1": "Architecture multi-entité isolée",
+      "point2": "Accès basé sur les rôles pour chaque membre de l'équipe",
+      "point3": "Historique d'audit complet et inaltérable",
+      "point4": "Six langues, avec une prise en charge complète de l'écriture de droite à gauche",
+      "cta": "Découvrir la plateforme"
+    },
+    "metrics": {
+      "m1Value": "40%",
+      "m1Label": "De temps en moins sur les inventaires",
+      "m2Value": "2x",
+      "m2Label": "Traitement des commandes plus rapide",
+      "m3Value": "0",
+      "m3Label": "Tableur nécessaire",
+      "m4Value": "6",
+      "m4Label": "Langues prises en charge"
+    },
+    "testimonial": {
+      "quote": "Nous avons remplacé trois outils déconnectés et une montagne de tableurs par une seule plateforme. Notre équipe a enfin confiance dans les chiffres.",
+      "author": "Responsable des opérations",
+      "role": "Entreprise de distribution en pleine croissance"
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "subtitle": "Tout ce qu'il faut savoir avant de vous lancer.",
+      "q1": "Mes données sont-elles isolées de celles des autres organisations ?",
+      "a1": "Oui. Chaque organisation évolue dans son propre espace de travail multi-entité sécurisé — vos données ne sont jamais partagées ni visibles par quiconque.",
+      "q2": "Puis-je gérer plusieurs entrepôts ?",
+      "a2": "Absolument. Créez un nombre illimité d'entrepôts et d'emplacements, et déplacez vos stocks entre eux avec un historique complet des mouvements.",
+      "q3": "Ma langue est-elle prise en charge ?",
+      "a3": "La plateforme est disponible en six langues, avec une prise en charge complète de l'écriture de droite à gauche, et change de langue instantanément où que vous soyez.",
+      "q4": "Combien de temps prend la configuration ?",
+      "a4": "La plupart des équipes sont opérationnelles le jour même — créez votre organisation, importez vos produits et commencez à suivre vos stocks en quelques minutes."
+    },
+    "cta": {
+      "title": "Prêt à reprendre le contrôle de votre inventaire ?",
+      "subtitle": "Rejoignez les équipes qui mènent des opérations plus efficaces et plus rapides. Démarrez gratuitement dès aujourd'hui.",
+      "primary": "Commencer gratuitement",
+      "secondary": "Se connecter"
+    },
+    "footer": {
+      "tagline": "La gestion d'inventaire multi-entité pour les équipes opérationnelles modernes.",
+      "productHeading": "Produit",
+      "features": "Fonctionnalités",
+      "workflow": "Comment ça marche",
+      "pricing": "Tarifs",
+      "companyHeading": "Entreprise",
+      "about": "À propos",
+      "contact": "Contact",
+      "careers": "Carrières",
+      "resourcesHeading": "Ressources",
+      "docs": "Documentation",
+      "security": "Sécurité",
+      "status": "Statut",
+      "rights": "Tous droits réservés.",
+      "privacy": "Confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
   }
 }

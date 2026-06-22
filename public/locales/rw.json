@@ -2328,5 +2328,131 @@
         "empty": "Nta bikorwa byo guhuriza uruzi byabonetse."
       }
     }
+  },
+  "Landing": {
+    "nav": {
+      "features": "Ibiranga",
+      "workflow": "Uko bikora",
+      "faq": "Ibibazo bikunze kubazwa",
+      "signIn": "Injira",
+      "getStarted": "Tangira",
+      "goToDashboard": "Jya ku Ikibaho",
+      "openMenu": "Fungura menu",
+      "closeMenu": "Funga menu",
+      "language": "Ururimi"
+    },
+    "hero": {
+      "badge": "Ububiko bw'imitungo bw'abakiriya benshi, butekerejweho bushya",
+      "title": "Imicungire y'ububiko igezweho",
+      "titleHighlight": "ikura n'ubucuruzi bwawe",
+      "subtitle": "Kurikirana ibicuruzwa muri buri bubiko, ukore gucunga ibigura mu buryo bwikora, kandi ufate ibyemezo wizeye ukoresheje amakuru ako kanya — byose ku rubuga rumwe rworoshye kandi ryiza.",
+      "ctaPrimary": "Tangira ku buntu",
+      "ctaSecondary": "Injira",
+      "note": "Nta karita y'inguzanyo isabwa · Wiyandikishe mu minota mike"
+    },
+    "stats": {
+      "uptimeValue": "99.9%",
+      "uptimeLabel": "Igihe sisitemu ikora (SLA)",
+      "warehousesValue": "Bidafite umupaka",
+      "warehousesLabel": "Ububiko n'ahantu",
+      "realtimeValue": "Ako kanya",
+      "realtimeLabel": "Kugaragara kw'ibicuruzwa"
+    },
+    "preview": {
+      "title": "Ikibaho",
+      "totalStock": "Agaciro kose k'ububiko",
+      "lowStock": "Ibicuruzwa bikeya",
+      "orders": "Amabwiriza afunguye",
+      "movements": "Inyeganyega z'ibicuruzwa"
+    },
+    "features": {
+      "eyebrow": "Ibyo ukeneye byose",
+      "title": "Urubuga rumwe rw'ububiko bwawe bwose",
+      "subtitle": "Kuva ku rutonde rw'ibicuruzwa kugeza ku kohereza, buri gikorwa cyubatswe muri sisitemu — nta materu, nta gukeka.",
+      "catalogTitle": "Imicungire y'urutonde rw'ibicuruzwa",
+      "catalogDesc": "Tunganya ibicuruzwa ukoresheje SKU, ubwoko, amafoto, n'ibyiciro bishamikiranye.",
+      "trackingTitle": "Gukurikirana ako kanya",
+      "trackingDesc": "Kurikirana buri nyeganyega y'ibicuruzwa hagati y'ububiko ufite amakuru ako kanya.",
+      "alertsTitle": "Imenyesha ryo kongera kugura ryitonze",
+      "alertsDesc": "Shyiraho aho kongerera kugura kandi umenyeshwe mbere y'uko ibicuruzwa bishira.",
+      "warehousesTitle": "Ububiko bwinshi",
+      "warehousesDesc": "Cunga ububiko n'ahantu bidafite umupaka uhereye ku rwego rumwe.",
+      "procurementTitle": "Kugura no kugurisha",
+      "procurementDesc": "Kora amabwiriza yo kugura, kwakira ibicuruzwa, no kohereza uhereye intangiriro kugeza impera.",
+      "reportsTitle": "Raporo zifite ireme",
+      "reportsDesc": "Agaciro k'ibicuruzwa, imigendekere y'inyeganyega, n'inyandiko zo kugenzura wizeye."
+    },
+    "workflow": {
+      "eyebrow": "Uko bikora",
+      "title": "Tangira ukora mu ntambwe eshatu",
+      "subtitle": "Kuva ku kwiyandikisha kugeza ku kohereza mu gicamunsi kimwe.",
+      "step1Title": "Shyiraho umuryango wawe",
+      "step1Desc": "Shyiraho umwanya wo gukorera utekanye kandi wihariye ku itsinda ryawe mu masegonda make.",
+      "step2Title": "Ongeraho ibicuruzwa n'ububiko",
+      "step2Desc": "Injiza urutonde rw'ibicuruzwa kandi ushyireho ububiko, ahantu, n'aho kongerera kugura.",
+      "step3Title": "Kora wizeye",
+      "step3Desc": "Kurikirana inyeganyega, uzuza amabwiriza, kandi urebe amakuru aje ako kanya."
+    },
+    "highlight": {
+      "eyebrow": "Yubatswe kugira ngo ikure",
+      "title": "Ku rwego rw'ibigo binini, nta bukomeye bw'ibigo binini",
+      "subtitle": "Imicungire y'abakiriya benshi itekanye, inshingano zihariye, n'inyandiko yuzuye yo kugenzura — biteguye igihe winjiriye.",
+      "point1": "Imiterere yihariye y'abakiriya benshi",
+      "point2": "Uburenganzira bushingiye ku nshingano kuri buri mukozi w'itsinda",
+      "point3": "Amateka yuzuye yo kugenzura adahinduka",
+      "point4": "Indimi esheshatu, hamwe no gushyigikira kwandika uhereye iburyo ujya ibumoso",
+      "cta": "Reba urubuga"
+    },
+    "metrics": {
+      "m1Value": "40%",
+      "m1Label": "Igihe gike cyo kubara ibicuruzwa",
+      "m2Value": "2x",
+      "m2Label": "Kuzuza amabwiriza vuba",
+      "m3Value": "0",
+      "m3Label": "Amateru asabwa",
+      "m4Value": "6",
+      "m4Label": "Indimi zishyigikiwe"
+    },
+    "testimonial": {
+      "quote": "Twasimbuje ibikoresho bitatu bitahuzaga n'ubwinshi bw'amateru urubuga rumwe. Itsinda ryacu rifite icyizere mu mibare amaherezo.",
+      "author": "Umuyobozi w'Imikorere",
+      "role": "Isosiyete y'ikwirakwiza ikura"
+    },
+    "faq": {
+      "title": "Ibibazo bikunze kubazwa",
+      "subtitle": "Ibyo ukeneye kumenya byose mbere yo gutangira.",
+      "q1": "Ese amakuru yanjye ari ukwayo ku yindi miryango?",
+      "a1": "Yego. Buri muryango ukorera mu mwanya wawo utekanye uhariwe abakiriya benshi — amakuru yawe ntashyirwa hamwe cyangwa ngo agaragare ku wundi muntu.",
+      "q2": "Ese nshobora gucunga ububiko burenze bumwe?",
+      "a2": "Rwose. Shyiraho ububiko n'ahantu bidafite umupaka, kandi wimure ibicuruzwa hagati yabwo ufite amateka yuzuye y'inyeganyega.",
+      "q3": "Ese ishyigikira ururimi rwanjye?",
+      "a3": "Urubuga ruboneka mu ndimi esheshatu, harimo no gushyigikira kwandika uhereye iburyo ujya ibumoso, kandi ruhinduka ako kanya aho uri hose.",
+      "q4": "Ese kwiyandikisha bifata igihe kingana iki?",
+      "a4": "Amatsinda menshi atangira gukora uwo munsi nyine — shyiraho umuryango wawe, injiza ibicuruzwa, kandi utangire gukurikirana mu minota mike."
+    },
+    "cta": {
+      "title": "Witeguye kwigarurira ububiko bwawe?",
+      "subtitle": "Ifatanye n'amatsinda akora imirimo yoroheje kandi yihuta. Tangira ku buntu uyu munsi.",
+      "primary": "Tangira ku buntu",
+      "secondary": "Injira"
+    },
+    "footer": {
+      "tagline": "Imicungire y'ububiko y'abakiriya benshi ku matsinda y'imikorere agezweho.",
+      "productHeading": "Igicuruzwa",
+      "features": "Ibiranga",
+      "workflow": "Uko bikora",
+      "pricing": "Ibiciro",
+      "companyHeading": "Ikigo",
+      "about": "Ibyerekeye",
+      "contact": "Twandikire",
+      "careers": "Akazi",
+      "resourcesHeading": "Ibikoresho",
+      "docs": "Inyandiko",
+      "security": "Umutekano",
+      "status": "Imiterere",
+      "rights": "Uburenganzira bwose bwitswe.",
+      "privacy": "Ibanga",
+      "terms": "Amabwiriza"
+    }
   }
 }

@@ -2328,5 +2328,131 @@
         "empty": "No traceability events found."
       }
     }
+  },
+  "Landing": {
+    "nav": {
+      "features": "Features",
+      "workflow": "How it works",
+      "faq": "FAQ",
+      "signIn": "Sign in",
+      "getStarted": "Get started",
+      "goToDashboard": "Go to Dashboard",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "language": "Language"
+    },
+    "hero": {
+      "badge": "Multi-tenant inventory, reimagined",
+      "title": "Modern inventory management that",
+      "titleHighlight": "scales with your business",
+      "subtitle": "Track stock across every warehouse, automate procurement, and make confident decisions with real-time insight — all in one beautifully simple platform.",
+      "ctaPrimary": "Start free",
+      "ctaSecondary": "Sign in",
+      "note": "No credit card required · Set up in minutes"
+    },
+    "stats": {
+      "uptimeValue": "99.9%",
+      "uptimeLabel": "Uptime SLA",
+      "warehousesValue": "Unlimited",
+      "warehousesLabel": "Warehouses & locations",
+      "realtimeValue": "Real-time",
+      "realtimeLabel": "Stock visibility"
+    },
+    "preview": {
+      "title": "Dashboard",
+      "totalStock": "Total stock value",
+      "lowStock": "Low-stock items",
+      "orders": "Open orders",
+      "movements": "Stock movements"
+    },
+    "features": {
+      "eyebrow": "Everything you need",
+      "title": "One platform for your entire inventory",
+      "subtitle": "From catalog to dispatch, every workflow is built in — no spreadsheets, no guesswork.",
+      "catalogTitle": "Catalog management",
+      "catalogDesc": "Organize products with SKUs, variants, images, and hierarchical categories.",
+      "trackingTitle": "Real-time tracking",
+      "trackingDesc": "Follow every stock movement across warehouses with instant updates.",
+      "alertsTitle": "Smart reorder alerts",
+      "alertsDesc": "Set reorder points and get notified before you ever run out.",
+      "warehousesTitle": "Multi-warehouse",
+      "warehousesDesc": "Manage unlimited warehouses and locations from a single view.",
+      "procurementTitle": "Procurement & sales",
+      "procurementDesc": "Run purchase orders, goods receipts, and dispatches end to end.",
+      "reportsTitle": "Insightful reports",
+      "reportsDesc": "Valuations, movement trends, and audit trails you can trust."
+    },
+    "workflow": {
+      "eyebrow": "How it works",
+      "title": "Up and running in three steps",
+      "subtitle": "Get from sign-up to shipping in a single afternoon.",
+      "step1Title": "Create your organization",
+      "step1Desc": "Spin up a secure, isolated workspace for your team in seconds.",
+      "step2Title": "Add products & stock",
+      "step2Desc": "Import your catalog and set up warehouses, locations, and reorder points.",
+      "step3Title": "Operate with confidence",
+      "step3Desc": "Track movements, fulfill orders, and watch insights roll in live."
+    },
+    "highlight": {
+      "eyebrow": "Built for scale",
+      "title": "Enterprise-grade, without the enterprise complexity",
+      "subtitle": "Secure multi-tenancy, granular roles, and a complete audit trail — ready the moment you sign in.",
+      "point1": "Isolated, multi-tenant architecture",
+      "point2": "Role-based access for every team member",
+      "point3": "Complete, immutable audit history",
+      "point4": "Six languages, with full right-to-left support",
+      "cta": "Explore the platform"
+    },
+    "metrics": {
+      "m1Value": "40%",
+      "m1Label": "Less time on stock counts",
+      "m2Value": "2x",
+      "m2Label": "Faster order fulfillment",
+      "m3Value": "0",
+      "m3Label": "Spreadsheets required",
+      "m4Value": "6",
+      "m4Label": "Languages supported"
+    },
+    "testimonial": {
+      "quote": "We replaced three disconnected tools and a pile of spreadsheets with one platform. Our team finally trusts the numbers.",
+      "author": "Operations Lead",
+      "role": "Growing distribution company"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "subtitle": "Everything you need to know before getting started.",
+      "q1": "Is my data isolated from other organizations?",
+      "a1": "Yes. Every organization runs in its own secure, multi-tenant workspace — your data is never shared with or visible to anyone else.",
+      "q2": "Can I manage more than one warehouse?",
+      "a2": "Absolutely. Create unlimited warehouses and locations, and move stock between them with a full movement history.",
+      "q3": "Does it support my language?",
+      "a3": "The platform ships in six languages, including full right-to-left support, and switches instantly from anywhere.",
+      "q4": "How long does setup take?",
+      "a4": "Most teams are up and running the same day — create your organization, import products, and start tracking in minutes."
+    },
+    "cta": {
+      "title": "Ready to take control of your inventory?",
+      "subtitle": "Join the teams running leaner, faster operations. Start free today.",
+      "primary": "Get started free",
+      "secondary": "Sign in"
+    },
+    "footer": {
+      "tagline": "Multi-tenant inventory management for modern operations teams.",
+      "productHeading": "Product",
+      "features": "Features",
+      "workflow": "How it works",
+      "pricing": "Pricing",
+      "companyHeading": "Company",
+      "about": "About",
+      "contact": "Contact",
+      "careers": "Careers",
+      "resourcesHeading": "Resources",
+      "docs": "Documentation",
+      "security": "Security",
+      "status": "Status",
+      "rights": "All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
   }
 }
