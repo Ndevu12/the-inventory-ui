@@ -93,7 +93,7 @@ export function AcceptInvitationPage({ token }: AcceptInvitationPageProps) {
           ],
         )
         toast.success(data.detail)
-        router.push("/")
+        router.push("/dashboard")
       },
       onError: (error) => {
         const msg =
@@ -134,7 +134,7 @@ export function AcceptInvitationPage({ token }: AcceptInvitationPageProps) {
             <CardDescription>{tInv("invalidDescription")}</CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">
-            <Button variant="outline" onClick={() => router.push("/login")}>
+            <Button variant="outline" onClick={() => router.push("/auth/login")}>
               {tInv("goToLogin")}
             </Button>
           </CardContent>
@@ -161,7 +161,7 @@ export function AcceptInvitationPage({ token }: AcceptInvitationPageProps) {
             </CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">
-            <Button variant="outline" onClick={() => router.push("/login")}>
+            <Button variant="outline" onClick={() => router.push("/auth/login")}>
               {tInv("goToLogin")}
             </Button>
           </CardContent>
