@@ -5,7 +5,7 @@ import { Link, useRouter } from "@/i18n/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
-import { Package, Loader2, Box, AlertCircle, Search, Zap } from "lucide-react";
+import { Package, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import {
@@ -15,7 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { AuthMarketingShell } from "../components/auth-marketing-shell";
+import { AuthCardShell } from "../components/auth-card-shell";
 import {
   createRegisterSchema,
   type RegisterFormValues,
@@ -27,35 +27,8 @@ export function RegisterCompanyPage() {
   const t = useTranslations("Auth");
   const tReg = useTranslations("Auth.register");
   const tVal = useTranslations("Auth.validation");
-  const tMarketing = useTranslations("Auth.marketing");
   const { data: config, isLoading: configLoading } = useAuthConfig();
   const registerMutation = useRegister();
-
-  const marketingFeatures = React.useMemo(
-    () => [
-      {
-        icon: Box,
-        title: tMarketing("catalogTitle"),
-        description: tMarketing("catalogDescription"),
-      },
-      {
-        icon: Zap,
-        title: tMarketing("trackingTitle"),
-        description: tMarketing("trackingDescription"),
-      },
-      {
-        icon: AlertCircle,
-        title: tMarketing("alertsTitle"),
-        description: tMarketing("alertsDescription"),
-      },
-      {
-        icon: Search,
-        title: tMarketing("searchTitle"),
-        description: tMarketing("searchDescription"),
-      },
-    ],
-    [tMarketing],
-  );
 
   const schema = React.useMemo(
     () =>
@@ -88,7 +61,7 @@ export function RegisterCompanyPage() {
 
   React.useEffect(() => {
     if (!configLoading && config && !config.allow_registration) {
-      router.replace("/login");
+      router.replace("/auth/login");
     }
   }, [config, configLoading, router]);
 
@@ -128,15 +101,11 @@ export function RegisterCompanyPage() {
   }
 
   return (
-    <AuthMarketingShell
+    <AuthCardShell
       formMaxWidth="lg"
-      columnAlign="start"
       formIcon={Package}
       title={tReg("title")}
       subtitle={tReg("description")}
-      marketingTitle={tMarketing("title")}
-      marketingSubtitle={tMarketing("subtitle")}
-      features={marketingFeatures}
     >
       <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
         <div className="grid gap-2">
@@ -264,13 +233,13 @@ export function RegisterCompanyPage() {
         <p className="text-center text-sm text-muted-foreground">
           {tReg("hasAccountPrompt")}{" "}
           <Link
-            href="/login"
+            href="/auth/login"
             className="text-primary underline hover:no-underline"
           >
             {tReg("signInLink")}
           </Link>
         </p>
       </form>
-    </AuthMarketingShell>
+    </AuthCardShell>
   );
 }

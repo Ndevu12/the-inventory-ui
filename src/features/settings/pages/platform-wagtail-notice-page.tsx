@@ -44,10 +44,10 @@ export function PlatformWagtailNoticePage({
             </p>
           </div>
         ) : null}
-        <Button type="button" onClick={() => router.push("/")}>
+        <Button type="button" onClick={() => router.push("/dashboard")}>
           {t("backHome")}
         </Button>
-        <Button type="button" variant="outline" render={<Link href="/login" />}>
+        <Button type="button" variant="outline" render={<Link href="/auth/login" />}>
           {t("signInDifferent")}
         </Button>
       </div>

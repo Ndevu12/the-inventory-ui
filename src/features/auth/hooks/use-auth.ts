@@ -43,7 +43,7 @@ export function useLogin() {
       invalidate();
       // Defer navigation so store updates fully propagate before dashboard mounts.
       // Prevents race where AuthGuard reads stale/empty state and redirects back to login.
-      setTimeout(() => router.replace("/"), 100);
+      setTimeout(() => router.replace("/dashboard"), 100);
     },
     onError: () => {
       toast.error("Invalid username or password");
@@ -82,7 +82,7 @@ export function useLogout() {
     });
     logout();
     queryClient.clear();
-    router.push("/login");
+    router.push("/auth/login");
   };
 }
 
@@ -153,7 +153,7 @@ export function useImpersonate() {
         real_user: data.impersonation.real_user,
       });
       queryClient.clear();
-      router.replace("/");
+      router.replace("/dashboard");
     },
     onError: () => {
       toast.error("Failed to start impersonation");
@@ -171,7 +171,7 @@ export function useExitImpersonation() {
     onSuccess: () => {
       exitImpersonation();
       queryClient.clear();
-      router.replace("/");
+      router.replace("/dashboard");
     },
     onError: () => {
       toast.error("Failed to exit impersonation");
@@ -192,7 +192,7 @@ export function useRegister() {
       setMemberships(data.memberships);
       invalidate();
       toast.success(`Welcome! Your organization ${data.tenant.name} has been created.`);
-      router.replace("/");
+      router.replace("/dashboard");
     },
     onError: (error) => {
       toast.error(

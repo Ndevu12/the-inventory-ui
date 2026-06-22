@@ -54,7 +54,7 @@ const SEARCH_NAV_GROUPS: SearchNavGroup[] = [
   {
     groupKey: "overview",
     items: [
-      { itemKey: "dashboard", href: "/", icon: LayoutDashboardIcon },
+      { itemKey: "dashboard", href: "/dashboard", icon: LayoutDashboardIcon },
     ],
   },
   {
