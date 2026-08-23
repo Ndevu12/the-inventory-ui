@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "chore/adopt-working-rules",
+    "feat/features-page",
+    "main",
+    "origin",
+    "security/auto-clean",
+    "test/pin-landing-composition"
+  ],
+  "parent": {
+    "chore/adopt-working-rules": "main",
+    "feat/features-page": "main",
+    "main": null,
+    "origin": "main",
+    "security/auto-clean": "main",
+    "test/pin-landing-composition": "main"
+  },
+  "order": [
+    "main",
+    "chore/adopt-working-rules",
+    "feat/features-page",
+    "origin",
+    "security/auto-clean",
+    "test/pin-landing-composition"
+  ]
+}
