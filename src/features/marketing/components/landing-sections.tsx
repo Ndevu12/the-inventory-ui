@@ -31,9 +31,13 @@ export function LandingFeatures() {
   ];
 
   return (
-    <section id="features" className="scroll-mt-20 py-20 sm:py-28">
-      <LandingContainer>
+    <section id="features" className="relative scroll-mt-20">
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-[-10%] h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-gradient-to-br from-[var(--chart-2)]/20 via-[var(--chart-4)]/10 to-transparent blur-3xl" />
+      </div>
+      <LandingContainer className="py-16 sm:py-24">
         <SectionHeading
+          level="h1"
           eyebrow={t("eyebrow")}
           title={t("title")}
           subtitle={t("subtitle")}
@@ -134,7 +138,7 @@ export function LandingHighlight() {
                 </li>
               ))}
             </ul>
-            <CtaButton href="/auth/register" variant="outline" className="group">
+            <CtaButton href="/features" variant="outline" className="group">
               {t("cta")}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </CtaButton>

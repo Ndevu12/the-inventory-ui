@@ -14,6 +14,7 @@ export type ParsedLocalePath = {
 /** Paths that do not require JWT access cookie (tenant UI); prefix is without locale. */
 const PUBLIC_INNER_PATHS = new Set([
   "/", // public marketing landing
+  "/features",
   "/auth/login",
   "/auth/register",
   "/auth/no-organization",
@@ -59,6 +60,12 @@ export function parseLocalePath(pathname: string): ParsedLocalePath {
 /**
  * True when the route is allowed without `access_token` (login, register, invite, etc.).
  */
+/** Marketing pages that render before auth hydration finishes. */
+export function isPublicMarketingPath(innerPath: string): boolean {
+  const p = normalizeAuthInnerPath(innerPath);
+  return p === "/" || p === "/features";
+}
+
 export function isPublicAuthPath(innerPath: string): boolean {
   const p = normalizeAuthInnerPath(innerPath);
   if (PUBLIC_INNER_PATHS.has(p)) {

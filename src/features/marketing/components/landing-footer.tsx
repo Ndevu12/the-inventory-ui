@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
+
 import { LandingContainer } from "./landing-ui";
 import { BrandMark } from "./landing-nav";
 
@@ -11,9 +13,9 @@ export function LandingFooter() {
     {
       heading: t("productHeading"),
       links: [
-        { label: t("features"), href: "#features" },
-        { label: t("workflow"), href: "#workflow" },
-        { label: t("pricing"), href: "#" },
+        { label: t("features"), href: "/features" },
+        { label: t("workflow"), href: "/#workflow" },
+        { label: t("pricing"), href: "/features#pricing" },
       ],
     },
     {
@@ -50,12 +52,21 @@ export function LandingFooter() {
               <ul className="flex flex-col gap-2.5">
                 {column.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href.startsWith("/") ? (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

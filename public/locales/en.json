@@ -2346,9 +2346,9 @@
       "title": "Modern inventory management that",
       "titleHighlight": "scales with your business",
       "subtitle": "Track stock across every warehouse, automate procurement, and make confident decisions with real-time insight — all in one beautifully simple platform.",
-      "ctaPrimary": "Start free",
+      "ctaPrimary": "Get started",
       "ctaSecondary": "Sign in",
-      "note": "No credit card required · Set up in minutes"
+      "note": "Free includes 5 people and 100 products"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2430,10 +2430,55 @@
       "q4": "How long does setup take?",
       "a4": "Most teams are up and running the same day — create your organization, import products, and start tracking in minutes."
     },
+    "comparison": {
+      "eyebrow": "Side by side",
+      "title": "The same work, without the spreadsheets",
+      "subtitle": "What your team already does, on one platform.",
+      "spreadsheets": "Spreadsheets",
+      "platform": "The Inventory",
+      "stockLabel": "Stock",
+      "stockSheets": "A file for every warehouse",
+      "stockPlatform": "One live record",
+      "alertsLabel": "Running low",
+      "alertsSheets": "Someone notices too late",
+      "alertsPlatform": "Reorder alerts before you run out",
+      "auditLabel": "History",
+      "auditSheets": "Whoever last edited the cell",
+      "auditPlatform": "A complete audit trail",
+      "languageLabel": "Language",
+      "languageSheets": "One sheet, one language",
+      "languagePlatform": "Six languages, including right-to-left"
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Four plans",
+      "subtitle": "A new organization starts on Free. Starter, Professional, and Enterprise are paid plans.",
+      "free": {
+        "kind": "Included",
+        "name": "Free",
+        "detail": "5 people and 100 products"
+      },
+      "starter": {
+        "kind": "Paid",
+        "name": "Starter",
+        "detail": "For a smaller operation"
+      },
+      "professional": {
+        "kind": "Paid",
+        "name": "Professional",
+        "detail": "For a growing operation"
+      },
+      "enterprise": {
+        "kind": "Paid",
+        "name": "Enterprise",
+        "detail": "For a larger organization"
+      },
+      "cta": "Get started"
+    },
     "cta": {
       "title": "Ready to take control of your inventory?",
-      "subtitle": "Join the teams running leaner, faster operations. Start free today.",
-      "primary": "Get started free",
+      "subtitle": "Join the teams running leaner, faster operations.",
+      "primary": "Get started",
       "secondary": "Sign in"
     },
     "footer": {
