@@ -2346,9 +2346,9 @@
       "title": "Une gestion d'inventaire moderne qui",
       "titleHighlight": "évolue avec votre entreprise",
       "subtitle": "Suivez vos stocks dans chaque entrepôt, automatisez vos approvisionnements et prenez des décisions éclairées grâce à une visibilité en temps réel — le tout sur une plateforme aussi élégante que simple.",
-      "ctaPrimary": "Démarrer gratuitement",
+      "ctaPrimary": "Commencer",
       "ctaSecondary": "Se connecter",
-      "note": "Aucune carte bancaire requise · Configuration en quelques minutes"
+      "note": "Gratuit comprend 5 personnes et 100 produits"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2430,10 +2430,55 @@
       "q4": "Combien de temps prend la configuration ?",
       "a4": "La plupart des équipes sont opérationnelles le jour même — créez votre organisation, importez vos produits et commencez à suivre vos stocks en quelques minutes."
     },
+    "comparison": {
+      "eyebrow": "Côte à côte",
+      "title": "Le même travail, sans les tableurs",
+      "subtitle": "Ce que votre équipe fait déjà, sur une seule plateforme.",
+      "spreadsheets": "Tableurs",
+      "platform": "The Inventory",
+      "stockLabel": "Stock",
+      "stockSheets": "Un fichier par entrepôt",
+      "stockPlatform": "Un enregistrement en direct",
+      "alertsLabel": "Rupture proche",
+      "alertsSheets": "Quelqu'un s'en aperçoit trop tard",
+      "alertsPlatform": "Des alertes de réapprovisionnement avant la rupture",
+      "auditLabel": "Historique",
+      "auditSheets": "La dernière personne qui a modifié la cellule",
+      "auditPlatform": "Une piste d'audit complète",
+      "languageLabel": "Langue",
+      "languageSheets": "Une feuille, une langue",
+      "languagePlatform": "Six langues, y compris de droite à gauche"
+    },
+    "pricing": {
+      "eyebrow": "Tarifs",
+      "title": "Quatre formules",
+      "subtitle": "Une nouvelle organisation commence sur Gratuit. Starter, Professional et Enterprise sont des formules payantes.",
+      "free": {
+        "kind": "Incluse",
+        "name": "Gratuit",
+        "detail": "5 personnes et 100 produits"
+      },
+      "starter": {
+        "kind": "Payante",
+        "name": "Starter",
+        "detail": "Pour une opération plus petite"
+      },
+      "professional": {
+        "kind": "Payante",
+        "name": "Professional",
+        "detail": "Pour une opération en croissance"
+      },
+      "enterprise": {
+        "kind": "Payante",
+        "name": "Enterprise",
+        "detail": "Pour une organisation plus grande"
+      },
+      "cta": "Commencer"
+    },
     "cta": {
       "title": "Prêt à reprendre le contrôle de votre inventaire ?",
-      "subtitle": "Rejoignez les équipes qui mènent des opérations plus efficaces et plus rapides. Démarrez gratuitement dès aujourd'hui.",
-      "primary": "Commencer gratuitement",
+      "subtitle": "Rejoignez les équipes qui mènent des opérations plus efficaces et plus rapides.",
+      "primary": "Commencer",
       "secondary": "Se connecter"
     },
     "footer": {

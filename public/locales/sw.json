@@ -2346,9 +2346,9 @@
       "title": "Usimamizi wa kisasa wa hesabu unaokua",
       "titleHighlight": "sambamba na biashara yako",
       "subtitle": "Fuatilia bidhaa katika kila ghala, fanya ununuzi kiotomatiki, na uchukue maamuzi kwa uhakika ukitumia taarifa za papo hapo — vyote katika jukwaa moja rahisi na nadhifu.",
-      "ctaPrimary": "Anza bila malipo",
+      "ctaPrimary": "Anza",
       "ctaSecondary": "Ingia",
-      "note": "Hakuna kadi ya benki inayohitajika · Anzisha kwa dakika chache"
+      "note": "Bure inajumuisha watu 5 na bidhaa 100"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2430,10 +2430,55 @@
       "q4": "Je, uanzishaji huchukua muda gani?",
       "a4": "Timu nyingi huanza kufanya kazi siku hiyo hiyo — unda shirika lako, leta bidhaa, na uanze kufuatilia kwa dakika chache."
     },
+    "comparison": {
+      "eyebrow": "Upande kwa upande",
+      "title": "Kazi ile ile, bila lahajedwali",
+      "subtitle": "Kile timu yako inafanya tayari, kwenye jukwaa moja.",
+      "spreadsheets": "Lahajedwali",
+      "platform": "The Inventory",
+      "stockLabel": "Hisa",
+      "stockSheets": "Faili kwa kila ghala",
+      "stockPlatform": "Rekodi moja ya moja kwa moja",
+      "alertsLabel": "Inakaribia kuisha",
+      "alertsSheets": "Mtu anagundua umechelewa",
+      "alertsPlatform": "Arifa za kuagiza upya kabla haijaisha",
+      "auditLabel": "Historia",
+      "auditSheets": "Aliyehariri seli mwisho",
+      "auditPlatform": "Historia kamili ya ukaguzi",
+      "languageLabel": "Lugha",
+      "languageSheets": "Laha moja, lugha moja",
+      "languagePlatform": "Lugha sita, pamoja na kulia kwenda kushoto"
+    },
+    "pricing": {
+      "eyebrow": "Bei",
+      "title": "Mipango minne",
+      "subtitle": "Shirika jipya linaanza kwenye Bure. Starter, Professional na Enterprise ni mipango ya kulipia.",
+      "free": {
+        "kind": "Imejumuishwa",
+        "name": "Bure",
+        "detail": "Watu 5 na bidhaa 100"
+      },
+      "starter": {
+        "kind": "Inalipwa",
+        "name": "Starter",
+        "detail": "Kwa shughuli ndogo"
+      },
+      "professional": {
+        "kind": "Inalipwa",
+        "name": "Professional",
+        "detail": "Kwa shughuli inayokua"
+      },
+      "enterprise": {
+        "kind": "Inalipwa",
+        "name": "Enterprise",
+        "detail": "Kwa shirika kubwa"
+      },
+      "cta": "Anza"
+    },
     "cta": {
       "title": "Uko tayari kudhibiti hesabu yako?",
-      "subtitle": "Jiunge na timu zinazoendesha shughuli nyepesi na za haraka zaidi. Anza bila malipo leo.",
-      "primary": "Anza bila malipo",
+      "subtitle": "Jiunge na timu zinazoendesha shughuli nyepesi na za haraka zaidi.",
+      "primary": "Anza",
       "secondary": "Ingia"
     },
     "footer": {
