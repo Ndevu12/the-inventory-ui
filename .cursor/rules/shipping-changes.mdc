@@ -1,0 +1,33 @@
+---
+description: Feature-branch PRs, signed commits, no push to main, no AI attribution
+alwaysApply: true
+---
+
+# Shipping changes
+
+- **Never push `main`.** Every change is a feature-branch PR. Fetch immediately, then
+  `git checkout -b <name> origin/main` in one step. Confirm `git log --oneline -1` is the
+  origin/main you expect.
+- `git checkout -b X origin/main` sets upstream to **main**. Always push with an explicit
+  refspec: `git push origin HEAD:refs/heads/<branch>`. Verify
+  `git config --get branch.<branch>.merge` is `refs/heads/<branch>`.
+- Rebase on `origin/main` before pushing. Don't merge stale. A PR is tested merged with main.
+- Signed commits (SSH). Local `%G?` may show `N` — fine. Confirm the signature blob exists
+  when signing is configured.
+- Use the GitHub noreply committer
+  (`140616733+Ndevu12@users.noreply.github.com`). A private Gmail committer is rejected
+  (GH007).
+- Name paths in `git add`. Never `git add -A` without reading `git status --porcelain`.
+- Never write a session note, plan, or scratch file inside the repository.
+- PR body: short. Defect, change, proof. Never how. Bare `Closes #NNNN` on its own line when
+  the issue is on this repo.
+- No AI / Cursor attribution anywhere. Before every `git commit` / `gh pr create|edit`,
+  grep the message:
+  `grep -ciE 'Co-Authored-By|Claude-Session|Generated with|claude\.ai/code|Made with Cursor|🤖'`
+  Non-zero → rewrite before committing.
+- Don't over-produce PRs. Align first, then ship a focused PR. Adjacent work goes in the
+  open PR, not a parallel one off main.
+- Merging is the maintainer's. Never `--admin`-merge.
+- This repo has no CHANGELOG yet. Do not invent one in a conventions PR. When a user-visible
+  product change ships, add `CHANGELOG.md` `[Unreleased]` in that same PR and describe what
+  the user observes, not the implementation.
