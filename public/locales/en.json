@@ -2380,8 +2380,7 @@
       "procurementTitle": "Procurement & sales",
       "procurementDesc": "Run purchase orders, goods receipts, and dispatches end to end.",
       "reportsTitle": "Insightful reports",
-      "reportsDesc": "Valuations, movement trends, and audit trails you can trust.",
-      "continue": "See the comparison"
+      "reportsDesc": "Valuations, movement trends, and audit trails you can trust."
     },
     "workflow": {
       "eyebrow": "How it works",

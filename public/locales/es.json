@@ -2380,8 +2380,7 @@
       "procurementTitle": "Compras y ventas",
       "procurementDesc": "Gestiona órdenes de compra, recepciones de mercancía y despachos de principio a fin.",
       "reportsTitle": "Informes reveladores",
-      "reportsDesc": "Valoraciones, tendencias de movimiento y registros de auditoría en los que puedes confiar.",
-      "continue": "Ver la comparación"
+      "reportsDesc": "Valoraciones, tendencias de movimiento y registros de auditoría en los que puedes confiar."
     },
     "workflow": {
       "eyebrow": "Cómo funciona",
