@@ -2346,9 +2346,9 @@
       "title": "Une gestion d'inventaire moderne qui",
       "titleHighlight": "évolue avec votre entreprise",
       "subtitle": "Suivez vos stocks dans chaque entrepôt, automatisez vos approvisionnements et prenez des décisions éclairées grâce à une visibilité en temps réel — le tout sur une plateforme aussi élégante que simple.",
-      "ctaPrimary": "Démarrer gratuitement",
+      "ctaPrimary": "Commencer",
       "ctaSecondary": "Se connecter",
-      "note": "Aucune carte bancaire requise · Configuration en quelques minutes"
+      "note": "Gratuit comprend 5 personnes et 100 produits"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2451,17 +2451,34 @@
     },
     "pricing": {
       "eyebrow": "Tarifs",
-      "title": "Commencez gratuitement",
-      "subtitle": "Ouvrez un espace de travail et gérez votre inventaire. Sans carte bancaire.",
-      "freeName": "Gratuit",
-      "freeDetail": "L'organisation que vous créez dès le premier jour.",
-      "also": "Starter, Professional et Enterprise restent sur ce même compte quand l'activité grandit.",
-      "cta": "Commencer gratuitement"
+      "title": "Quatre formules",
+      "subtitle": "Une nouvelle organisation commence sur Gratuit. Starter, Professional et Enterprise sont des formules payantes.",
+      "free": {
+        "kind": "Incluse",
+        "name": "Gratuit",
+        "detail": "5 personnes et 100 produits"
+      },
+      "starter": {
+        "kind": "Payante",
+        "name": "Starter",
+        "detail": "Pour une opération plus petite"
+      },
+      "professional": {
+        "kind": "Payante",
+        "name": "Professional",
+        "detail": "Pour une opération en croissance"
+      },
+      "enterprise": {
+        "kind": "Payante",
+        "name": "Enterprise",
+        "detail": "Pour une organisation plus grande"
+      },
+      "cta": "Commencer"
     },
     "cta": {
       "title": "Prêt à reprendre le contrôle de votre inventaire ?",
-      "subtitle": "Rejoignez les équipes qui mènent des opérations plus efficaces et plus rapides. Démarrez gratuitement dès aujourd'hui.",
-      "primary": "Commencer gratuitement",
+      "subtitle": "Rejoignez les équipes qui mènent des opérations plus efficaces et plus rapides.",
+      "primary": "Commencer",
       "secondary": "Se connecter"
     },
     "footer": {

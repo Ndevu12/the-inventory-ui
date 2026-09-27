@@ -2346,9 +2346,9 @@
       "title": "Imicungire y'ububiko igezweho",
       "titleHighlight": "ikura n'ubucuruzi bwawe",
       "subtitle": "Kurikirana ibicuruzwa muri buri bubiko, ukore gucunga ibigura mu buryo bwikora, kandi ufate ibyemezo wizeye ukoresheje amakuru ako kanya — byose ku rubuga rumwe rworoshye kandi ryiza.",
-      "ctaPrimary": "Tangira ku buntu",
+      "ctaPrimary": "Tangira",
       "ctaSecondary": "Injira",
-      "note": "Nta karita y'inguzanyo isabwa · Wiyandikishe mu minota mike"
+      "note": "Ubuntu irimo abantu 5 n'ibicuruzwa 100"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2451,17 +2451,34 @@
     },
     "pricing": {
       "eyebrow": "Ibiciro",
-      "title": "Tangira ubuntu",
-      "subtitle": "Fungura ahantu h'akazi ukayobora ibicuruzwa. Nta karita.",
-      "freeName": "Ubuntu",
-      "freeDetail": "Ikigo urema ku munsi wa mbere.",
-      "also": "Starter, Professional na Enterprise biguma kuri konti imwe iyo akazi gakura.",
-      "cta": "Tangira ubuntu"
+      "title": "Gahunda enye",
+      "subtitle": "Ikigo gishya gitangira kuri Ubuntu. Starter, Professional na Enterprise ni gahunda zishyurwa.",
+      "free": {
+        "kind": "Irimo",
+        "name": "Ubuntu",
+        "detail": "Abantu 5 n'ibicuruzwa 100"
+      },
+      "starter": {
+        "kind": "Ishyuwe",
+        "name": "Starter",
+        "detail": "Ku mirimo mito"
+      },
+      "professional": {
+        "kind": "Ishyuwe",
+        "name": "Professional",
+        "detail": "Ku mirimo ikura"
+      },
+      "enterprise": {
+        "kind": "Ishyuwe",
+        "name": "Enterprise",
+        "detail": "Ku kigo kinini"
+      },
+      "cta": "Tangira"
     },
     "cta": {
       "title": "Witeguye kwigarurira ububiko bwawe?",
-      "subtitle": "Ifatanye n'amatsinda akora imirimo yoroheje kandi yihuta. Tangira ku buntu uyu munsi.",
-      "primary": "Tangira ku buntu",
+      "subtitle": "Ifatanye n'amatsinda akora imirimo yoroheje kandi yihuta.",
+      "primary": "Tangira",
       "secondary": "Injira"
     },
     "footer": {
