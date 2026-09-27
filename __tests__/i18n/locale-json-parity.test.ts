@@ -2,7 +2,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
-/** I18N feature namespaces that must stay in sync across all UI locales (I18N-04, I18N-09). */
+/** Feature namespaces that must stay in sync across all UI locales. */
 const FEATURE_NAMESPACES = [
   "Nav",
   "Breadcrumbs",
@@ -13,6 +13,7 @@ const FEATURE_NAMESPACES = [
   "Procurement",
   "Sales",
   "Auth",
+  "Landing",
   "Audit",
   "SettingsTenant",
   "SettingsPlatform",
@@ -44,7 +45,7 @@ function featureKeyPaths(data: unknown): Set<string> {
   return new Set(paths);
 }
 
-describe("public/locales feature namespace parity (Nav, Breadcrumbs, Reservations, Reports, CycleCounts, BulkOperations, Procurement, Sales, Auth, Audit, SettingsTenant, SettingsPlatform)", () => {
+describe("public/locales feature namespace parity (Nav, Breadcrumbs, Reservations, Reports, CycleCounts, BulkOperations, Procurement, Sales, Auth, Landing, Audit, SettingsTenant, SettingsPlatform)", () => {
   const localesDir = join(process.cwd(), "public", "locales");
   const files = readdirSync(localesDir).filter((f) => f.endsWith(".json"));
 
