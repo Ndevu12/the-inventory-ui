@@ -1,0 +1,30 @@
+---
+description: Design bar — SRP, DRY-but-not-too-DRY, self-documenting names, value before coverage
+alwaysApply: true
+---
+
+# Engineering standard
+
+Write for a new collaborator. Be ready to say how new work honors these.
+
+- **SRP** — one reason to change per module. Split a god-module before adding capability.
+  Keep `features` / `components` / `lib` / `app` boundaries. One administration concern per
+  file, composed by an index.
+- **DRY, but not too DRY.** Share an interface when things differ. No universal helper that
+  collapses unrelated domains.
+- **Dependency inversion** — an obvious second consumer stands alone; callers depend on an
+  injectable seam so tests inject fakes.
+- **Open/closed** — adding a case is add + register, touch nothing else.
+- **Self-documenting names.** Name by meaning. Never comment a variable — fix the name.
+- **Comment density.** A comment earns its place with a measurement or a rejected alternative,
+  not by narrating the code. Two lines, not nine.
+- **Docstrings** (when needed): one short line of WHAT it does (lead with a verb); what it
+  takes; what it returns including the absent case. No "because", no algorithm, no history.
+- **Altitude.** Fix at the right depth. No bandaid on shared infra; don't build the maximal
+  engine for one case. Freeze an abstraction after a second implementation proves it, unless
+  the maintainer called out plumbing every part touches — then build it properly now.
+- **Value before coverage.** The cheap approach that covers the real case beats the expensive
+  one that covers hypotheticals. Grep the code and the open issues before writing.
+- **Measure before optimizing.** Don't ship a win that measures ~1×.
+- A guard must call the check's own code. A self-test that re-derives the check is a second
+  implementation and they drift.
