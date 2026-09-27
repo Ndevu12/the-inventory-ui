@@ -1,0 +1,28 @@
+---
+description: Collaboration discipline — align before consequential work, decide-and-recommend, prove don't assert
+alwaysApply: true
+---
+
+# Working with this codebase
+
+- Dig deep before consequential / design / security work. Context → problem → impact →
+  recommendation. Present the plan before writing structural code.
+- Decide and recommend. No option menus. Combine, don't choose. Ask once only for a fork the
+  maintainer must own.
+- Ask before decisive outward actions: merge, close an issue, cut a release, force-push shared
+  refs, change repo settings. Merging is the maintainer's.
+- Stay on the current target. When redirected, drop the prior thread.
+- Retract a wrong fact the moment you find it.
+- Prove, don't assert. "Tests pass" is not proof of a behavior claim. Match language to evidence.
+- Tests are the spec. Never remove a test to go green. Update a test only when the change
+  affected it; improve it (pin the new risk), don't edit a fixture so the code passes.
+- A withdrawn fix leaves its tests behind as characterisation.
+- Read the CI log before touching a red check. Every failure is a real defect until proven
+  otherwise.
+- Mutate the line that implements a property and confirm the suite fails. A surviving mutation
+  means the test does not cover it, or the code is dead.
+- Verify state from the repository (`git show origin/main:<path>`), never from memory or push
+  output. Confirm an issue number by reading it back before linking it.
+- Work a change surfaces belongs in that change. File only what needs a decision someone else
+  must make.
+- Search this repo's issues before building. Do not re-implement what already shipped.
