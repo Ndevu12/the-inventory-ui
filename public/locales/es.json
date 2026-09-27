@@ -2346,9 +2346,9 @@
       "title": "Gestión de inventario moderna que",
       "titleHighlight": "crece con tu negocio",
       "subtitle": "Controla el stock en cada almacén, automatiza las compras y toma decisiones con seguridad gracias a información en tiempo real, todo en una plataforma sencilla y elegante.",
-      "ctaPrimary": "Empieza gratis",
+      "ctaPrimary": "Empezar",
       "ctaSecondary": "Iniciar sesión",
-      "note": "Sin tarjeta de crédito · Configúralo en minutos"
+      "note": "Gratis incluye 5 personas y 100 productos"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2430,10 +2430,55 @@
       "q4": "¿Cuánto tarda la configuración?",
       "a4": "La mayoría de los equipos están en marcha el mismo día: crea tu organización, importa productos y empieza a controlar en minutos."
     },
+    "comparison": {
+      "eyebrow": "Lado a lado",
+      "title": "El mismo trabajo, sin las hojas de cálculo",
+      "subtitle": "Lo que tu equipo ya hace, en una sola plataforma.",
+      "spreadsheets": "Hojas de cálculo",
+      "platform": "The Inventory",
+      "stockLabel": "Stock",
+      "stockSheets": "Un archivo por almacén",
+      "stockPlatform": "Un registro en vivo",
+      "alertsLabel": "Quedarse sin stock",
+      "alertsSheets": "Alguien se da cuenta demasiado tarde",
+      "alertsPlatform": "Alertas de reposición antes de que se agote",
+      "auditLabel": "Historial",
+      "auditSheets": "Quien editó la celda por última vez",
+      "auditPlatform": "Un historial de auditoría completo",
+      "languageLabel": "Idioma",
+      "languageSheets": "Una hoja, un idioma",
+      "languagePlatform": "Seis idiomas, incluido de derecha a izquierda"
+    },
+    "pricing": {
+      "eyebrow": "Precios",
+      "title": "Cuatro planes",
+      "subtitle": "Una organización nueva empieza en Gratis. Starter, Professional y Enterprise son planes de pago.",
+      "free": {
+        "kind": "Incluido",
+        "name": "Gratis",
+        "detail": "5 personas y 100 productos"
+      },
+      "starter": {
+        "kind": "De pago",
+        "name": "Starter",
+        "detail": "Para una operación más pequeña"
+      },
+      "professional": {
+        "kind": "De pago",
+        "name": "Professional",
+        "detail": "Para una operación en crecimiento"
+      },
+      "enterprise": {
+        "kind": "De pago",
+        "name": "Enterprise",
+        "detail": "Para una organización más grande"
+      },
+      "cta": "Empezar"
+    },
     "cta": {
       "title": "¿Listo para tomar el control de tu inventario?",
-      "subtitle": "Únete a los equipos que operan de forma más ágil y rápida. Empieza gratis hoy mismo.",
-      "primary": "Comienza gratis",
+      "subtitle": "Únete a los equipos que operan de forma más ágil y rápida.",
+      "primary": "Empezar",
       "secondary": "Iniciar sesión"
     },
     "footer": {

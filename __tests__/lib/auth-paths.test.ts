@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   isPublicAuthPath,
+  isPublicMarketingPath,
   parseLocalePath,
   requiresJwtAccessCookie,
 } from "@/lib/auth-paths";
@@ -28,6 +29,10 @@ describe("auth-paths", () => {
 
   it("isPublicAuthPath covers the landing, auth and invitation flows", () => {
     expect(isPublicAuthPath("/")).toBe(true);
+    expect(isPublicAuthPath("/features")).toBe(true);
+    expect(isPublicMarketingPath("/")).toBe(true);
+    expect(isPublicMarketingPath("/features")).toBe(true);
+    expect(isPublicMarketingPath("/auth/login")).toBe(false);
     expect(isPublicAuthPath("/auth/login")).toBe(true);
     expect(isPublicAuthPath("/auth/register")).toBe(true);
     expect(isPublicAuthPath("/auth/no-organization")).toBe(true);
@@ -41,5 +46,6 @@ describe("auth-paths", () => {
     expect(requiresJwtAccessCookie("/products")).toBe(true);
     expect(requiresJwtAccessCookie("/dashboard")).toBe(true);
     expect(requiresJwtAccessCookie("/auth/login")).toBe(false);
+    expect(requiresJwtAccessCookie("/features")).toBe(false);
   });
 });
