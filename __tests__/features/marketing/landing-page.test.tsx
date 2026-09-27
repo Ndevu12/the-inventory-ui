@@ -52,9 +52,6 @@ describe("LandingPage composition", () => {
       </NextIntlClientProvider>,
     );
 
-    const features = screen.getByRole("heading", {
-      name: /one platform for your entire inventory/i,
-    });
     const workflow = screen.getByRole("heading", {
       name: /up and running in three steps/i,
     });
@@ -66,7 +63,11 @@ describe("LandingPage composition", () => {
       name: /ready to take control of your inventory/i,
     });
 
-    expect(follows(features, workflow)).toBe(true);
+    expect(
+      screen.queryByRole("heading", {
+        name: /one platform for your entire inventory/i,
+      }),
+    ).toBeNull();
     expect(follows(workflow, quote)).toBe(true);
     expect(follows(quote, faq)).toBe(true);
     expect(follows(faq, cta)).toBe(true);
@@ -80,9 +81,5 @@ describe("LandingPage composition", () => {
     for (const link of screen.getAllByRole("link", { name: "How it works" })) {
       expect(link).toHaveAttribute("href", "/#workflow");
     }
-    expect(screen.getByRole("button", { name: "See the comparison" })).toHaveAttribute(
-      "href",
-      "/features",
-    );
   });
 });

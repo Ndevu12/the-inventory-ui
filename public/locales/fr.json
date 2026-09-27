@@ -2380,8 +2380,7 @@
       "procurementTitle": "Achats et ventes",
       "procurementDesc": "Pilotez vos commandes d'achat, vos réceptions de marchandises et vos expéditions de bout en bout.",
       "reportsTitle": "Des rapports pertinents",
-      "reportsDesc": "Valorisations, tendances des mouvements et pistes d'audit auxquelles vous pouvez vous fier.",
-      "continue": "Voir la comparaison"
+      "reportsDesc": "Valorisations, tendances des mouvements et pistes d'audit auxquelles vous pouvez vous fier."
     },
     "workflow": {
       "eyebrow": "Comment ça marche",

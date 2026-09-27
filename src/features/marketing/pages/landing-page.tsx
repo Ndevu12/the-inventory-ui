@@ -1,7 +1,6 @@
 import { LandingNav } from "../components/landing-nav";
 import { LandingHero } from "../components/landing-hero";
 import {
-  LandingFeatures,
   LandingHighlight,
   LandingMetrics,
   LandingTestimonial,
@@ -21,7 +20,6 @@ export function LandingPage() {
       <LandingNav />
       <main className="flex-1">
         <LandingHero />
-        <LandingFeatures showContinue />
         <LandingWorkflow />
         <LandingHighlight />
         <LandingMetrics />
