@@ -134,7 +134,7 @@ export function LandingHighlight() {
                 </li>
               ))}
             </ul>
-            <CtaButton href="/auth/register" variant="outline" className="group">
+            <CtaButton href="/features" variant="outline" className="group">
               {t("cta")}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </CtaButton>

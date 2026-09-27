@@ -2334,6 +2334,8 @@
       "features": "Vipengele",
       "workflow": "Jinsi inavyofanya kazi",
       "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+      "comparison": "Ulinganisho",
+      "pricing": "Bei",
       "signIn": "Ingia",
       "getStarted": "Anza sasa",
       "goToDashboard": "Nenda kwenye Dashibodi",
@@ -2429,6 +2431,34 @@
       "a3": "Jukwaa linapatikana kwa lugha sita, ikijumuisha uwezo kamili wa maandishi ya kulia kwenda kushoto, na hubadilika papo hapo kutoka mahali popote.",
       "q4": "Je, uanzishaji huchukua muda gani?",
       "a4": "Timu nyingi huanza kufanya kazi siku hiyo hiyo — unda shirika lako, leta bidhaa, na uanze kufuatilia kwa dakika chache."
+    },
+    "comparison": {
+      "eyebrow": "Upande kwa upande",
+      "title": "Kazi ile ile, bila lahajedwali",
+      "subtitle": "Kile timu yako inafanya tayari, kwenye jukwaa moja.",
+      "spreadsheets": "Lahajedwali",
+      "platform": "The Inventory",
+      "stockLabel": "Hisa",
+      "stockSheets": "Faili kwa kila ghala",
+      "stockPlatform": "Rekodi moja ya moja kwa moja",
+      "alertsLabel": "Inakaribia kuisha",
+      "alertsSheets": "Mtu anagundua umechelewa",
+      "alertsPlatform": "Arifa za kuagiza upya kabla haijaisha",
+      "auditLabel": "Historia",
+      "auditSheets": "Aliyehariri seli mwisho",
+      "auditPlatform": "Historia kamili ya ukaguzi",
+      "languageLabel": "Lugha",
+      "languageSheets": "Laha moja, lugha moja",
+      "languagePlatform": "Lugha sita, pamoja na kulia kwenda kushoto"
+    },
+    "pricing": {
+      "eyebrow": "Bei",
+      "title": "Anza bure",
+      "subtitle": "Fungua eneo la kazi uendeshe hesabu yako. Hakuna kadi.",
+      "freeName": "Bure",
+      "freeDetail": "Shirika unalounda siku ya kwanza.",
+      "also": "Starter, Professional na Enterprise hubaki kwenye akaunti hiyo hiyo kazi inapokua.",
+      "cta": "Anza bure"
     },
     "cta": {
       "title": "Uko tayari kudhibiti hesabu yako?",
