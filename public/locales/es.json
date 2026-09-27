@@ -2346,9 +2346,9 @@
       "title": "Gestión de inventario moderna que",
       "titleHighlight": "crece con tu negocio",
       "subtitle": "Controla el stock en cada almacén, automatiza las compras y toma decisiones con seguridad gracias a información en tiempo real, todo en una plataforma sencilla y elegante.",
-      "ctaPrimary": "Empieza gratis",
+      "ctaPrimary": "Empezar",
       "ctaSecondary": "Iniciar sesión",
-      "note": "Sin tarjeta de crédito · Configúralo en minutos"
+      "note": "Gratis incluye 5 personas y 100 productos"
     },
     "stats": {
       "uptimeValue": "99.9%",
@@ -2451,17 +2451,34 @@
     },
     "pricing": {
       "eyebrow": "Precios",
-      "title": "Empieza gratis",
-      "subtitle": "Abre un espacio de trabajo y gestiona tu inventario. Sin tarjeta.",
-      "freeName": "Gratis",
-      "freeDetail": "La organización que creas el primer día.",
-      "also": "Starter, Professional y Enterprise siguen en esa misma cuenta cuando el trabajo crece.",
-      "cta": "Empezar gratis"
+      "title": "Cuatro planes",
+      "subtitle": "Una organización nueva empieza en Gratis. Starter, Professional y Enterprise son planes de pago.",
+      "free": {
+        "kind": "Incluido",
+        "name": "Gratis",
+        "detail": "5 personas y 100 productos"
+      },
+      "starter": {
+        "kind": "De pago",
+        "name": "Starter",
+        "detail": "Para una operación más pequeña"
+      },
+      "professional": {
+        "kind": "De pago",
+        "name": "Professional",
+        "detail": "Para una operación en crecimiento"
+      },
+      "enterprise": {
+        "kind": "De pago",
+        "name": "Enterprise",
+        "detail": "Para una organización más grande"
+      },
+      "cta": "Empezar"
     },
     "cta": {
       "title": "¿Listo para tomar el control de tu inventario?",
-      "subtitle": "Únete a los equipos que operan de forma más ágil y rápida. Empieza gratis hoy mismo.",
-      "primary": "Comienza gratis",
+      "subtitle": "Únete a los equipos que operan de forma más ágil y rápida.",
+      "primary": "Empezar",
       "secondary": "Iniciar sesión"
     },
     "footer": {
