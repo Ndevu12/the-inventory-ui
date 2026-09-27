@@ -36,7 +36,7 @@ describe("FeaturesPage", () => {
     resetClientTestState();
   });
 
-  it("shows the feature grid, the comparison, and free pricing", () => {
+  it("shows the feature grid, the comparison, and the four plans", () => {
     resetClientTestState();
     renderWithProviders(
       <NextIntlClientProvider locale="en" messages={messages}>
@@ -55,8 +55,10 @@ describe("FeaturesPage", () => {
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /start free/i }),
+      screen.getByRole("heading", { name: /four plans/i }),
     ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Starter" })).toBeInTheDocument();
+    expect(screen.getByText("5 people and 100 products")).toBeInTheDocument();
     expect(document.getElementById("comparison")?.nextElementSibling?.id).toBe(
       "pricing",
     );
