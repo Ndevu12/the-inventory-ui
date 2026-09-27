@@ -2334,10 +2334,6 @@
       "features": "Funciones",
       "workflow": "Cómo funciona",
       "faq": "Preguntas frecuentes",
-      "comparison": "Comparación",
-      "pricing": "Precios",
-      "comparison": "Comparación",
-      "pricing": "Precios",
       "signIn": "Iniciar sesión",
       "getStarted": "Comenzar",
       "goToDashboard": "Ir al panel",
@@ -2384,7 +2380,8 @@
       "procurementTitle": "Compras y ventas",
       "procurementDesc": "Gestiona órdenes de compra, recepciones de mercancía y despachos de principio a fin.",
       "reportsTitle": "Informes reveladores",
-      "reportsDesc": "Valoraciones, tendencias de movimiento y registros de auditoría en los que puedes confiar."
+      "reportsDesc": "Valoraciones, tendencias de movimiento y registros de auditoría en los que puedes confiar.",
+      "continue": "Ver la comparación"
     },
     "workflow": {
       "eyebrow": "Cómo funciona",

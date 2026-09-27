@@ -21,7 +21,7 @@ export function LandingPage() {
       <LandingNav />
       <main className="flex-1">
         <LandingHero />
-        <LandingFeatures />
+        <LandingFeatures showContinue />
         <LandingWorkflow />
         <LandingHighlight />
         <LandingMetrics />

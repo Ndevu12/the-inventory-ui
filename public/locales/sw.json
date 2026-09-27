@@ -2334,8 +2334,6 @@
       "features": "Vipengele",
       "workflow": "Jinsi inavyofanya kazi",
       "faq": "Maswali Yanayoulizwa Mara kwa Mara",
-      "comparison": "Ulinganisho",
-      "pricing": "Bei",
       "signIn": "Ingia",
       "getStarted": "Anza sasa",
       "goToDashboard": "Nenda kwenye Dashibodi",
@@ -2382,7 +2380,8 @@
       "procurementTitle": "Ununuzi na mauzo",
       "procurementDesc": "Endesha oda za ununuzi, upokeaji wa bidhaa, na usafirishaji kuanzia mwanzo hadi mwisho.",
       "reportsTitle": "Ripoti zenye maarifa",
-      "reportsDesc": "Tathmini za thamani, mwenendo wa mienendo, na rekodi za ukaguzi unazoweza kuziamini."
+      "reportsDesc": "Tathmini za thamani, mwenendo wa mienendo, na rekodi za ukaguzi unazoweza kuziamini.",
+      "continue": "Ona ulinganisho"
     },
     "workflow": {
       "eyebrow": "Jinsi inavyofanya kazi",

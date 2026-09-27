@@ -2334,10 +2334,6 @@
       "features": "Ibiranga",
       "workflow": "Uko bikora",
       "faq": "Ibibazo bikunze kubazwa",
-      "comparison": "Isuzuma",
-      "pricing": "Ibiciro",
-      "comparison": "Isuzuma",
-      "pricing": "Ibiciro",
       "signIn": "Injira",
       "getStarted": "Tangira",
       "goToDashboard": "Jya ku Ikibaho",
@@ -2384,7 +2380,8 @@
       "procurementTitle": "Kugura no kugurisha",
       "procurementDesc": "Kora amabwiriza yo kugura, kwakira ibicuruzwa, no kohereza uhereye intangiriro kugeza impera.",
       "reportsTitle": "Raporo zifite ireme",
-      "reportsDesc": "Agaciro k'ibicuruzwa, imigendekere y'inyeganyega, n'inyandiko zo kugenzura wizeye."
+      "reportsDesc": "Agaciro k'ibicuruzwa, imigendekere y'inyeganyega, n'inyandiko zo kugenzura wizeye.",
+      "continue": "Reba isuzuma"
     },
     "workflow": {
       "eyebrow": "Uko bikora",

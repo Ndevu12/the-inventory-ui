@@ -61,5 +61,16 @@ describe("FeaturesPage", () => {
       "pricing",
     );
     expect(screen.queryByRole("heading", { name: /frequently asked questions/i })).toBeNull();
+    for (const link of screen.getAllByRole("link", { name: "Features" })) {
+      expect(link).toHaveAttribute("href", "/features");
+    }
+    for (const link of screen.getAllByRole("link", { name: "How it works" })) {
+      expect(link).toHaveAttribute("href", "/#workflow");
+    }
+    expect(screen.getByRole("link", { name: "FAQ" })).toHaveAttribute(
+      "href",
+      "/#faq",
+    );
+    expect(screen.queryByRole("button", { name: "See the comparison" })).toBeNull();
   });
 });

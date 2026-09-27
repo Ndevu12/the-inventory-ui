@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 import { CtaButton, LandingContainer, SectionHeading } from "./landing-ui";
 
 /** Feature grid — six core capabilities of the platform. */
-export function LandingFeatures() {
+export function LandingFeatures({ showContinue = false }: { showContinue?: boolean }) {
   const t = useTranslations("Landing.features");
 
   const features: { icon: LucideIcon; title: string; desc: string }[] = [
@@ -58,6 +58,14 @@ export function LandingFeatures() {
             </div>
           ))}
         </div>
+        {showContinue ? (
+          <div className="mt-10 flex justify-center">
+            <CtaButton href="/features" variant="outline" className="group">
+              {t("continue")}
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+            </CtaButton>
+          </div>
+        ) : null}
       </LandingContainer>
     </section>
   );

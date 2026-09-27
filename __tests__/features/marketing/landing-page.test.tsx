@@ -73,5 +73,16 @@ describe("LandingPage composition", () => {
 
     const testimonialSection = quote.closest("section");
     expect(testimonialSection?.nextElementSibling?.id).toBe("faq");
+
+    for (const link of screen.getAllByRole("link", { name: "Features" })) {
+      expect(link).toHaveAttribute("href", "/features");
+    }
+    for (const link of screen.getAllByRole("link", { name: "How it works" })) {
+      expect(link).toHaveAttribute("href", "/#workflow");
+    }
+    expect(screen.getByRole("button", { name: "See the comparison" })).toHaveAttribute(
+      "href",
+      "/features",
+    );
   });
 });
