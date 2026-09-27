@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Boxes, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
@@ -14,22 +14,11 @@ import { cn } from "@/lib/utils";
 
 import { CtaButton } from "./landing-ui";
 
-const LANDING_SECTION_LINKS = [
-  { key: "features", href: "#features" },
-  { key: "workflow", href: "#workflow" },
-  { key: "faq", href: "#faq" },
+const SECTION_LINKS = [
+  { key: "features", href: "/features" },
+  { key: "workflow", href: "/#workflow" },
+  { key: "faq", href: "/#faq" },
 ] as const;
-
-export const FEATURES_SECTION_LINKS = [
-  { key: "features", href: "#features" },
-  { key: "comparison", href: "#comparison" },
-  { key: "pricing", href: "#pricing" },
-] as const;
-
-type SectionLink = {
-  key: "features" | "workflow" | "faq" | "comparison" | "pricing";
-  href: string;
-};
 
 /** Brand mark reused in the nav and footer. */
 export function BrandMark({ className }: { className?: string }) {
@@ -82,12 +71,9 @@ function NavActions({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
-export function LandingNav({
-  links = LANDING_SECTION_LINKS,
-}: {
-  links?: readonly SectionLink[];
-}) {
+export function LandingNav() {
   const t = useTranslations("Landing.nav");
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
@@ -96,14 +82,20 @@ export function LandingNav({
         <BrandMark />
 
         <div className="hidden items-center gap-1 md:flex">
-          {links.map((link) => (
-            <a
+          {SECTION_LINKS.map((link) => (
+            <Link
               key={link.key}
               href={link.href}
-              className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              aria-current={pathname === link.href ? "page" : undefined}
+              className={cn(
+                "rounded-lg px-3 py-2 text-sm font-medium transition-colors hover:text-foreground",
+                pathname === link.href
+                  ? "text-foreground"
+                  : "text-muted-foreground",
+              )}
             >
               {t(link.key)}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -131,15 +123,21 @@ export function LandingNav({
       {open ? (
         <div className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden">
           <div className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-5 py-4 sm:px-8">
-            {links.map((link) => (
-              <a
+            {SECTION_LINKS.map((link) => (
+              <Link
                 key={link.key}
                 href={link.href}
+                aria-current={pathname === link.href ? "page" : undefined}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                className={cn(
+                  "rounded-lg px-3 py-2.5 text-sm font-medium transition-colors hover:bg-muted hover:text-foreground",
+                  pathname === link.href
+                    ? "text-foreground"
+                    : "text-muted-foreground",
+                )}
               >
                 {t(link.key)}
-              </a>
+              </Link>
             ))}
             <div className="mt-3 flex items-center justify-between border-t border-border/60 pt-4">
               <span className="text-sm text-muted-foreground">

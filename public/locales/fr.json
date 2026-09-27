@@ -2334,10 +2334,6 @@
       "features": "Fonctionnalités",
       "workflow": "Comment ça marche",
       "faq": "FAQ",
-      "comparison": "Comparaison",
-      "pricing": "Tarifs",
-      "comparison": "Comparaison",
-      "pricing": "Tarifs",
       "signIn": "Se connecter",
       "getStarted": "Commencer",
       "goToDashboard": "Accéder au tableau de bord",
@@ -2384,7 +2380,8 @@
       "procurementTitle": "Achats et ventes",
       "procurementDesc": "Pilotez vos commandes d'achat, vos réceptions de marchandises et vos expéditions de bout en bout.",
       "reportsTitle": "Des rapports pertinents",
-      "reportsDesc": "Valorisations, tendances des mouvements et pistes d'audit auxquelles vous pouvez vous fier."
+      "reportsDesc": "Valorisations, tendances des mouvements et pistes d'audit auxquelles vous pouvez vous fier.",
+      "continue": "Voir la comparaison"
     },
     "workflow": {
       "eyebrow": "Comment ça marche",
@@ -2433,34 +2430,6 @@
       "a3": "La plateforme est disponible en six langues, avec une prise en charge complète de l'écriture de droite à gauche, et change de langue instantanément où que vous soyez.",
       "q4": "Combien de temps prend la configuration ?",
       "a4": "La plupart des équipes sont opérationnelles le jour même — créez votre organisation, importez vos produits et commencez à suivre vos stocks en quelques minutes."
-    },
-    "comparison": {
-      "eyebrow": "Côte à côte",
-      "title": "Le même travail, sans les tableurs",
-      "subtitle": "Ce que votre équipe fait aujourd'hui, sur une seule plateforme.",
-      "spreadsheets": "Tableurs",
-      "platform": "The Inventory",
-      "stockLabel": "Stock",
-      "stockSheets": "Un fichier par entrepôt",
-      "stockPlatform": "Un enregistrement en direct",
-      "alertsLabel": "Rupture proche",
-      "alertsSheets": "Quelqu'un s'en aperçoit trop tard",
-      "alertsPlatform": "Des alertes avant la rupture",
-      "auditLabel": "Historique",
-      "auditSheets": "La dernière personne à avoir modifié la cellule",
-      "auditPlatform": "Une piste d'audit complète",
-      "languageLabel": "Langue",
-      "languageSheets": "Une feuille, une langue",
-      "languagePlatform": "Six langues, dont l'écriture de droite à gauche"
-    },
-    "pricing": {
-      "eyebrow": "Tarifs",
-      "title": "Commencez gratuitement",
-      "subtitle": "Ouvrez un espace de travail et gérez votre inventaire. Sans carte bancaire.",
-      "freeName": "Gratuit",
-      "freeDetail": "L'organisation que vous créez le premier jour.",
-      "also": "Starter, Professional et Enterprise restent sur le même compte quand l'activité grandit.",
-      "cta": "Commencer gratuitement"
     },
     "comparison": {
       "eyebrow": "Côte à côte",
