@@ -12,7 +12,7 @@ import {
 } from "react";
 
 import { usePathname } from "next/navigation";
-import { parseLocalePath } from "@/lib/auth-paths";
+import { isPublicMarketingPath, parseLocalePath } from "@/lib/auth-paths";
 import { useAuthStore } from "@/lib/auth-store";
 import type { User, Membership } from "@/lib/auth-store";
 
@@ -129,7 +129,7 @@ export function AuthProvider({
     invalidate,
   };
 
-  // The public marketing landing ("/") is auth-independent: render it immediately
+  // Public marketing pages are auth-independent: render them immediately
   // (server HTML + no spinner flash) so it stays fast and SEO-friendly. Its only
   // auth-aware piece (the nav CTA) reads `isReady`/`isAuthenticated` and renders a
   // stable signed-out default until hydration completes.
@@ -137,7 +137,9 @@ export function AuthProvider({
   // not next-intl's — AuthProvider renders above NextIntlClientProvider, so a
   // next-intl navigation hook would throw "no intl context". Reuse the same
   // locale parsing the middleware uses to recover the inner path.
-  const isPublicMarketing = parseLocalePath(pathname).innerPath === "/";
+  const isPublicMarketing = isPublicMarketingPath(
+    parseLocalePath(pathname).innerPath,
+  );
 
   // Block all auth-dependent UI until we know true state. Prevents hydration mismatch + redirect loops.
   if (!isReady && !isPublicMarketing) {
