@@ -19,6 +19,11 @@ const { navigationState } = vi.hoisted(() => ({
   navigationState: { pathname: "/register" },
 }));
 
+vi.mock("next/navigation", () => ({
+  usePathname: () => "/en/auth/register",
+  useRouter: () => ({ refresh: vi.fn(), replace: vi.fn(), push: vi.fn() }),
+}));
+
 vi.mock("@/i18n/navigation", () => ({
   Link: ({
     href,
@@ -59,5 +64,8 @@ describe("RegisterCompanyPage rendering", () => {
     });
 
     expect(screen.getByLabelText(/^organization name$/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/starts on Free: 5 people and 100 products/i),
+    ).toBeInTheDocument();
   });
 });
