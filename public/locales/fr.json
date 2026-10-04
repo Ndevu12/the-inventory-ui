@@ -1877,7 +1877,10 @@
     "acceptInvitationFailed": "Impossible d'accepter l'invitation",
     "password": {
       "show": "Afficher le mot de passe",
-      "hide": "Masquer le mot de passe"
+      "hide": "Masquer le mot de passe",
+      "strengthShort": "Trop court — au moins 8 caractères",
+      "strengthFair": "Acceptable",
+      "strengthStrong": "Solide"
     },
     "login": {
       "title": "Bon retour",
@@ -2485,6 +2488,31 @@
       "subtitle": "Rejoignez les équipes qui mènent des opérations plus efficaces et plus rapides.",
       "primary": "Commencer",
       "secondary": "Se connecter"
+    },
+    "guide": {
+      "eyebrow": "Guide",
+      "title": "Comment le travail est organisé",
+      "subtitle": "Les mêmes tâches, au même endroit.",
+      "catalogTitle": "Catalogue",
+      "catalogBody": "Produits, SKU et catégories vivent dans un seul catalogue.",
+      "stockTitle": "Stock",
+      "stockBody": "Chaque entrepôt partage un enregistrement vivant, avec l'historique des mouvements.",
+      "ordersTitle": "Achats et ventes",
+      "ordersBody": "Bons de commande, réceptions et expéditions s'appuient sur ce stock.",
+      "reportsTitle": "Rapports",
+      "reportsBody": "Valorisations, stock bas et piste d'audit sont prêts quand vous en avez besoin.",
+      "languagesTitle": "Langues",
+      "languagesBody": "Six langues, y compris de droite à gauche.",
+      "plansTitle": "Formules",
+      "plansBody": "Une nouvelle organisation commence sur Gratuit : 5 personnes et 100 produits. Starter, Professional et Enterprise sont payantes."
+    },
+    "reach": {
+      "eyebrow": "Contact",
+      "title": "Rejoindre le produit, pas une boîte séparée",
+      "subtitle": "Connectez-vous si vous avez déjà un espace, ou ouvrez-en un.",
+      "signIn": "Se connecter",
+      "getStarted": "Commencer",
+      "owner": "Les questions sur un espace vont à son propriétaire."
     },
     "footer": {
       "tagline": "La gestion d'inventaire multi-entité pour les équipes opérationnelles modernes.",

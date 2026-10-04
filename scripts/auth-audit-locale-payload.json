@@ -7,7 +7,10 @@
       "acceptInvitationFailed": "Impossible d'accepter l'invitation",
       "password": {
         "show": "Afficher le mot de passe",
-        "hide": "Masquer le mot de passe"
+        "hide": "Masquer le mot de passe",
+        "strengthShort": "Trop court — au moins 8 caractères",
+        "strengthFair": "Acceptable",
+        "strengthStrong": "Solide"
       },
       "login": {
         "title": "Bon retour",
@@ -253,7 +256,10 @@
       "acceptInvitationFailed": "No se pudo aceptar la invitación",
       "password": {
         "show": "Mostrar contraseña",
-        "hide": "Ocultar contraseña"
+        "hide": "Ocultar contraseña",
+        "strengthShort": "Demasiado corta — al menos 8 caracteres",
+        "strengthFair": "Aceptable",
+        "strengthStrong": "Fuerte"
       },
       "login": {
         "title": "Bienvenido de nuevo",
@@ -499,7 +505,10 @@
       "acceptInvitationFailed": "تعذر قبول الدعوة",
       "password": {
         "show": "إظهار كلمة المرور",
-        "hide": "إخفاء كلمة المرور"
+        "hide": "إخفاء كلمة المرور",
+        "strengthShort": "قصيرة جداً — 8 أحرف على الأقل",
+        "strengthFair": "مقبولة",
+        "strengthStrong": "قوية"
       },
       "login": {
         "title": "مرحبًا بعودتك",
@@ -745,7 +754,10 @@
       "acceptInvitationFailed": "Failed to accept invitation",
       "password": {
         "show": "Erekana ijambobanga",
-        "hide": "Hisha ijambobanga"
+        "hide": "Hisha ijambobanga",
+        "strengthShort": "Ntoy'ingano — byibuze inyuguti 8",
+        "strengthFair": "Ikoreshwa",
+        "strengthStrong": "Irakomeye"
       },
       "login": {
         "title": "Murakaza neza",
@@ -991,7 +1003,10 @@
       "acceptInvitationFailed": "Failed to accept invitation",
       "password": {
         "show": "Onyesha nenosiri",
-        "hide": "Ficha nenosiri"
+        "hide": "Ficha nenosiri",
+        "strengthShort": "Fupi sana — angalau herufi 8",
+        "strengthFair": "Inakubalika",
+        "strengthStrong": "Imara"
       },
       "login": {
         "title": "Karibu tena",
