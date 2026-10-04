@@ -17,6 +17,7 @@ import { CtaButton } from "./landing-ui";
 const SECTION_LINKS = [
   { key: "features", href: "/features" },
   { key: "workflow", href: "/#workflow" },
+  { key: "pricing", href: "/features#pricing" },
   { key: "faq", href: "/#faq" },
 ] as const;
 

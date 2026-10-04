@@ -235,6 +235,7 @@
       "features": "Features",
       "workflow": "How it works",
       "faq": "FAQ",
+      "pricing": "Pricing",
       "signIn": "Sign in",
       "getStarted": "Get started",
       "goToDashboard": "Go to Dashboard",
@@ -352,27 +353,24 @@
     },
     "pricing": {
       "eyebrow": "Pricing",
-      "title": "Four plans",
-      "subtitle": "A new organization starts on Free. Starter, Professional, and Enterprise are paid plans.",
+      "title": "Choose a plan",
+      "subtitle": "A new organization starts on Free. Starter, Professional, and Enterprise are paid.",
       "free": {
         "kind": "Included",
         "name": "Free",
         "detail": "5 people and 100 products"
       },
+      "paidTitle": "Paid plans",
+      "paidKind": "Paid",
+      "paidNote": "People and product limits are set with the plan.",
       "starter": {
-        "kind": "Paid",
-        "name": "Starter",
-        "detail": "For a smaller operation"
+        "name": "Starter"
       },
       "professional": {
-        "kind": "Paid",
-        "name": "Professional",
-        "detail": "For a growing operation"
+        "name": "Professional"
       },
       "enterprise": {
-        "kind": "Paid",
-        "name": "Enterprise",
-        "detail": "For a larger organization"
+        "name": "Enterprise"
       },
       "cta": "Get started"
     },
