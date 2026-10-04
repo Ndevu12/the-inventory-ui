@@ -1902,7 +1902,8 @@
     },
     "register": {
       "title": "أنشئ مؤسستك",
-      "description": "سجّل مؤسسة جديدة واضبط حسابك كمالك.",
+      "description": "سجّل بصفتك المالك.",
+      "planNote": "تبدأ على المجانية: 5 أشخاص و100 منتج. Starter وProfessional وEnterprise مدفوعة.",
       "organizationName": "اسم المؤسسة",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "المعرّف (اختياري)",
@@ -2334,6 +2335,7 @@
       "features": "المميزات",
       "workflow": "كيف يعمل",
       "faq": "الأسئلة الشائعة",
+      "pricing": "الأسعار",
       "signIn": "تسجيل الدخول",
       "getStarted": "ابدأ الآن",
       "goToDashboard": "الانتقال إلى لوحة التحكم",
@@ -2451,27 +2453,24 @@
     },
     "pricing": {
       "eyebrow": "الأسعار",
-      "title": "أربع خطط",
-      "subtitle": "تبدأ المنظمة الجديدة على الخطة المجانية. Starter وProfessional وEnterprise خطط مدفوعة.",
+      "title": "اختر خطة",
+      "subtitle": "تبدأ المنظمة الجديدة على الخطة المجانية. Starter وProfessional وEnterprise مدفوعة.",
       "free": {
         "kind": "مشمولة",
         "name": "مجاني",
         "detail": "5 أشخاص و100 منتج"
       },
+      "paidTitle": "خطط مدفوعة",
+      "paidKind": "مدفوعة",
+      "paidNote": "حدود الأشخاص والمنتجات تُحدَّد مع الخطة.",
       "starter": {
-        "kind": "مدفوعة",
-        "name": "Starter",
-        "detail": "لعملية أصغر"
+        "name": "Starter"
       },
       "professional": {
-        "kind": "مدفوعة",
-        "name": "Professional",
-        "detail": "لعملية نامية"
+        "name": "Professional"
       },
       "enterprise": {
-        "kind": "مدفوعة",
-        "name": "Enterprise",
-        "detail": "لمنظمة أكبر"
+        "name": "Enterprise"
       },
       "cta": "ابدأ"
     },

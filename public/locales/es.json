@@ -1902,7 +1902,8 @@
     },
     "register": {
       "title": "Cree su organización",
-      "description": "Registre una nueva organización y configure su cuenta como propietario.",
+      "description": "Regístrese como propietario.",
+      "planNote": "Empieza en Gratis: 5 personas y 100 productos. Starter, Professional y Enterprise son de pago.",
       "organizationName": "Nombre de la organización",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (opcional)",
@@ -2334,6 +2335,7 @@
       "features": "Funciones",
       "workflow": "Cómo funciona",
       "faq": "Preguntas frecuentes",
+      "pricing": "Precios",
       "signIn": "Iniciar sesión",
       "getStarted": "Comenzar",
       "goToDashboard": "Ir al panel",
@@ -2451,27 +2453,24 @@
     },
     "pricing": {
       "eyebrow": "Precios",
-      "title": "Cuatro planes",
-      "subtitle": "Una organización nueva empieza en Gratis. Starter, Professional y Enterprise son planes de pago.",
+      "title": "Elige un plan",
+      "subtitle": "Una organización nueva empieza en Gratis. Starter, Professional y Enterprise son de pago.",
       "free": {
         "kind": "Incluido",
         "name": "Gratis",
         "detail": "5 personas y 100 productos"
       },
+      "paidTitle": "Planes de pago",
+      "paidKind": "De pago",
+      "paidNote": "Los límites de personas y productos van con el plan.",
       "starter": {
-        "kind": "De pago",
-        "name": "Starter",
-        "detail": "Para una operación más pequeña"
+        "name": "Starter"
       },
       "professional": {
-        "kind": "De pago",
-        "name": "Professional",
-        "detail": "Para una operación en crecimiento"
+        "name": "Professional"
       },
       "enterprise": {
-        "kind": "De pago",
-        "name": "Enterprise",
-        "detail": "Para una organización más grande"
+        "name": "Enterprise"
       },
       "cta": "Empezar"
     },

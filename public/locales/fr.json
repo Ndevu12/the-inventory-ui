@@ -1902,7 +1902,8 @@
     },
     "register": {
       "title": "Créer votre organisation",
-      "description": "Enregistrez une nouvelle organisation et configurez votre compte en tant que propriétaire.",
+      "description": "Inscrivez-vous en tant que propriétaire.",
+      "planNote": "Commence sur Gratuit : 5 personnes et 100 produits. Starter, Professional et Enterprise sont payantes.",
       "organizationName": "Nom de l'organisation",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Identifiant URL (facultatif)",
@@ -2334,6 +2335,7 @@
       "features": "Fonctionnalités",
       "workflow": "Comment ça marche",
       "faq": "FAQ",
+      "pricing": "Tarifs",
       "signIn": "Se connecter",
       "getStarted": "Commencer",
       "goToDashboard": "Accéder au tableau de bord",
@@ -2451,27 +2453,24 @@
     },
     "pricing": {
       "eyebrow": "Tarifs",
-      "title": "Quatre formules",
-      "subtitle": "Une nouvelle organisation commence sur Gratuit. Starter, Professional et Enterprise sont des formules payantes.",
+      "title": "Choisissez une formule",
+      "subtitle": "Une nouvelle organisation commence sur Gratuit. Starter, Professional et Enterprise sont payantes.",
       "free": {
         "kind": "Incluse",
         "name": "Gratuit",
         "detail": "5 personnes et 100 produits"
       },
+      "paidTitle": "Formules payantes",
+      "paidKind": "Payante",
+      "paidNote": "Les limites de personnes et de produits suivent la formule.",
       "starter": {
-        "kind": "Payante",
-        "name": "Starter",
-        "detail": "Pour une opération plus petite"
+        "name": "Starter"
       },
       "professional": {
-        "kind": "Payante",
-        "name": "Professional",
-        "detail": "Pour une opération en croissance"
+        "name": "Professional"
       },
       "enterprise": {
-        "kind": "Payante",
-        "name": "Enterprise",
-        "detail": "Pour une organisation plus grande"
+        "name": "Enterprise"
       },
       "cta": "Commencer"
     },

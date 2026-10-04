@@ -31,7 +31,8 @@
     },
     "register": {
       "title": "Create your organization",
-      "description": "Register a new organization and set up your account as the owner.",
+      "description": "Register as the owner.",
+      "planNote": "Starts on Free: 5 people and 100 products. Starter, Professional, and Enterprise are paid.",
       "organizationName": "Organization name",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "URL slug (optional)",

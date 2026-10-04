@@ -17,13 +17,12 @@ import { cn } from "@/lib/utils";
 
 import { CtaButton, LandingContainer, SectionHeading } from "./landing-ui";
 
-/** Feature grid — six core capabilities of the platform. */
+/** Capabilities: one lead, then the rest as a single scan. */
 export function LandingFeatures() {
   const t = useTranslations("Landing.features");
 
-  const features: { icon: LucideIcon; title: string; desc: string }[] = [
+  const rest: { icon: LucideIcon; title: string; desc: string }[] = [
     { icon: Tags, title: t("catalogTitle"), desc: t("catalogDesc") },
-    { icon: Boxes, title: t("trackingTitle"), desc: t("trackingDesc") },
     { icon: Bell, title: t("alertsTitle"), desc: t("alertsDesc") },
     { icon: Building2, title: t("warehousesTitle"), desc: t("warehousesDesc") },
     { icon: ShoppingCart, title: t("procurementTitle"), desc: t("procurementDesc") },
@@ -42,25 +41,39 @@ export function LandingFeatures() {
           title={t("title")}
           subtitle={t("subtitle")}
         />
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature) => (
+        <div className="mt-14 grid items-stretch gap-5 lg:grid-cols-2">
+          <article className="relative flex flex-col justify-between gap-10 overflow-hidden rounded-2xl border border-border/70 bg-card p-8 shadow-xl shadow-black/5">
             <div
-              key={feature.title}
-              className="group relative flex flex-col gap-4 rounded-2xl border border-border/70 bg-card p-6 transition-all hover:-translate-y-1 hover:border-border hover:shadow-lg hover:shadow-black/5"
-            >
-              <span className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--chart-2)]/12 to-[var(--chart-4)]/12 text-[var(--chart-3)] ring-1 ring-inset ring-[var(--chart-3)]/15">
-                <feature.icon className="size-5.5" />
-              </span>
-              <div className="space-y-1.5">
-                <h3 className="text-base font-semibold tracking-tight">
-                  {feature.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {feature.desc}
-                </p>
-              </div>
+              aria-hidden
+              className="pointer-events-none absolute -right-16 -top-16 size-56 rounded-full bg-gradient-to-br from-[var(--chart-2)]/20 to-[var(--chart-4)]/10 blur-2xl"
+            />
+            <span className="flex size-12 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--chart-2)]/12 to-[var(--chart-4)]/12 text-[var(--chart-3)] ring-1 ring-inset ring-[var(--chart-3)]/15">
+              <Boxes className="size-6" />
+            </span>
+            <div className="relative space-y-3">
+              <h3 className="text-2xl font-semibold tracking-tight">
+                {t("trackingTitle")}
+              </h3>
+              <p className="max-w-sm text-base leading-relaxed text-foreground/90">
+                {t("trackingDesc")}
+              </p>
             </div>
-          ))}
+          </article>
+          <ul className="flex flex-col divide-y divide-border/70 rounded-2xl border border-border/70 bg-card">
+            {rest.map((feature) => (
+              <li key={feature.title} className="flex gap-4 px-6 py-4">
+                <feature.icon className="mt-0.5 size-5 shrink-0 text-[var(--chart-3)]" />
+                <div className="space-y-1">
+                  <h3 className="text-sm font-semibold tracking-tight">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {feature.desc}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </LandingContainer>
     </section>
