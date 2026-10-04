@@ -1902,7 +1902,7 @@
     },
     "register": {
       "title": "Kora sosiyete yawe",
-      "description": "Iyandikishe n'ushyiraho konti yawe nk'nyir'ayo.",
+      "description": "Iyandikishe nk'umwene. Ikigo gitangira kuri Ubuntu: abantu 5 n'ibicuruzwa 100. Starter, Professional na Enterprise ni gahunda zishyurwa.",
       "organizationName": "Izina ry'sosiyete",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (si ngombwa)",
