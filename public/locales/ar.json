@@ -1902,7 +1902,7 @@
     },
     "register": {
       "title": "أنشئ مؤسستك",
-      "description": "سجّل مؤسسة جديدة واضبط حسابك كمالك.",
+      "description": "سجّل بصفتك المالك. تبدأ المؤسسة على الخطة المجانية: 5 أشخاص و100 منتج. Starter وProfessional وEnterprise خطط مدفوعة.",
       "organizationName": "اسم المؤسسة",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "المعرّف (اختياري)",

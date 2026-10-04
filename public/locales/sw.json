@@ -1902,7 +1902,7 @@
     },
     "register": {
       "title": "Unda shirika lako",
-      "description": "Sajili shirika jipya na weka akaunti yako kama mmiliki.",
+      "description": "Jisajili kama mmiliki. Shirika linaanza kwenye Bure: watu 5 na bidhaa 100. Starter, Professional na Enterprise ni mipango ya kulipia.",
       "organizationName": "Jina la shirika",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (si lazima)",

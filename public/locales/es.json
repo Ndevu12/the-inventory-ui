@@ -1902,7 +1902,7 @@
     },
     "register": {
       "title": "Cree su organización",
-      "description": "Registre una nueva organización y configure su cuenta como propietario.",
+      "description": "Regístrese como propietario. La organización empieza en Gratis: 5 personas y 100 productos. Starter, Professional y Enterprise son planes de pago.",
       "organizationName": "Nombre de la organización",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (opcional)",
