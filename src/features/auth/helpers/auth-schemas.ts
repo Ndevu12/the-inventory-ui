@@ -78,3 +78,36 @@ export function createRegisterSchema(msgs: {
 }
 
 export type RegisterFormValues = z.infer<ReturnType<typeof createRegisterSchema>>;
+
+export function createForgotPasswordSchema(msgs: {
+  emailRequired: string;
+  validEmail: string;
+}) {
+  return z.object({
+    email: z.string().min(1, msgs.emailRequired).email(msgs.validEmail),
+  });
+}
+
+export type ForgotPasswordFormValues = z.infer<
+  ReturnType<typeof createForgotPasswordSchema>
+>;
+
+export function createResetPasswordSchema(msgs: {
+  newMin: string;
+  confirmRequired: string;
+  mismatch: string;
+}) {
+  return z
+    .object({
+      new_password: z.string().min(8, msgs.newMin),
+      confirm_password: z.string().min(1, msgs.confirmRequired),
+    })
+    .refine((data) => data.new_password === data.confirm_password, {
+      message: msgs.mismatch,
+      path: ["confirm_password"],
+    });
+}
+
+export type ResetPasswordFormValues = z.infer<
+  ReturnType<typeof createResetPasswordSchema>
+>;

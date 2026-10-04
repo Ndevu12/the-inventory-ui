@@ -1892,7 +1892,43 @@
       "usernamePlaceholder": "Introduzca su usuario",
       "passwordPlaceholder": "Introduzca su contraseña",
       "signIn": "Iniciar sesión",
-      "signingIn": "Iniciando sesión…"
+      "signingIn": "Iniciando sesión…",
+      "forgot": "¿Olvidaste tu contraseña?"
+    },
+    "forgot": {
+      "title": "Restablece tu contraseña",
+      "subtitle": "Enviamos un enlace cuando una cuenta usa esa dirección.",
+      "email": "Correo",
+      "emailPlaceholder": "tu@empresa.com",
+      "submit": "Enviarme un enlace",
+      "submitting": "Enviando…",
+      "sentTitle": "Revisa tu correo",
+      "sent": "Si una cuenta usa ese correo, el enlace de restablecimiento va en camino.",
+      "back": "Volver a iniciar sesión",
+      "failed": "No se pudo enviar el correo. Inténtalo de nuevo."
+    },
+    "reset": {
+      "title": "Elige una contraseña nueva",
+      "subtitle": "Usa al menos 8 caracteres.",
+      "password": "Contraseña nueva",
+      "passwordPlaceholder": "Mín. 8 caracteres",
+      "confirm": "Confirmar contraseña",
+      "confirmPlaceholder": "Repite la contraseña",
+      "submit": "Actualizar contraseña",
+      "submitting": "Actualizando…",
+      "successTitle": "Contraseña actualizada",
+      "success": "Ya puedes iniciar sesión con la contraseña nueva.",
+      "signIn": "Iniciar sesión",
+      "invalid": "Este enlace ya no es válido. Pide uno nuevo."
+    },
+    "verify": {
+      "title": "Confirma tu correo",
+      "subtitle": "Esto comprueba el enlace enviado al registrarte.",
+      "working": "Confirmando…",
+      "successTitle": "Correo confirmado",
+      "success": "Esta dirección está confirmada. Puedes iniciar sesión.",
+      "signIn": "Iniciar sesión",
+      "invalid": "Este enlace ya no es válido."
     },
     "marketing": {
       "title": "Gestión de inventario potente",
@@ -2512,7 +2548,10 @@
       "subtitle": "Inicia sesión si ya tienes un espacio, o abre uno.",
       "signIn": "Iniciar sesión",
       "getStarted": "Empezar",
-      "owner": "Las preguntas sobre un espacio van a su propietario."
+      "owner": "Las preguntas sobre un espacio van a su propietario.",
+      "consent": "¿Contar las visitas anónimas a esta página?",
+      "consentYes": "Permitir",
+      "consentNo": "No permitir"
     },
     "footer": {
       "tagline": "Gestión de inventario multiempresa para equipos de operaciones modernos.",

@@ -40,6 +40,9 @@ describe("auth-paths", () => {
     expect(isPublicAuthPath("/auth/login")).toBe(true);
     expect(isPublicAuthPath("/auth/register")).toBe(true);
     expect(isPublicAuthPath("/auth/no-organization")).toBe(true);
+    expect(isPublicAuthPath("/auth/forgot-password")).toBe(true);
+    expect(isPublicAuthPath("/auth/reset-password/uid/token")).toBe(true);
+    expect(isPublicAuthPath("/auth/verify-email/uid/token")).toBe(true);
     expect(isPublicAuthPath("/auth/accept-invitation")).toBe(true);
     expect(isPublicAuthPath("/auth/accept-invitation/abc")).toBe(true);
     expect(isPublicAuthPath("/auth/login/")).toBe(true);
