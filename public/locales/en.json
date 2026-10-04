@@ -1877,7 +1877,10 @@
     "acceptInvitationFailed": "Could not accept invitation",
     "password": {
       "show": "Show password",
-      "hide": "Hide password"
+      "hide": "Hide password",
+      "strengthShort": "Too short — use at least 8 characters",
+      "strengthFair": "Usable",
+      "strengthStrong": "Strong"
     },
     "login": {
       "title": "Welcome back",
@@ -2485,6 +2488,31 @@
       "subtitle": "Join the teams running leaner, faster operations.",
       "primary": "Get started",
       "secondary": "Sign in"
+    },
+    "guide": {
+      "eyebrow": "Guide",
+      "title": "How the work is organized",
+      "subtitle": "The same jobs your team already does, in one place.",
+      "catalogTitle": "Catalog",
+      "catalogBody": "Products, SKUs, and categories live in one catalog.",
+      "stockTitle": "Stock",
+      "stockBody": "Every warehouse shares one live record, with a movement history.",
+      "ordersTitle": "Buying and selling",
+      "ordersBody": "Purchase orders, receipts, and dispatches run on that same stock.",
+      "reportsTitle": "Reports",
+      "reportsBody": "Valuations, low stock, and the audit trail are ready when you need them.",
+      "languagesTitle": "Languages",
+      "languagesBody": "Six languages, including right-to-left.",
+      "plansTitle": "Plans",
+      "plansBody": "A new organization starts on Free: 5 people and 100 products. Starter, Professional, and Enterprise are paid."
+    },
+    "reach": {
+      "eyebrow": "Contact",
+      "title": "Reach the product, not a separate inbox",
+      "subtitle": "Sign in if you already have a workspace, or open one.",
+      "signIn": "Sign in",
+      "getStarted": "Get started",
+      "owner": "Questions about a workspace go to that organization's owner."
     },
     "footer": {
       "tagline": "Multi-tenant inventory management for modern operations teams.",

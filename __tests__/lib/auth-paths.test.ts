@@ -30,8 +30,12 @@ describe("auth-paths", () => {
   it("isPublicAuthPath covers the landing, auth and invitation flows", () => {
     expect(isPublicAuthPath("/")).toBe(true);
     expect(isPublicAuthPath("/features")).toBe(true);
+    expect(isPublicAuthPath("/docs")).toBe(true);
+    expect(isPublicAuthPath("/contact")).toBe(true);
     expect(isPublicMarketingPath("/")).toBe(true);
     expect(isPublicMarketingPath("/features")).toBe(true);
+    expect(isPublicMarketingPath("/docs")).toBe(true);
+    expect(isPublicMarketingPath("/contact")).toBe(true);
     expect(isPublicMarketingPath("/auth/login")).toBe(false);
     expect(isPublicAuthPath("/auth/login")).toBe(true);
     expect(isPublicAuthPath("/auth/register")).toBe(true);
@@ -47,5 +51,7 @@ describe("auth-paths", () => {
     expect(requiresJwtAccessCookie("/dashboard")).toBe(true);
     expect(requiresJwtAccessCookie("/auth/login")).toBe(false);
     expect(requiresJwtAccessCookie("/features")).toBe(false);
+    expect(requiresJwtAccessCookie("/docs")).toBe(false);
+    expect(requiresJwtAccessCookie("/contact")).toBe(false);
   });
 });

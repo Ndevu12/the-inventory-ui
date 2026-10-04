@@ -1877,7 +1877,10 @@
     "acceptInvitationFailed": "Failed to accept invitation",
     "password": {
       "show": "Onyesha nenosiri",
-      "hide": "Ficha nenosiri"
+      "hide": "Ficha nenosiri",
+      "strengthShort": "Fupi sana — angalau herufi 8",
+      "strengthFair": "Inakubalika",
+      "strengthStrong": "Imara"
     },
     "login": {
       "title": "Karibu tena",
@@ -2485,6 +2488,31 @@
       "subtitle": "Jiunge na timu zinazoendesha shughuli nyepesi na za haraka zaidi.",
       "primary": "Anza",
       "secondary": "Ingia"
+    },
+    "guide": {
+      "eyebrow": "Mwongozo",
+      "title": "Jinsi kazi ilivyopangwa",
+      "subtitle": "Kazi zilezile, mahali pamoja.",
+      "catalogTitle": "Katalogi",
+      "catalogBody": "Bidhaa, SKU, na makundi yako katika katalogi moja.",
+      "stockTitle": "Hesabu",
+      "stockBody": "Kila ghala linashiriki rekodi moja hai, pamoja na historia ya mienendo.",
+      "ordersTitle": "Kununua na kuuza",
+      "ordersBody": "Oda za ununuzi, mapokezi, na usafirishaji vinatumia hesabu hiyo.",
+      "reportsTitle": "Ripoti",
+      "reportsBody": "Thamani, hesabu ndogo, na ukaguzi viko tayari unapovihitaji.",
+      "languagesTitle": "Lugha",
+      "languagesBody": "Lugha sita, pamoja na kulia kwenda kushoto.",
+      "plansTitle": "Mipango",
+      "plansBody": "Shirika jipya linaanza kwenye Bure: watu 5 na bidhaa 100. Starter, Professional na Enterprise zinalipwa."
+    },
+    "reach": {
+      "eyebrow": "Wasiliana",
+      "title": "Fikia bidhaa, si kisanduku tofauti",
+      "subtitle": "Ingia ikiwa una eneo, au fungua moja.",
+      "signIn": "Ingia",
+      "getStarted": "Anza",
+      "owner": "Maswali kuhusu eneo huenda kwa mmiliki wake."
     },
     "footer": {
       "tagline": "Usimamizi wa hesabu wa watumiaji wengi kwa timu za kisasa za uendeshaji.",

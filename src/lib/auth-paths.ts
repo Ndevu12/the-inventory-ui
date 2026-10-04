@@ -15,6 +15,8 @@ export type ParsedLocalePath = {
 const PUBLIC_INNER_PATHS = new Set([
   "/", // public marketing landing
   "/features",
+  "/docs",
+  "/contact",
   "/auth/login",
   "/auth/register",
   "/auth/no-organization",
@@ -63,7 +65,7 @@ export function parseLocalePath(pathname: string): ParsedLocalePath {
 /** Marketing pages that render before auth hydration finishes. */
 export function isPublicMarketingPath(innerPath: string): boolean {
   const p = normalizeAuthInnerPath(innerPath);
-  return p === "/" || p === "/features";
+  return p === "/" || p === "/features" || p === "/docs" || p === "/contact";
 }
 
 export function isPublicAuthPath(innerPath: string): boolean {

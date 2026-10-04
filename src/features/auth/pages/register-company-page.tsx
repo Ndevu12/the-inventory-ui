@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AuthCardShell } from "../components/auth-card-shell";
 import { PasswordField } from "../components/password-field";
+import { PasswordStrength } from "../components/password-strength";
 import {
   createRegisterSchema,
   type RegisterFormValues,
@@ -46,6 +47,7 @@ export function RegisterCompanyPage() {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm<RegisterFormValues>({
     resolver: zodResolver(schema),
@@ -220,6 +222,7 @@ export function RegisterCompanyPage() {
           error={errors.owner_password?.message}
           registration={register("owner_password")}
         />
+        <PasswordStrength password={watch("owner_password") ?? ""} />
         </fieldset>
 
         <Button
