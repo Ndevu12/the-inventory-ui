@@ -6,7 +6,10 @@
     "acceptInvitationFailed": "Could not accept invitation",
     "password": {
       "show": "Show password",
-      "hide": "Hide password"
+      "hide": "Hide password",
+      "strengthShort": "Too short — use at least 8 characters",
+      "strengthFair": "Usable",
+      "strengthStrong": "Strong"
     },
     "login": {
       "title": "Welcome back",
