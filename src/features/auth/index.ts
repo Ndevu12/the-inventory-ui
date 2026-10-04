@@ -1,4 +1,7 @@
 export { LoginPage } from "./pages/login-page";
+export { ForgotPasswordPage } from "./pages/forgot-password-page";
+export { ResetPasswordPage } from "./pages/reset-password-page";
+export { VerifyEmailPage } from "./pages/verify-email-page";
 export { NoOrganizationPage } from "./pages/no-organization-page";
 export { AccountSettingsPage } from "./pages/account-settings-page";
 export { AuthGuard } from "./components/auth-guard";

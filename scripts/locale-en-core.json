@@ -403,7 +403,10 @@
       "subtitle": "Sign in if you already have a workspace, or open one.",
       "signIn": "Sign in",
       "getStarted": "Get started",
-      "owner": "Questions about a workspace go to that organization's owner."
+      "owner": "Questions about a workspace go to that organization's owner.",
+      "consent": "Count anonymous visits to this page?",
+      "consentYes": "Allow",
+      "consentNo": "Don't allow"
     },
     "footer": {
       "tagline": "Multi-tenant inventory management for modern operations teams.",
