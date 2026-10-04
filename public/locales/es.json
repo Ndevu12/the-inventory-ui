@@ -1875,6 +1875,10 @@
     "invalidCredentials": "Usuario o contraseña incorrectos",
     "registrationFailed": "Error en el registro",
     "acceptInvitationFailed": "No se pudo aceptar la invitación",
+    "password": {
+      "show": "Mostrar contraseña",
+      "hide": "Ocultar contraseña"
+    },
     "login": {
       "title": "Bienvenido de nuevo",
       "subtitle": "Inicie sesión en The Inventory",
@@ -1904,6 +1908,8 @@
       "title": "Cree su organización",
       "description": "Regístrese como propietario.",
       "planNote": "Empieza en Gratis: 5 personas y 100 productos. Starter, Professional y Enterprise son de pago.",
+      "organizationSection": "Organización",
+      "accountSection": "Tu cuenta",
       "organizationName": "Nombre de la organización",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (opcional)",
