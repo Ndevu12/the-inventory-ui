@@ -1902,7 +1902,8 @@
     },
     "register": {
       "title": "Unda shirika lako",
-      "description": "Jisajili kama mmiliki. Shirika linaanza kwenye Bure: watu 5 na bidhaa 100. Starter, Professional na Enterprise ni mipango ya kulipia.",
+      "description": "Jisajili kama mmiliki.",
+      "planNote": "Inaanza kwenye Bure: watu 5 na bidhaa 100. Starter, Professional na Enterprise zinalipwa.",
       "organizationName": "Jina la shirika",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (si lazima)",
@@ -2334,6 +2335,7 @@
       "features": "Vipengele",
       "workflow": "Jinsi inavyofanya kazi",
       "faq": "Maswali Yanayoulizwa Mara kwa Mara",
+      "pricing": "Bei",
       "signIn": "Ingia",
       "getStarted": "Anza sasa",
       "goToDashboard": "Nenda kwenye Dashibodi",
@@ -2451,27 +2453,24 @@
     },
     "pricing": {
       "eyebrow": "Bei",
-      "title": "Mipango minne",
-      "subtitle": "Shirika jipya linaanza kwenye Bure. Starter, Professional na Enterprise ni mipango ya kulipia.",
+      "title": "Chagua mpango",
+      "subtitle": "Shirika jipya linaanza kwenye Bure. Starter, Professional na Enterprise zinalipwa.",
       "free": {
         "kind": "Imejumuishwa",
         "name": "Bure",
         "detail": "Watu 5 na bidhaa 100"
       },
+      "paidTitle": "Mipango ya kulipia",
+      "paidKind": "Inalipwa",
+      "paidNote": "Vikomo vya watu na bidhaa vinafuata mpango.",
       "starter": {
-        "kind": "Inalipwa",
-        "name": "Starter",
-        "detail": "Kwa shughuli ndogo"
+        "name": "Starter"
       },
       "professional": {
-        "kind": "Inalipwa",
-        "name": "Professional",
-        "detail": "Kwa shughuli inayokua"
+        "name": "Professional"
       },
       "enterprise": {
-        "kind": "Inalipwa",
-        "name": "Enterprise",
-        "detail": "Kwa shirika kubwa"
+        "name": "Enterprise"
       },
       "cta": "Anza"
     },

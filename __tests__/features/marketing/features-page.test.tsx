@@ -55,9 +55,9 @@ describe("FeaturesPage", () => {
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: /four plans/i }),
+      screen.getByRole("heading", { name: /choose a plan/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Starter" })).toBeInTheDocument();
+    expect(screen.getByText("Starter")).toBeInTheDocument();
     expect(screen.getByText("5 people and 100 products")).toBeInTheDocument();
     expect(document.getElementById("comparison")?.nextElementSibling?.id).toBe(
       "pricing",
@@ -73,6 +73,9 @@ describe("FeaturesPage", () => {
       "href",
       "/#faq",
     );
+    for (const link of screen.getAllByRole("link", { name: "Pricing" })) {
+      expect(link).toHaveAttribute("href", "/features#pricing");
+    }
     expect(screen.queryByRole("button", { name: "See the comparison" })).toBeNull();
   });
 });
