@@ -1892,7 +1892,43 @@
       "usernamePlaceholder": "Saisissez votre nom d'utilisateur",
       "passwordPlaceholder": "Saisissez votre mot de passe",
       "signIn": "Se connecter",
-      "signingIn": "Connexion…"
+      "signingIn": "Connexion…",
+      "forgot": "Mot de passe oublié ?"
+    },
+    "forgot": {
+      "title": "Réinitialiser le mot de passe",
+      "subtitle": "Nous envoyons un lien lorsqu'un compte utilise cette adresse.",
+      "email": "E-mail",
+      "emailPlaceholder": "vous@entreprise.com",
+      "submit": "Recevoir un lien",
+      "submitting": "Envoi…",
+      "sentTitle": "Vérifiez votre e-mail",
+      "sent": "Si un compte utilise cette adresse, un lien de réinitialisation est en route.",
+      "back": "Retour à la connexion",
+      "failed": "L'e-mail n'a pas pu être envoyé. Réessayez."
+    },
+    "reset": {
+      "title": "Choisir un nouveau mot de passe",
+      "subtitle": "Au moins 8 caractères.",
+      "password": "Nouveau mot de passe",
+      "passwordPlaceholder": "8 caractères minimum",
+      "confirm": "Confirmer le mot de passe",
+      "confirmPlaceholder": "Répétez le mot de passe",
+      "submit": "Mettre à jour",
+      "submitting": "Mise à jour…",
+      "successTitle": "Mot de passe mis à jour",
+      "success": "Vous pouvez vous connecter avec le nouveau mot de passe.",
+      "signIn": "Se connecter",
+      "invalid": "Ce lien n'est plus valable. Demandez-en un nouveau."
+    },
+    "verify": {
+      "title": "Confirmez votre e-mail",
+      "subtitle": "Ce lien a été envoyé après l'inscription.",
+      "working": "Confirmation…",
+      "successTitle": "E-mail confirmé",
+      "success": "Cette adresse est confirmée. Vous pouvez vous connecter.",
+      "signIn": "Se connecter",
+      "invalid": "Ce lien n'est plus valable."
     },
     "marketing": {
       "title": "Gestion des stocks puissante",
@@ -2512,7 +2548,10 @@
       "subtitle": "Connectez-vous si vous avez déjà un espace, ou ouvrez-en un.",
       "signIn": "Se connecter",
       "getStarted": "Commencer",
-      "owner": "Les questions sur un espace vont à son propriétaire."
+      "owner": "Les questions sur un espace vont à son propriétaire.",
+      "consent": "Compter les visites anonymes de cette page ?",
+      "consentYes": "Autoriser",
+      "consentNo": "Ne pas autoriser"
     },
     "footer": {
       "tagline": "La gestion d'inventaire multi-entité pour les équipes opérationnelles modernes.",

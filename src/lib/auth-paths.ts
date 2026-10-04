@@ -19,6 +19,7 @@ const PUBLIC_INNER_PATHS = new Set([
   "/contact",
   "/auth/login",
   "/auth/register",
+  "/auth/forgot-password",
   "/auth/no-organization",
 ]);
 
@@ -75,7 +76,9 @@ export function isPublicAuthPath(innerPath: string): boolean {
   }
   if (
     p === "/auth/accept-invitation" ||
-    p.startsWith("/auth/accept-invitation/")
+    p.startsWith("/auth/accept-invitation/") ||
+    p.startsWith("/auth/reset-password/") ||
+    p.startsWith("/auth/verify-email/")
   ) {
     return true;
   }

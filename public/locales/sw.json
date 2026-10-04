@@ -1892,7 +1892,43 @@
       "usernamePlaceholder": "Weka jina la mtumiaji",
       "passwordPlaceholder": "Weka nenosiri",
       "signIn": "Ingia",
-      "signingIn": "Inaingia…"
+      "signingIn": "Inaingia…",
+      "forgot": "Umesahau nenosiri?"
+    },
+    "forgot": {
+      "title": "Weka upya nenosiri",
+      "subtitle": "Tunatuma kiungo ikiwa akaunti inatumia anwani hiyo.",
+      "email": "Barua pepe",
+      "emailPlaceholder": "wewe@kampuni.com",
+      "submit": "Nitumie kiungo",
+      "submitting": "Inatuma…",
+      "sentTitle": "Angalia barua pepe",
+      "sent": "Ikiwa akaunti inatumia barua hiyo, kiungo cha kuweka upya kinakuja.",
+      "back": "Rudi kuingia",
+      "failed": "Barua pepe haikutumwa. Jaribu tena."
+    },
+    "reset": {
+      "title": "Chagua nenosiri jipya",
+      "subtitle": "Tumia angalau herufi 8.",
+      "password": "Nenosiri jipya",
+      "passwordPlaceholder": "Angalau herufi 8",
+      "confirm": "Thibitisha nenosiri",
+      "confirmPlaceholder": "Rudia nenosiri",
+      "submit": "Sasisha nenosiri",
+      "submitting": "Inasasisha…",
+      "successTitle": "Nenosiri limesasishwa",
+      "success": "Unaweza kuingia kwa nenosiri jipya.",
+      "signIn": "Ingia",
+      "invalid": "Kiungo hiki hakifanyi kazi tena. Omba kipya."
+    },
+    "verify": {
+      "title": "Thibitisha barua pepe",
+      "subtitle": "Hii inakagua kiungo tulichotuma baada ya usajili.",
+      "working": "Inathibitisha…",
+      "successTitle": "Barua pepe imethibitishwa",
+      "success": "Anwani hii imethibitishwa. Unaweza kuingia.",
+      "signIn": "Ingia",
+      "invalid": "Kiungo hiki hakifanyi kazi tena."
     },
     "marketing": {
       "title": "Usimamizi thabiti wa hesabu",
@@ -2512,7 +2548,10 @@
       "subtitle": "Ingia ikiwa una eneo, au fungua moja.",
       "signIn": "Ingia",
       "getStarted": "Anza",
-      "owner": "Maswali kuhusu eneo huenda kwa mmiliki wake."
+      "owner": "Maswali kuhusu eneo huenda kwa mmiliki wake.",
+      "consent": "Hesabu matembezi yasiyo na jina kwenye ukurasa huu?",
+      "consentYes": "Ruhusu",
+      "consentNo": "Usiruhusu"
     },
     "footer": {
       "tagline": "Usimamizi wa hesabu wa watumiaji wengi kwa timu za kisasa za uendeshaji.",

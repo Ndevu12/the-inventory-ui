@@ -6,6 +6,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -88,6 +90,15 @@ export function LoginForm({ onSubmit, isPending, serverError }: LoginFormProps) 
         error={errors.password?.message}
         registration={register("password")}
       />
+
+      <div className="flex justify-end">
+        <Link
+          href="/auth/forgot-password"
+          className="text-sm text-primary underline hover:no-underline"
+        >
+          {t("forgot")}
+        </Link>
+      </div>
 
       <Button type="submit" size="lg" className="w-full" disabled={isPending}>
         {isPending && <Loader2 className="animate-spin" />}
