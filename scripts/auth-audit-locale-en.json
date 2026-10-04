@@ -21,7 +21,43 @@
       "usernamePlaceholder": "Enter your username",
       "passwordPlaceholder": "Enter your password",
       "signIn": "Sign in",
-      "signingIn": "Signing in…"
+      "signingIn": "Signing in…",
+      "forgot": "Forgot password?"
+    },
+    "forgot": {
+      "title": "Reset your password",
+      "subtitle": "We email a link when an account uses that address.",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "submit": "Email me a link",
+      "submitting": "Sending…",
+      "sentTitle": "Check your email",
+      "sent": "If an account uses that email, a reset link is on its way.",
+      "back": "Back to sign in",
+      "failed": "The email could not be sent. Try again."
+    },
+    "reset": {
+      "title": "Choose a new password",
+      "subtitle": "Use at least 8 characters.",
+      "password": "New password",
+      "passwordPlaceholder": "Min. 8 characters",
+      "confirm": "Confirm password",
+      "confirmPlaceholder": "Repeat the password",
+      "submit": "Update password",
+      "submitting": "Updating…",
+      "successTitle": "Password updated",
+      "success": "You can sign in with the new password.",
+      "signIn": "Sign in",
+      "invalid": "This link is no longer valid. Request a new one."
+    },
+    "verify": {
+      "title": "Confirm your email",
+      "subtitle": "This checks the link we sent after you registered.",
+      "working": "Confirming…",
+      "successTitle": "Email confirmed",
+      "success": "This address is confirmed. You can sign in.",
+      "signIn": "Sign in",
+      "invalid": "This link is no longer valid."
     },
     "marketing": {
       "title": "Powerful inventory management",

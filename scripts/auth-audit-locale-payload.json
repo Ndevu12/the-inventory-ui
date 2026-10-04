@@ -22,7 +22,43 @@
         "usernamePlaceholder": "Saisissez votre nom d'utilisateur",
         "passwordPlaceholder": "Saisissez votre mot de passe",
         "signIn": "Se connecter",
-        "signingIn": "Connexion…"
+        "signingIn": "Connexion…",
+        "forgot": "Mot de passe oublié ?"
+      },
+      "forgot": {
+        "title": "Réinitialiser le mot de passe",
+        "subtitle": "Nous envoyons un lien lorsqu'un compte utilise cette adresse.",
+        "email": "E-mail",
+        "emailPlaceholder": "vous@entreprise.com",
+        "submit": "Recevoir un lien",
+        "submitting": "Envoi…",
+        "sentTitle": "Vérifiez votre e-mail",
+        "sent": "Si un compte utilise cette adresse, un lien de réinitialisation est en route.",
+        "back": "Retour à la connexion",
+        "failed": "L'e-mail n'a pas pu être envoyé. Réessayez."
+      },
+      "reset": {
+        "title": "Choisir un nouveau mot de passe",
+        "subtitle": "Au moins 8 caractères.",
+        "password": "Nouveau mot de passe",
+        "passwordPlaceholder": "8 caractères minimum",
+        "confirm": "Confirmer le mot de passe",
+        "confirmPlaceholder": "Répétez le mot de passe",
+        "submit": "Mettre à jour",
+        "submitting": "Mise à jour…",
+        "successTitle": "Mot de passe mis à jour",
+        "success": "Vous pouvez vous connecter avec le nouveau mot de passe.",
+        "signIn": "Se connecter",
+        "invalid": "Ce lien n'est plus valable. Demandez-en un nouveau."
+      },
+      "verify": {
+        "title": "Confirmez votre e-mail",
+        "subtitle": "Ce lien a été envoyé après l'inscription.",
+        "working": "Confirmation…",
+        "successTitle": "E-mail confirmé",
+        "success": "Cette adresse est confirmée. Vous pouvez vous connecter.",
+        "signIn": "Se connecter",
+        "invalid": "Ce lien n'est plus valable."
       },
       "marketing": {
         "title": "Gestion des stocks puissante",
@@ -271,7 +307,43 @@
         "usernamePlaceholder": "Introduzca su usuario",
         "passwordPlaceholder": "Introduzca su contraseña",
         "signIn": "Iniciar sesión",
-        "signingIn": "Iniciando sesión…"
+        "signingIn": "Iniciando sesión…",
+        "forgot": "¿Olvidaste tu contraseña?"
+      },
+      "forgot": {
+        "title": "Restablece tu contraseña",
+        "subtitle": "Enviamos un enlace cuando una cuenta usa esa dirección.",
+        "email": "Correo",
+        "emailPlaceholder": "tu@empresa.com",
+        "submit": "Enviarme un enlace",
+        "submitting": "Enviando…",
+        "sentTitle": "Revisa tu correo",
+        "sent": "Si una cuenta usa ese correo, el enlace de restablecimiento va en camino.",
+        "back": "Volver a iniciar sesión",
+        "failed": "No se pudo enviar el correo. Inténtalo de nuevo."
+      },
+      "reset": {
+        "title": "Elige una contraseña nueva",
+        "subtitle": "Usa al menos 8 caracteres.",
+        "password": "Contraseña nueva",
+        "passwordPlaceholder": "Mín. 8 caracteres",
+        "confirm": "Confirmar contraseña",
+        "confirmPlaceholder": "Repite la contraseña",
+        "submit": "Actualizar contraseña",
+        "submitting": "Actualizando…",
+        "successTitle": "Contraseña actualizada",
+        "success": "Ya puedes iniciar sesión con la contraseña nueva.",
+        "signIn": "Iniciar sesión",
+        "invalid": "Este enlace ya no es válido. Pide uno nuevo."
+      },
+      "verify": {
+        "title": "Confirma tu correo",
+        "subtitle": "Esto comprueba el enlace enviado al registrarte.",
+        "working": "Confirmando…",
+        "successTitle": "Correo confirmado",
+        "success": "Esta dirección está confirmada. Puedes iniciar sesión.",
+        "signIn": "Iniciar sesión",
+        "invalid": "Este enlace ya no es válido."
       },
       "marketing": {
         "title": "Gestión de inventario potente",
@@ -520,7 +592,43 @@
         "usernamePlaceholder": "أدخل اسم المستخدم",
         "passwordPlaceholder": "أدخل كلمة المرور",
         "signIn": "تسجيل الدخول",
-        "signingIn": "جاري تسجيل الدخول…"
+        "signingIn": "جاري تسجيل الدخول…",
+        "forgot": "هل نسيت كلمة المرور؟"
+      },
+      "forgot": {
+        "title": "إعادة تعيين كلمة المرور",
+        "subtitle": "نرسل رابطًا إذا كان هناك حساب بهذا العنوان.",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "you@company.com",
+        "submit": "أرسل الرابط",
+        "submitting": "جارٍ الإرسال…",
+        "sentTitle": "تحقق من بريدك",
+        "sent": "إذا كان هناك حساب بهذا البريد، فالرابط في الطريق.",
+        "back": "العودة لتسجيل الدخول",
+        "failed": "تعذر إرسال البريد. حاول مرة أخرى."
+      },
+      "reset": {
+        "title": "اختر كلمة مرور جديدة",
+        "subtitle": "ثمانية أحرف على الأقل.",
+        "password": "كلمة المرور الجديدة",
+        "passwordPlaceholder": "8 أحرف على الأقل",
+        "confirm": "تأكيد كلمة المرور",
+        "confirmPlaceholder": "أعد كتابة كلمة المرور",
+        "submit": "تحديث كلمة المرور",
+        "submitting": "جارٍ التحديث…",
+        "successTitle": "تم تحديث كلمة المرور",
+        "success": "يمكنك تسجيل الدخول بكلمة المرور الجديدة.",
+        "signIn": "تسجيل الدخول",
+        "invalid": "هذا الرابط لم يعد صالحًا. اطلب رابطًا جديدًا."
+      },
+      "verify": {
+        "title": "تأكيد البريد الإلكتروني",
+        "subtitle": "يتحقق هذا من الرابط الذي أرسلناه بعد التسجيل.",
+        "working": "جارٍ التأكيد…",
+        "successTitle": "تم تأكيد البريد",
+        "success": "هذا العنوان مؤكد. يمكنك تسجيل الدخول.",
+        "signIn": "تسجيل الدخول",
+        "invalid": "هذا الرابط لم يعد صالحًا."
       },
       "marketing": {
         "title": "إدارة مخزون قوية",
@@ -769,7 +877,43 @@
         "usernamePlaceholder": "Andika izina ry'ukoresha",
         "passwordPlaceholder": "Andika ijambo ry'ibanga",
         "signIn": "Injira",
-        "signingIn": "Buri kwinjira…"
+        "signingIn": "Buri kwinjira…",
+        "forgot": "Wibagiwe ijambo ry'ibanga?"
+      },
+      "forgot": {
+        "title": "Subiza ijambo ry'ibanga",
+        "subtitle": "Twohereza umurongo niba konti ikoresha iyo aderesi.",
+        "email": "Imeli",
+        "emailPlaceholder": "wowe@sosiyete.com",
+        "submit": "Ohereza umurongo",
+        "submitting": "Kohereza…",
+        "sentTitle": "Reba imeli yawe",
+        "sent": "Niba konti ikoresha iyo imeli, umurongo wo gusubiza urimo inzira.",
+        "back": "Subira kwinjira",
+        "failed": "Imeli ntiyoherejwe. Ongera ugerageze."
+      },
+      "reset": {
+        "title": "Hitamo ijambo rishya ry'ibanga",
+        "subtitle": "Koresha byibuze inyuguti 8.",
+        "password": "Ijambo rishya ry'ibanga",
+        "passwordPlaceholder": "Byibuze inyuguti 8",
+        "confirm": "Emeza ijambo ry'ibanga",
+        "confirmPlaceholder": "Ongera wandike ijambo ry'ibanga",
+        "submit": "Vugurura ijambo ry'ibanga",
+        "submitting": "Biravugururwa…",
+        "successTitle": "Ijambo ry'ibanga ryavuguruwe",
+        "success": "Ushobora kwinjira ukoresheje ijambo rishya.",
+        "signIn": "Injira",
+        "invalid": "Uyu murongo ntukigikora. Saba undi."
+      },
+      "verify": {
+        "title": "Emeza imeli yawe",
+        "subtitle": "Ibi bisuzuma umurongo twohereje nyuma yo kwiyandikisha.",
+        "working": "Birimo kwemezwa…",
+        "successTitle": "Imeli yemejwe",
+        "success": "Iyi aderesi yemejwe. Ushobora kwinjira.",
+        "signIn": "Injira",
+        "invalid": "Uyu murongo ntukigikora."
       },
       "marketing": {
         "title": "Gucunga ububiko neza kandi bukomatanyije",
@@ -1018,7 +1162,43 @@
         "usernamePlaceholder": "Weka jina la mtumiaji",
         "passwordPlaceholder": "Weka nenosiri",
         "signIn": "Ingia",
-        "signingIn": "Inaingia…"
+        "signingIn": "Inaingia…",
+        "forgot": "Umesahau nenosiri?"
+      },
+      "forgot": {
+        "title": "Weka upya nenosiri",
+        "subtitle": "Tunatuma kiungo ikiwa akaunti inatumia anwani hiyo.",
+        "email": "Barua pepe",
+        "emailPlaceholder": "wewe@kampuni.com",
+        "submit": "Nitumie kiungo",
+        "submitting": "Inatuma…",
+        "sentTitle": "Angalia barua pepe",
+        "sent": "Ikiwa akaunti inatumia barua hiyo, kiungo cha kuweka upya kinakuja.",
+        "back": "Rudi kuingia",
+        "failed": "Barua pepe haikutumwa. Jaribu tena."
+      },
+      "reset": {
+        "title": "Chagua nenosiri jipya",
+        "subtitle": "Tumia angalau herufi 8.",
+        "password": "Nenosiri jipya",
+        "passwordPlaceholder": "Angalau herufi 8",
+        "confirm": "Thibitisha nenosiri",
+        "confirmPlaceholder": "Rudia nenosiri",
+        "submit": "Sasisha nenosiri",
+        "submitting": "Inasasisha…",
+        "successTitle": "Nenosiri limesasishwa",
+        "success": "Unaweza kuingia kwa nenosiri jipya.",
+        "signIn": "Ingia",
+        "invalid": "Kiungo hiki hakifanyi kazi tena. Omba kipya."
+      },
+      "verify": {
+        "title": "Thibitisha barua pepe",
+        "subtitle": "Hii inakagua kiungo tulichotuma baada ya usajili.",
+        "working": "Inathibitisha…",
+        "successTitle": "Barua pepe imethibitishwa",
+        "success": "Anwani hii imethibitishwa. Unaweza kuingia.",
+        "signIn": "Ingia",
+        "invalid": "Kiungo hiki hakifanyi kazi tena."
       },
       "marketing": {
         "title": "Usimamizi thabiti wa hesabu",

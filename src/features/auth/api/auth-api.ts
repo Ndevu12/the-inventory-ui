@@ -60,3 +60,30 @@ export function impersonateStart(
 export function impersonateEnd(): Promise<{ detail: string }> {
   return apiClient.post<{ detail: string }>(`${AUTH_BASE}/impersonate/end/`);
 }
+
+export function requestPasswordReset(email: string): Promise<{ detail: string }> {
+  return apiClient.post<{ detail: string }>(`${AUTH_BASE}/password-reset/`, {
+    email,
+  });
+}
+
+export function confirmPasswordReset(payload: {
+  uid: string;
+  token: string;
+  new_password: string;
+}): Promise<{ detail: string }> {
+  return apiClient.post<{ detail: string }>(
+    `${AUTH_BASE}/password-reset/confirm/`,
+    payload,
+  );
+}
+
+export function confirmEmailVerification(payload: {
+  uid: string;
+  token: string;
+}): Promise<{ detail: string }> {
+  return apiClient.post<{ detail: string }>(
+    `${AUTH_BASE}/email-verification/confirm/`,
+    payload,
+  );
+}

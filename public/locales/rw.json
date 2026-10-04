@@ -1892,7 +1892,43 @@
       "usernamePlaceholder": "Andika izina ry'ukoresha",
       "passwordPlaceholder": "Andika ijambo ry'ibanga",
       "signIn": "Injira",
-      "signingIn": "Buri kwinjira…"
+      "signingIn": "Buri kwinjira…",
+      "forgot": "Wibagiwe ijambo ry'ibanga?"
+    },
+    "forgot": {
+      "title": "Subiza ijambo ry'ibanga",
+      "subtitle": "Twohereza umurongo niba konti ikoresha iyo aderesi.",
+      "email": "Imeli",
+      "emailPlaceholder": "wowe@sosiyete.com",
+      "submit": "Ohereza umurongo",
+      "submitting": "Kohereza…",
+      "sentTitle": "Reba imeli yawe",
+      "sent": "Niba konti ikoresha iyo imeli, umurongo wo gusubiza urimo inzira.",
+      "back": "Subira kwinjira",
+      "failed": "Imeli ntiyoherejwe. Ongera ugerageze."
+    },
+    "reset": {
+      "title": "Hitamo ijambo rishya ry'ibanga",
+      "subtitle": "Koresha byibuze inyuguti 8.",
+      "password": "Ijambo rishya ry'ibanga",
+      "passwordPlaceholder": "Byibuze inyuguti 8",
+      "confirm": "Emeza ijambo ry'ibanga",
+      "confirmPlaceholder": "Ongera wandike ijambo ry'ibanga",
+      "submit": "Vugurura ijambo ry'ibanga",
+      "submitting": "Biravugururwa…",
+      "successTitle": "Ijambo ry'ibanga ryavuguruwe",
+      "success": "Ushobora kwinjira ukoresheje ijambo rishya.",
+      "signIn": "Injira",
+      "invalid": "Uyu murongo ntukigikora. Saba undi."
+    },
+    "verify": {
+      "title": "Emeza imeli yawe",
+      "subtitle": "Ibi bisuzuma umurongo twohereje nyuma yo kwiyandikisha.",
+      "working": "Birimo kwemezwa…",
+      "successTitle": "Imeli yemejwe",
+      "success": "Iyi aderesi yemejwe. Ushobora kwinjira.",
+      "signIn": "Injira",
+      "invalid": "Uyu murongo ntukigikora."
     },
     "marketing": {
       "title": "Gucunga ububiko neza kandi bukomatanyije",
@@ -2512,7 +2548,10 @@
       "subtitle": "Injira niba usanzwe ufite ahantu, cyangwa ufungure.",
       "signIn": "Injira",
       "getStarted": "Tangira",
-      "owner": "Ibibazo by'ahantu h'akazi bijya ku mwene wo."
+      "owner": "Ibibazo by'ahantu h'akazi bijya ku mwene wo.",
+      "consent": "Bara gusura kw'izina ritazwi kuri iyi paji?",
+      "consentYes": "Emera",
+      "consentNo": "Ntukemere"
     },
     "footer": {
       "tagline": "Imicungire y'ububiko y'abakiriya benshi ku matsinda y'imikorere agezweho.",
