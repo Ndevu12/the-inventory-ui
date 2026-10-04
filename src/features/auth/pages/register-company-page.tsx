@@ -108,6 +108,9 @@ export function RegisterCompanyPage() {
       subtitle={tReg("description")}
     >
       <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
+        <p className="rounded-xl bg-muted/50 px-4 py-3 text-sm leading-relaxed text-foreground/90">
+          {tReg("planNote")}
+        </p>
         <div className="grid gap-2">
           <Label htmlFor="organization_name">{tReg("organizationName")}</Label>
           <Input

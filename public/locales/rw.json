@@ -1902,7 +1902,8 @@
     },
     "register": {
       "title": "Kora sosiyete yawe",
-      "description": "Iyandikishe nk'umwene. Ikigo gitangira kuri Ubuntu: abantu 5 n'ibicuruzwa 100. Starter, Professional na Enterprise ni gahunda zishyurwa.",
+      "description": "Iyandikishe nk'umwene.",
+      "planNote": "Gitangira kuri Ubuntu: abantu 5 n'ibicuruzwa 100. Starter, Professional na Enterprise zirishyurwa.",
       "organizationName": "Izina ry'sosiyete",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (si ngombwa)",
@@ -2334,6 +2335,7 @@
       "features": "Ibiranga",
       "workflow": "Uko bikora",
       "faq": "Ibibazo bikunze kubazwa",
+      "pricing": "Ibiciro",
       "signIn": "Injira",
       "getStarted": "Tangira",
       "goToDashboard": "Jya ku Ikibaho",
@@ -2451,27 +2453,24 @@
     },
     "pricing": {
       "eyebrow": "Ibiciro",
-      "title": "Gahunda enye",
-      "subtitle": "Ikigo gishya gitangira kuri Ubuntu. Starter, Professional na Enterprise ni gahunda zishyurwa.",
+      "title": "Hitamo gahunda",
+      "subtitle": "Ikigo gishya gitangira kuri Ubuntu. Starter, Professional na Enterprise zirishyurwa.",
       "free": {
         "kind": "Irimo",
         "name": "Ubuntu",
         "detail": "Abantu 5 n'ibicuruzwa 100"
       },
+      "paidTitle": "Gahunda zishyuwe",
+      "paidKind": "Ishyuwe",
+      "paidNote": "Imipaka y'abantu n'ibicuruzwa ikurikira gahunda.",
       "starter": {
-        "kind": "Ishyuwe",
-        "name": "Starter",
-        "detail": "Ku mirimo mito"
+        "name": "Starter"
       },
       "professional": {
-        "kind": "Ishyuwe",
-        "name": "Professional",
-        "detail": "Ku mirimo ikura"
+        "name": "Professional"
       },
       "enterprise": {
-        "kind": "Ishyuwe",
-        "name": "Enterprise",
-        "detail": "Ku kigo kinini"
+        "name": "Enterprise"
       },
       "cta": "Tangira"
     },
