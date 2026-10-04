@@ -1875,6 +1875,10 @@
     "invalidCredentials": "اسم المستخدم أو كلمة المرور غير صحيحة",
     "registrationFailed": "فشل التسجيل",
     "acceptInvitationFailed": "تعذر قبول الدعوة",
+    "password": {
+      "show": "إظهار كلمة المرور",
+      "hide": "إخفاء كلمة المرور"
+    },
     "login": {
       "title": "مرحبًا بعودتك",
       "subtitle": "سجّل الدخول إلى The Inventory",
@@ -1904,6 +1908,8 @@
       "title": "أنشئ مؤسستك",
       "description": "سجّل بصفتك المالك.",
       "planNote": "تبدأ على المجانية: 5 أشخاص و100 منتج. Starter وProfessional وEnterprise مدفوعة.",
+      "organizationSection": "المؤسسة",
+      "accountSection": "حسابك",
       "organizationName": "اسم المؤسسة",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "المعرّف (اختياري)",

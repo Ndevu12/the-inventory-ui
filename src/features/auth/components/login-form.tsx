@@ -13,6 +13,7 @@ import {
   createLoginSchema,
   type LoginFormValues,
 } from "../helpers/auth-schemas";
+import { PasswordField } from "./password-field";
 
 interface LoginFormProps {
   onSubmit: (values: LoginFormValues) => void;
@@ -45,10 +46,15 @@ export function LoginForm({ onSubmit, isPending, serverError }: LoginFormProps) 
     },
   });
 
+  const usernameErrorId = "username-error";
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
       {serverError && (
-        <div className="rounded-lg border border-destructive/50 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+        <div
+          role="alert"
+          className="rounded-lg border border-destructive/50 bg-destructive/10 px-3 py-2 text-sm text-destructive"
+        >
           {serverError}
         </div>
       )}
@@ -62,29 +68,26 @@ export function LoginForm({ onSubmit, isPending, serverError }: LoginFormProps) 
           autoComplete="username"
           autoFocus
           disabled={isPending}
-          aria-invalid={!!errors.username}
+          aria-invalid={errors.username ? true : undefined}
+          aria-describedby={errors.username ? usernameErrorId : undefined}
           {...register("username")}
         />
         {errors.username && (
-          <p className="text-xs text-destructive">{errors.username.message}</p>
+          <p id={usernameErrorId} className="text-xs text-destructive">
+            {errors.username.message}
+          </p>
         )}
       </div>
 
-      <div className="grid gap-2">
-        <Label htmlFor="password">{t("password")}</Label>
-        <Input
-          id="password"
-          type="password"
-          placeholder={t("passwordPlaceholder")}
-          autoComplete="current-password"
-          disabled={isPending}
-          aria-invalid={!!errors.password}
-          {...register("password")}
-        />
-        {errors.password && (
-          <p className="text-xs text-destructive">{errors.password.message}</p>
-        )}
-      </div>
+      <PasswordField
+        id="password"
+        label={t("password")}
+        placeholder={t("passwordPlaceholder")}
+        autoComplete="current-password"
+        disabled={isPending}
+        error={errors.password?.message}
+        registration={register("password")}
+      />
 
       <Button type="submit" size="lg" className="w-full" disabled={isPending}>
         {isPending && <Loader2 className="animate-spin" />}
