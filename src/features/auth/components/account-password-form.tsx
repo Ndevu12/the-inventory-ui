@@ -21,6 +21,7 @@ import {
   type ChangePasswordFormValues,
 } from "../helpers/auth-schemas";
 import { useChangePassword } from "../hooks/use-auth";
+import { PasswordStrength } from "./password-strength";
 
 export function AccountPasswordForm() {
   const t = useTranslations("Auth.account");
@@ -42,6 +43,7 @@ export function AccountPasswordForm() {
     register,
     handleSubmit,
     reset,
+    watch,
     formState: { errors },
   } = useForm<ChangePasswordFormValues>({
     resolver: zodResolver(schema),
@@ -109,6 +111,7 @@ export function AccountPasswordForm() {
                 {errors.new_password.message}
               </p>
             )}
+            <PasswordStrength password={watch("new_password") ?? ""} />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="account-confirm-password">
