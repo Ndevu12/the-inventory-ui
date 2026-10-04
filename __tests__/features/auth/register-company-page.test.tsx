@@ -64,6 +64,8 @@ describe("RegisterCompanyPage rendering", () => {
     });
 
     expect(screen.getByLabelText(/^organization name$/i)).toBeInTheDocument();
+    expect(screen.getByText("Organization")).toBeInTheDocument();
+    expect(screen.getByText("Your account")).toBeInTheDocument();
     expect(
       screen.getByText(/starts on Free: 5 people and 100 products/i),
     ).toBeInTheDocument();

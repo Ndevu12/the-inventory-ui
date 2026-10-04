@@ -1875,6 +1875,10 @@
     "invalidCredentials": "Invalid username or password",
     "registrationFailed": "Registration failed",
     "acceptInvitationFailed": "Could not accept invitation",
+    "password": {
+      "show": "Show password",
+      "hide": "Hide password"
+    },
     "login": {
       "title": "Welcome back",
       "subtitle": "Sign in to The Inventory",
@@ -1904,6 +1908,8 @@
       "title": "Create your organization",
       "description": "Register as the owner.",
       "planNote": "Starts on Free: 5 people and 100 products. Starter, Professional, and Enterprise are paid.",
+      "organizationSection": "Organization",
+      "accountSection": "Your account",
       "organizationName": "Organization name",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "URL slug (optional)",

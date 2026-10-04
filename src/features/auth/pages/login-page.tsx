@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { Package } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { useAuth } from "../context/auth-context";
@@ -63,7 +62,6 @@ export function LoginPage() {
 
   return (
     <AuthCardShell
-      formIcon={Package}
       title={t("login.title")}
       subtitle={t("login.subtitle")}
     >

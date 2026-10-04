@@ -1875,6 +1875,10 @@
     "invalidCredentials": "Izina ry'ukoresha cyangwa ijambo ry'ibanga si byo",
     "registrationFailed": "Registration failed",
     "acceptInvitationFailed": "Failed to accept invitation",
+    "password": {
+      "show": "Erekana ijambobanga",
+      "hide": "Hisha ijambobanga"
+    },
     "login": {
       "title": "Murakaza neza",
       "subtitle": "Injira muri The Inventory",
@@ -1904,6 +1908,8 @@
       "title": "Kora sosiyete yawe",
       "description": "Iyandikishe nk'umwene.",
       "planNote": "Gitangira kuri Ubuntu: abantu 5 n'ibicuruzwa 100. Starter, Professional na Enterprise zirishyurwa.",
+      "organizationSection": "Ikigo",
+      "accountSection": "Konti yawe",
       "organizationName": "Izina ry'sosiyete",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (si ngombwa)",
