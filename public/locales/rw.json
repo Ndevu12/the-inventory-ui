@@ -1877,7 +1877,10 @@
     "acceptInvitationFailed": "Failed to accept invitation",
     "password": {
       "show": "Erekana ijambobanga",
-      "hide": "Hisha ijambobanga"
+      "hide": "Hisha ijambobanga",
+      "strengthShort": "Ntoy'ingano — byibuze inyuguti 8",
+      "strengthFair": "Ikoreshwa",
+      "strengthStrong": "Irakomeye"
     },
     "login": {
       "title": "Murakaza neza",
@@ -2485,6 +2488,31 @@
       "subtitle": "Ifatanye n'amatsinda akora imirimo yoroheje kandi yihuta.",
       "primary": "Tangira",
       "secondary": "Injira"
+    },
+    "guide": {
+      "eyebrow": "Inyobora",
+      "title": "Uko akazi gateguwe",
+      "subtitle": "Imirimo imwe, ahantu hamwe.",
+      "catalogTitle": "Katalozi",
+      "catalogBody": "Ibicuruzwa, SKU, n'ibyiciro biri muri katalozi imwe.",
+      "stockTitle": "Ububiko",
+      "stockBody": "Buri ububiko bufite inyandiko imwe ihinduka, hamwe n'amateka y'imigendekere.",
+      "ordersTitle": "Kugura no kugurisha",
+      "ordersBody": "Amabwiriza yo kugura, kwakira, no kohereza bikoresha ubwo bubiko.",
+      "reportsTitle": "Raporo",
+      "reportsBody": "Agaciro, ibicuruzwa bikeye, n'inzira y'igenzura birahari iyo ubikeneye.",
+      "languagesTitle": "Indimi",
+      "languagesBody": "Indimi esheshatu, harimo izisomwa iburyo ujya ibumoso.",
+      "plansTitle": "Gahunda",
+      "plansBody": "Ikigo gishya gitangira kuri Ubuntu: abantu 5 n'ibicuruzwa 100. Starter, Professional na Enterprise zirishyurwa."
+    },
+    "reach": {
+      "eyebrow": "Twandikire",
+      "title": "Gera ku gicuruzwa, si agasanduku katandukanye",
+      "subtitle": "Injira niba usanzwe ufite ahantu, cyangwa ufungure.",
+      "signIn": "Injira",
+      "getStarted": "Tangira",
+      "owner": "Ibibazo by'ahantu h'akazi bijya ku mwene wo."
     },
     "footer": {
       "tagline": "Imicungire y'ububiko y'abakiriya benshi ku matsinda y'imikorere agezweho.",

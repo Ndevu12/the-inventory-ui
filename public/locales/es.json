@@ -1877,7 +1877,10 @@
     "acceptInvitationFailed": "No se pudo aceptar la invitación",
     "password": {
       "show": "Mostrar contraseña",
-      "hide": "Ocultar contraseña"
+      "hide": "Ocultar contraseña",
+      "strengthShort": "Demasiado corta — al menos 8 caracteres",
+      "strengthFair": "Aceptable",
+      "strengthStrong": "Fuerte"
     },
     "login": {
       "title": "Bienvenido de nuevo",
@@ -2485,6 +2488,31 @@
       "subtitle": "Únete a los equipos que operan de forma más ágil y rápida.",
       "primary": "Empezar",
       "secondary": "Iniciar sesión"
+    },
+    "guide": {
+      "eyebrow": "Guía",
+      "title": "Cómo está organizado el trabajo",
+      "subtitle": "Las mismas tareas, en un solo lugar.",
+      "catalogTitle": "Catálogo",
+      "catalogBody": "Productos, SKU y categorías viven en un solo catálogo.",
+      "stockTitle": "Stock",
+      "stockBody": "Cada almacén comparte un registro en vivo, con el historial de movimientos.",
+      "ordersTitle": "Compras y ventas",
+      "ordersBody": "Órdenes de compra, recepciones y despachos usan ese mismo stock.",
+      "reportsTitle": "Informes",
+      "reportsBody": "Valoraciones, stock bajo y la auditoría están listos cuando los necesitas.",
+      "languagesTitle": "Idiomas",
+      "languagesBody": "Seis idiomas, incluido de derecha a izquierda.",
+      "plansTitle": "Planes",
+      "plansBody": "Una organización nueva empieza en Gratis: 5 personas y 100 productos. Starter, Professional y Enterprise son de pago."
+    },
+    "reach": {
+      "eyebrow": "Contacto",
+      "title": "Llega al producto, no a un buzón aparte",
+      "subtitle": "Inicia sesión si ya tienes un espacio, o abre uno.",
+      "signIn": "Iniciar sesión",
+      "getStarted": "Empezar",
+      "owner": "Las preguntas sobre un espacio van a su propietario."
     },
     "footer": {
       "tagline": "Gestión de inventario multiempresa para equipos de operaciones modernos.",
