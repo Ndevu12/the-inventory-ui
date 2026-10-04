@@ -5,7 +5,7 @@ import { Link, useRouter } from "@/i18n/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
-import { Package, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import {
@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AuthCardShell } from "../components/auth-card-shell";
+import { PasswordField } from "../components/password-field";
 import {
   createRegisterSchema,
   type RegisterFormValues,
@@ -103,14 +104,15 @@ export function RegisterCompanyPage() {
   return (
     <AuthCardShell
       formMaxWidth="lg"
-      formIcon={Package}
       title={tReg("title")}
       subtitle={tReg("description")}
+      note={tReg("planNote")}
     >
-      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
-        <p className="rounded-xl bg-muted/50 px-4 py-3 text-sm leading-relaxed text-foreground/90">
-          {tReg("planNote")}
-        </p>
+      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-8">
+        <fieldset className="grid gap-4 border-0 p-0">
+          <legend className="mb-1 text-xs font-medium tracking-wide text-muted-foreground">
+            {tReg("organizationSection")}
+          </legend>
         <div className="grid gap-2">
           <Label htmlFor="organization_name">{tReg("organizationName")}</Label>
           <Input
@@ -149,7 +151,12 @@ export function RegisterCompanyPage() {
             </p>
           )}
         </div>
+        </fieldset>
 
+        <fieldset className="grid gap-4 border-0 p-0">
+          <legend className="mb-1 text-xs font-medium tracking-wide text-muted-foreground">
+            {tReg("accountSection")}
+          </legend>
         <div className="grid gap-2">
           <Label htmlFor="owner_username">{tReg("username")}</Label>
           <Input
@@ -204,22 +211,16 @@ export function RegisterCompanyPage() {
           </div>
         </div>
 
-        <div className="grid gap-2">
-          <Label htmlFor="owner_password">{tReg("password")}</Label>
-          <Input
-            id="owner_password"
-            type="password"
-            placeholder={tReg("passwordPlaceholder")}
-            autoComplete="new-password"
-            disabled={registerMutation.isPending}
-            {...register("owner_password")}
-          />
-          {errors.owner_password && (
-            <p className="text-xs text-destructive">
-              {errors.owner_password.message}
-            </p>
-          )}
-        </div>
+        <PasswordField
+          id="owner_password"
+          label={tReg("password")}
+          placeholder={tReg("passwordPlaceholder")}
+          autoComplete="new-password"
+          disabled={registerMutation.isPending}
+          error={errors.owner_password?.message}
+          registration={register("owner_password")}
+        />
+        </fieldset>
 
         <Button
           type="submit"

@@ -18,6 +18,11 @@ const { navigationState } = vi.hoisted(() => ({
   navigationState: { pathname: "/login" },
 }));
 
+vi.mock("next/navigation", () => ({
+  usePathname: () => "/en/auth/login",
+  useRouter: () => ({ refresh: vi.fn(), replace: vi.fn(), push: vi.fn() }),
+}));
+
 vi.mock("@/i18n/navigation", () => ({
   Link: ({
     href,
@@ -56,7 +61,8 @@ describe("LoginPage rendering", () => {
       expect(screen.getByText(/welcome back/i)).toBeInTheDocument();
     });
 
-    expect(screen.getByLabelText(/username/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/password/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/^username$/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/^password$/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /show password/i })).toBeInTheDocument();
   });
 });

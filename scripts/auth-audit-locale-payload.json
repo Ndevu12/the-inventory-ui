@@ -5,6 +5,10 @@
       "invalidCredentials": "Identifiant ou mot de passe incorrect",
       "registrationFailed": "L'inscription a échoué",
       "acceptInvitationFailed": "Impossible d'accepter l'invitation",
+      "password": {
+        "show": "Afficher le mot de passe",
+        "hide": "Masquer le mot de passe"
+      },
       "login": {
         "title": "Bon retour",
         "subtitle": "Connectez-vous à The Inventory",
@@ -34,6 +38,8 @@
         "title": "Créer votre organisation",
         "description": "Inscrivez-vous en tant que propriétaire.",
         "planNote": "Commence sur Gratuit : 5 personnes et 100 produits. Starter, Professional et Enterprise sont payantes.",
+        "organizationSection": "Organisation",
+        "accountSection": "Votre compte",
         "organizationName": "Nom de l'organisation",
         "organizationPlaceholder": "Acme Corp",
         "slugLabel": "Identifiant URL (facultatif)",
@@ -245,6 +251,10 @@
       "invalidCredentials": "Usuario o contraseña incorrectos",
       "registrationFailed": "Error en el registro",
       "acceptInvitationFailed": "No se pudo aceptar la invitación",
+      "password": {
+        "show": "Mostrar contraseña",
+        "hide": "Ocultar contraseña"
+      },
       "login": {
         "title": "Bienvenido de nuevo",
         "subtitle": "Inicie sesión en The Inventory",
@@ -274,6 +284,8 @@
         "title": "Cree su organización",
         "description": "Regístrese como propietario.",
         "planNote": "Empieza en Gratis: 5 personas y 100 productos. Starter, Professional y Enterprise son de pago.",
+        "organizationSection": "Organización",
+        "accountSection": "Tu cuenta",
         "organizationName": "Nombre de la organización",
         "organizationPlaceholder": "Acme Corp",
         "slugLabel": "Slug (opcional)",
@@ -485,6 +497,10 @@
       "invalidCredentials": "اسم المستخدم أو كلمة المرور غير صحيحة",
       "registrationFailed": "فشل التسجيل",
       "acceptInvitationFailed": "تعذر قبول الدعوة",
+      "password": {
+        "show": "إظهار كلمة المرور",
+        "hide": "إخفاء كلمة المرور"
+      },
       "login": {
         "title": "مرحبًا بعودتك",
         "subtitle": "سجّل الدخول إلى The Inventory",
@@ -514,6 +530,8 @@
         "title": "أنشئ مؤسستك",
         "description": "سجّل بصفتك المالك.",
         "planNote": "تبدأ على المجانية: 5 أشخاص و100 منتج. Starter وProfessional وEnterprise مدفوعة.",
+        "organizationSection": "المؤسسة",
+        "accountSection": "حسابك",
         "organizationName": "اسم المؤسسة",
         "organizationPlaceholder": "Acme Corp",
         "slugLabel": "المعرّف (اختياري)",
@@ -725,6 +743,10 @@
       "invalidCredentials": "Izina ry'ukoresha cyangwa ijambo ry'ibanga si byo",
       "registrationFailed": "Registration failed",
       "acceptInvitationFailed": "Failed to accept invitation",
+      "password": {
+        "show": "Erekana ijambobanga",
+        "hide": "Hisha ijambobanga"
+      },
       "login": {
         "title": "Murakaza neza",
         "subtitle": "Injira muri The Inventory",
@@ -754,6 +776,8 @@
         "title": "Kora sosiyete yawe",
         "description": "Iyandikishe nk'umwene.",
         "planNote": "Gitangira kuri Ubuntu: abantu 5 n'ibicuruzwa 100. Starter, Professional na Enterprise zirishyurwa.",
+        "organizationSection": "Ikigo",
+        "accountSection": "Konti yawe",
         "organizationName": "Izina ry'sosiyete",
         "organizationPlaceholder": "Acme Corp",
         "slugLabel": "Slug (si ngombwa)",
@@ -965,6 +989,10 @@
       "invalidCredentials": "Jina la mtumiaji au nenosiri si sahihi",
       "registrationFailed": "Registration failed",
       "acceptInvitationFailed": "Failed to accept invitation",
+      "password": {
+        "show": "Onyesha nenosiri",
+        "hide": "Ficha nenosiri"
+      },
       "login": {
         "title": "Karibu tena",
         "subtitle": "Ingia kwenye The Inventory",
@@ -994,6 +1022,8 @@
         "title": "Unda shirika lako",
         "description": "Jisajili kama mmiliki.",
         "planNote": "Inaanza kwenye Bure: watu 5 na bidhaa 100. Starter, Professional na Enterprise zinalipwa.",
+        "organizationSection": "Shirika",
+        "accountSection": "Akaunti yako",
         "organizationName": "Jina la shirika",
         "organizationPlaceholder": "Acme Corp",
         "slugLabel": "Slug (si lazima)",

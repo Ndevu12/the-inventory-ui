@@ -1875,6 +1875,10 @@
     "invalidCredentials": "Jina la mtumiaji au nenosiri si sahihi",
     "registrationFailed": "Registration failed",
     "acceptInvitationFailed": "Failed to accept invitation",
+    "password": {
+      "show": "Onyesha nenosiri",
+      "hide": "Ficha nenosiri"
+    },
     "login": {
       "title": "Karibu tena",
       "subtitle": "Ingia kwenye The Inventory",
@@ -1904,6 +1908,8 @@
       "title": "Unda shirika lako",
       "description": "Jisajili kama mmiliki.",
       "planNote": "Inaanza kwenye Bure: watu 5 na bidhaa 100. Starter, Professional na Enterprise zinalipwa.",
+      "organizationSection": "Shirika",
+      "accountSection": "Akaunti yako",
       "organizationName": "Jina la shirika",
       "organizationPlaceholder": "Acme Corp",
       "slugLabel": "Slug (si lazima)",
