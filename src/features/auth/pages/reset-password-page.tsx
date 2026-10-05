@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
@@ -9,8 +9,11 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 
-import { confirmPasswordReset } from "../api/auth-api";
 import { AuthCardShell } from "../components/auth-card-shell";
+import {
+  newPasswordError,
+  useConfirmPasswordReset,
+} from "../hooks/use-password-reset";
 import { PasswordField } from "../components/password-field";
 import { PasswordStrength } from "../components/password-strength";
 import {
@@ -28,10 +31,7 @@ export function ResetPasswordPage({
 }) {
   const t = useTranslations("Auth.reset");
   const tVal = useTranslations("Auth.validation");
-  const [done, setDone] = useState(false);
-  const [invalid, setInvalid] = useState(false);
-  const [passwordError, setPasswordError] = useState<string | null>(null);
-  const [pending, setPending] = useState(false);
+  const confirmReset = useConfirmPasswordReset();
 
   const schema = useMemo(
     () =>
@@ -53,36 +53,23 @@ export function ResetPasswordPage({
     defaultValues: { new_password: "", confirm_password: "" },
   });
 
-  async function onSubmit(values: ResetPasswordFormValues) {
-    setInvalid(false);
-    setPasswordError(null);
-    setPending(true);
-    try {
-      await confirmPasswordReset({
-        uid,
-        token,
-        new_password: values.new_password,
-      });
-      setDone(true);
-    } catch (error) {
-      const passwordErrors = (error as { errors?: { new_password?: string[] } })
-        .errors?.new_password;
-      if (passwordErrors?.length) {
-        setPasswordError(passwordErrors.join(" "));
-      } else {
-        setInvalid(true);
-      }
-    } finally {
-      setPending(false);
-    }
+  function onSubmit(values: ResetPasswordFormValues) {
+    confirmReset.mutate({
+      uid,
+      token,
+      new_password: values.new_password,
+    });
   }
+
+  const passwordError = newPasswordError(confirmReset.error);
+  const pending = confirmReset.isPending;
 
   return (
     <AuthCardShell
-      title={done ? t("successTitle") : t("title")}
-      subtitle={done ? t("success") : t("subtitle")}
+      title={confirmReset.isSuccess ? t("successTitle") : t("title")}
+      subtitle={confirmReset.isSuccess ? t("success") : t("subtitle")}
     >
-      {done ? (
+      {confirmReset.isSuccess ? (
         <p className="text-center text-sm">
           <Link
             href="/auth/login"
@@ -93,7 +80,7 @@ export function ResetPasswordPage({
         </p>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
-          {invalid || passwordError ? (
+          {confirmReset.isError ? (
             <p
               role="alert"
               className="rounded-lg border border-destructive/50 bg-destructive/10 px-3 py-2 text-sm text-destructive"
