@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Link, useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
@@ -18,14 +18,16 @@ import {
   createRegisterSchema,
   type RegisterFormValues,
 } from "../helpers/auth-schemas";
-import { useAuthConfig, useRegister } from "../hooks/use-auth";
+import {
+  useLeaveWhenRegistrationClosed,
+  useRegister,
+} from "../hooks/use-registration";
 
 export function RegisterCompanyPage() {
-  const router = useRouter();
   const t = useTranslations("Auth");
   const tReg = useTranslations("Auth.register");
   const tVal = useTranslations("Auth.validation");
-  const { data: config } = useAuthConfig();
+  useLeaveWhenRegistrationClosed();
   const registerMutation = useRegister();
 
   const schema = React.useMemo(
@@ -57,12 +59,6 @@ export function RegisterCompanyPage() {
       owner_last_name: "",
     },
   });
-
-  React.useEffect(() => {
-    if (config && !config.allow_registration) {
-      router.replace("/auth/login");
-    }
-  }, [config, router]);
 
   function onSubmit(values: RegisterFormValues) {
     const payload = {

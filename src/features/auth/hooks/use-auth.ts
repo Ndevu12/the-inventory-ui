@@ -13,7 +13,6 @@ import type {
   LoginRequest,
   ChangePasswordRequest,
   MeResponse,
-  RegisterRequest,
   UpdateProfileRequest,
 } from "../types/auth.types";
 import type { ApiError } from "@/types/api-common";
@@ -122,15 +121,6 @@ export function useUpdateProfile() {
   });
 }
 
-export function useAuthConfig() {
-  return useQuery({
-    queryKey: authKeys.config,
-    queryFn: authApi.fetchAuthConfig,
-    staleTime: 5 * 60 * 1000,
-    retry: false,
-  });
-}
-
 export function useImpersonate() {
   const {
     setUser,
@@ -175,29 +165,6 @@ export function useExitImpersonation() {
     },
     onError: () => {
       toast.error("Failed to exit impersonation");
-    },
-  });
-}
-
-export function useRegister() {
-  const { invalidate } = useAuth();
-  const { setUser, setTenant, setMemberships } = useAuthStore();
-  const router = useRouter();
-
-  return useMutation({
-    mutationFn: (payload: RegisterRequest) => authApi.register(payload),
-    onSuccess: (data) => {
-      setUser(data.user);
-      setTenant(data.tenant.slug);
-      setMemberships(data.memberships);
-      invalidate();
-      toast.success(`Welcome! Your organization ${data.tenant.name} has been created.`);
-      router.replace("/dashboard");
-    },
-    onError: (error) => {
-      toast.error(
-        (error as { message?: string }).message ?? "Registration failed"
-      );
     },
   });
 }
