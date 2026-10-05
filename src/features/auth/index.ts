@@ -14,8 +14,9 @@ export {
   useLogout,
   useChangePassword,
   useUpdateProfile,
-  useAuthConfig,
 } from "./hooks/use-auth";
+export { useAuthConfig } from "./hooks/use-auth-config";
+export { useRegister } from "./hooks/use-registration";
 export { isTokenExpired, parseJwtPayload } from "./helpers/auth-utils";
 export type {
   LoginRequest,
