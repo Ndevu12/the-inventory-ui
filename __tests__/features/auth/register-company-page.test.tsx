@@ -15,8 +15,9 @@ import {
   stubFetchAuthConfig,
 } from "../../helpers/test-app-shell";
 
-const { navigationState } = vi.hoisted(() => ({
+const { navigationState, replace } = vi.hoisted(() => ({
   navigationState: { pathname: "/register" },
+  replace: vi.fn(),
 }));
 
 vi.mock("next/navigation", () => ({
@@ -34,13 +35,14 @@ vi.mock("@/i18n/navigation", () => ({
       {children}
     </a>
   ),
-  useRouter: () => ({ replace: vi.fn(), push: vi.fn() }),
+  useRouter: () => ({ replace, push: vi.fn() }),
   usePathname: () => navigationState.pathname,
 }));
 
 describe("RegisterCompanyPage rendering", () => {
   beforeEach(() => {
     navigationState.pathname = "/register";
+    replace.mockClear();
     resetClientTestState();
     stubFetchAuthConfig(true);
   });
@@ -69,5 +71,39 @@ describe("RegisterCompanyPage rendering", () => {
     expect(
       screen.getByText(/starts on Free: 5 people and 100 products/i),
     ).toBeInTheDocument();
+  });
+
+  it("shows the form while the server has not answered", async () => {
+    vi.spyOn(globalThis, "fetch").mockImplementation(
+      () => new Promise(() => {}),
+    );
+    clearQueryClientCache();
+    renderWithProviders(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <RegisterCompanyPage />
+      </NextIntlClientProvider>,
+    );
+
+    await waitFor(() => {
+      expect(screen.getByText(/create your organization/i)).toBeInTheDocument();
+    });
+    expect(screen.queryByText(/loading/i)).not.toBeInTheDocument();
+  });
+
+  it("leaves for sign-in only after the server closes registration", async () => {
+    stubFetchAuthConfig(false);
+    clearQueryClientCache();
+    renderWithProviders(
+      <NextIntlClientProvider locale="en" messages={messages}>
+        <RegisterCompanyPage />
+      </NextIntlClientProvider>,
+    );
+
+    await waitFor(() => {
+      expect(screen.getByText(/create your organization/i)).toBeInTheDocument();
+    });
+    await waitFor(() => {
+      expect(replace).toHaveBeenCalledWith("/auth/login");
+    });
   });
 });
