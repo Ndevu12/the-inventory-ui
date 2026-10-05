@@ -1,14 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
 
-import { confirmEmailVerification } from "../api/auth-api";
 import { AuthCardShell } from "../components/auth-card-shell";
-
-type VerifyState = "working" | "success" | "invalid";
+import { useEmailVerification } from "../hooks/use-email-verification";
 
 /** Confirm the address from the link sent after registration. */
 export function VerifyEmailPage({
@@ -19,34 +16,19 @@ export function VerifyEmailPage({
   token: string;
 }) {
   const t = useTranslations("Auth.verify");
-  const [state, setState] = useState<VerifyState>("working");
+  const status = useEmailVerification(uid, token);
 
-  useEffect(() => {
-    let cancelled = false;
-    confirmEmailVerification({ uid, token })
-      .then(() => {
-        if (!cancelled) setState("success");
-      })
-      .catch(() => {
-        if (!cancelled) setState("invalid");
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [uid, token]);
-
-  const title =
-    state === "success" ? t("successTitle") : t("title");
+  const title = status === "success" ? t("successTitle") : t("title");
   const subtitle =
-    state === "success"
+    status === "success"
       ? t("success")
-      : state === "invalid"
+      : status === "invalid"
         ? t("invalid")
         : t("working");
 
   return (
     <AuthCardShell title={title} subtitle={subtitle}>
-      {state === "working" ? null : (
+      {status === "working" ? null : (
         <p className="text-center text-sm">
           <Link
             href="/auth/login"
