@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2 } from "lucide-react";
@@ -11,8 +11,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-import { requestPasswordReset } from "../api/auth-api";
 import { AuthCardShell } from "../components/auth-card-shell";
+import { useRequestPasswordReset } from "../hooks/use-password-reset";
 import {
   createForgotPasswordSchema,
   type ForgotPasswordFormValues,
@@ -22,9 +22,7 @@ import {
 export function ForgotPasswordPage() {
   const t = useTranslations("Auth.forgot");
   const tVal = useTranslations("Auth.validation");
-  const [sent, setSent] = useState(false);
-  const [failed, setFailed] = useState(false);
-  const [pending, setPending] = useState(false);
+  const requestReset = useRequestPasswordReset();
 
   const schema = useMemo(
     () =>
@@ -44,18 +42,11 @@ export function ForgotPasswordPage() {
     defaultValues: { email: "" },
   });
 
-  async function onSubmit(values: ForgotPasswordFormValues) {
-    setFailed(false);
-    setPending(true);
-    try {
-      await requestPasswordReset(values.email);
-      setSent(true);
-    } catch {
-      setFailed(true);
-    } finally {
-      setPending(false);
-    }
+  function onSubmit(values: ForgotPasswordFormValues) {
+    requestReset.mutate(values.email);
   }
+
+  const sent = requestReset.isSuccess;
 
   return (
     <AuthCardShell
@@ -73,7 +64,7 @@ export function ForgotPasswordPage() {
         </p>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)} className="grid gap-4">
-          {failed ? (
+          {requestReset.isError ? (
             <p
               role="alert"
               className="rounded-lg border border-destructive/50 bg-destructive/10 px-3 py-2 text-sm text-destructive"
@@ -88,7 +79,7 @@ export function ForgotPasswordPage() {
               type="email"
               autoComplete="email"
               placeholder={t("emailPlaceholder")}
-              disabled={pending}
+              disabled={requestReset.isPending}
               aria-invalid={errors.email ? true : undefined}
               aria-describedby={errors.email ? "email-error" : undefined}
               {...register("email")}
@@ -99,9 +90,14 @@ export function ForgotPasswordPage() {
               </p>
             ) : null}
           </div>
-          <Button type="submit" size="lg" className="w-full" disabled={pending}>
-            {pending ? <Loader2 className="animate-spin" /> : null}
-            {pending ? t("submitting") : t("submit")}
+          <Button
+            type="submit"
+            size="lg"
+            className="w-full"
+            disabled={requestReset.isPending}
+          >
+            {requestReset.isPending ? <Loader2 className="animate-spin" /> : null}
+            {requestReset.isPending ? t("submitting") : t("submit")}
           </Button>
         </form>
       )}

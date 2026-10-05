@@ -2,6 +2,7 @@
  * Password reset and email confirmation screens.
  */
 import type { ComponentProps, ReactNode } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
 import { afterEach, describe, expect, it, vi } from "vitest";
@@ -34,10 +35,15 @@ vi.mock("@/i18n/navigation", () => ({
 }));
 
 function renderRecovery(ui: ReactNode) {
+  const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: false }, mutations: { retry: false } },
+  });
   return render(
-    <NextIntlClientProvider locale="en" messages={messages}>
-      {ui}
-    </NextIntlClientProvider>,
+    <QueryClientProvider client={queryClient}>
+      <NextIntlClientProvider locale="en" messages={messages}>
+        {ui}
+      </NextIntlClientProvider>
+    </QueryClientProvider>,
   );
 }
 
