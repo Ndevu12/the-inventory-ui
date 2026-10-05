@@ -7,7 +7,8 @@ import { useTranslations } from "next-intl";
 import { useAuth } from "../context/auth-context";
 import { LoginForm } from "../components/login-form";
 import { AuthCardShell } from "../components/auth-card-shell";
-import { useLogin, useAuthConfig } from "../hooks/use-auth";
+import { useAuthConfig } from "../hooks/use-auth-config";
+import { useLogin } from "../hooks/use-auth";
 import { useLoginFormStore } from "../stores/login-form-store";
 import type { LoginFormValues } from "../helpers/auth-schemas";
 
