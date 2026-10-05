@@ -8,10 +8,6 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -29,7 +25,7 @@ export function RegisterCompanyPage() {
   const t = useTranslations("Auth");
   const tReg = useTranslations("Auth.register");
   const tVal = useTranslations("Auth.validation");
-  const { data: config, isLoading: configLoading } = useAuthConfig();
+  const { data: config } = useAuthConfig();
   const registerMutation = useRegister();
 
   const schema = React.useMemo(
@@ -63,10 +59,10 @@ export function RegisterCompanyPage() {
   });
 
   React.useEffect(() => {
-    if (!configLoading && config && !config.allow_registration) {
+    if (config && !config.allow_registration) {
       router.replace("/auth/login");
     }
-  }, [config, configLoading, router]);
+  }, [config, router]);
 
   function onSubmit(values: RegisterFormValues) {
     const payload = {
@@ -88,19 +84,6 @@ export function RegisterCompanyPage() {
         toast.error(msg);
       },
     });
-  }
-
-  if (configLoading || (!config?.allow_registration && !configLoading)) {
-    return (
-      <div className="flex justify-center px-4 py-8">
-        <Card className="w-full max-w-md">
-          <CardContent className="flex flex-col items-center gap-4 py-8">
-            <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
-            <p className="text-sm text-muted-foreground">{t("loading")}</p>
-          </CardContent>
-        </Card>
-      </div>
-    );
   }
 
   return (
